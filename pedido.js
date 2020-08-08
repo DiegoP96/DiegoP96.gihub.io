@@ -27,16 +27,22 @@ function ready() {
 }
 
 function purchaseClicked() {
-    numeroMesa = document.getElementsByClassName('number-table').innerText
-    console.log(numeroMesa);
-    // var cartItems = document.getElementsByClassName('cart-items')[0]
-    // var totalPurchased = document.getElementsByClassName('cart-total-price')[0].innerText
-    // alert(`Gracias por su pedido ${totalPurchased}`)
-    // while (cartItems.hasChildNodes()) {
-    //     cartItems.removeChild(cartItems.firstChild)
-    // }
-    // // updateCartTotal()
-    // history.go(-1);
+    numeroMesa = document.getElementsByClassName('number-table')[0].value
+    if (numeroMesa == '') {
+        alert('INGRESE NUMERO DE MESA')
+        return
+    } else {
+        console.log(numeroMesa);
+        var cartItems = document.getElementsByClassName('cart-items')[0]
+        var totalPurchased = document.getElementsByClassName('cart-total-price')[0].innerText
+        alert(`Gracias por su pedido ${totalPurchased}`)
+        while (cartItems.hasChildNodes()) {
+            cartItems.removeChild(cartItems.firstChild)
+        }
+        // updateCartTotal()
+        history.go(-1);
+    }
+
 }
 
 function removeCartItem(event) {

@@ -4,6 +4,77 @@ if (document.readyState == 'loading') {
     ready()
 }
 
+function alertCookie() {
+    console.log(document.cookie);
+}
+
+function getCookiePlates() {
+
+    var name
+    var allPlates = [1]
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        name = 'plato' + i + "="
+
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+
+        }
+        if (c.indexOf(name) == 0) {
+            allPlates[i] = c.substring(name.length, c.length);
+        }
+    }
+    if (allPlates[0] == 1) {
+        return "";
+    } else {
+        return allPlates
+
+    }
+
+}
+
+function getTitle(string) {
+    var i = 0
+    while (isNaN(string.charAt(i)) && i < string.length) {
+        i++
+    }
+    return string.substring(0, i)
+}
+
+function getPrice(string) {
+    var i = 0
+    while (isNaN(string.charAt(i)) && i < string.length) {
+        i++
+    }
+    return ("$" + string.substring(i))
+}
+
+function checkPlates() {
+    var plates = getCookiePlates()
+    if (plates == "") {
+        return
+    } else {
+        for (var i = 0; i < plates.length; i++) {
+            var title = getTitle(plates[i])
+            var price = getPrice(plates[i])
+           addItemToCart(title, price)
+        }
+    }
+
+}
+
+// function checkCookie() {
+//     var user = getCookie("username");
+//     if (user != "") {
+//         alert("Welcome again " + user);
+//     } else {
+//         user = prompt("Please enter your name:", "");
+//         if (user != "" && user != null) {
+//             setCookie("username", user, 365);
+//         }
+//     }
+// }
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -39,8 +110,8 @@ function purchaseClicked() {
         while (cartItems.hasChildNodes()) {
             cartItems.removeChild(cartItems.firstChild)
         }
-        // updateCartTotal()
         history.go(-1);
+
     }
 
 }
@@ -69,7 +140,9 @@ function addToCartClicked(event) {
     updateCartTotal()
 }
 
-function addItemToCart(title, price, imageSrc) {
+function addItemToCart(title, price) {
+
+
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
@@ -77,12 +150,12 @@ function addItemToCart(title, price, imageSrc) {
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == title) {
             alert('This item is already added to the cart')
+            cartItems.getElementsByClassName('cart-quantity-input').value++
             return
         }
     }
     var cartRowContents = `
         <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="100" height="100">
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
@@ -94,6 +167,7 @@ function addItemToCart(title, price, imageSrc) {
     cartItems.append(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+    updateCartTotal()
 }
 
 function updateCartTotal() {

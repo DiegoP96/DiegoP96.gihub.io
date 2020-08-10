@@ -113,6 +113,13 @@
            font-size: 20px;
        }
        
+       #nachos {
+           display: inline-block;
+           width: 200px;
+           height: 80px;
+           background-color: chocolate;
+       }
+       
        .contenedorGrid {
            display: grid;
            margin: auto;

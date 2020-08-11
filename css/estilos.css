@@ -30,7 +30,7 @@
            justify-self: center;
            align-self: center;
            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-           font-size: 40px;
+           font-size: 2.2em;
            font-weight: bold;
            letter-spacing: 2px;
        }
@@ -39,7 +39,7 @@
            position: relative;
            z-index: 1;
            width: 200px;
-           height: 180px;
+           height: 150px;
            align-self: center;
        }
        
@@ -52,22 +52,6 @@
            height: 300px;
        }
        
-       .contenedorMenu {
-           display: flex;
-           align-items: center;
-           justify-content: space-evenly;
-           width: 100%;
-           height: 50px;
-           background-color: green;
-       }
-       
-       .botonesMenu {
-           font-size: 20px;
-           font-family: monospace;
-           text-decoration-line: none;
-           color: rgb(255, 230, 0);
-       }
-       
        .contenedorColumnas {
            display: grid;
            width: 100%;
@@ -78,7 +62,9 @@
        .columna {
            grid-row-start: 1;
            width: 300px;
-           height: 250px;
+           height: 200px;
+           box-sizing: border-box;
+           contain: content;
            border-top-right-radius: 10px;
            border-top-left-radius: 10px;
            border-bottom-left-radius: 10px;
@@ -88,19 +74,20 @@
        
        #columnaUno {
            background-image: url(../img/menu.jpg);
-           max-width: 100%;
-           height: auto;
-           /* background-size: 380px; */
+           background-size: 100%;
+           background-repeat: no-repeat;
        }
        
        #columnaDos {
            background-image: url(../img/reserva.jpg);
-           background-size: 380px;
+           background-size: 100%;
+           background-repeat: no-repeat;
        }
        
        #columnaTres {
            background-image: url(../img/takeaway.jpg);
-           background-size: 380px;
+           background-size: 100%;
+           background-repeat: no-repeat;
        }
        
        .textoColumna {
@@ -110,7 +97,7 @@
            letter-spacing: 2px;
            font-weight: 700;
            font-family: sans-serif;
-           font-size: 20px;
+           font-size: 1.1em;
        }
        
        #nachos {
@@ -122,45 +109,39 @@
        
        .contenedorGrid {
            display: grid;
-           margin: auto;
-           justify-items: center;
-           grid-template-columns: 1fr 1fr;
            max-width: 100%;
+           margin: 0px auto;
+           grid-template-columns: auto;
            background-color: #f9f9f9;
        }
        
        .listaUno {
-           grid-column-start: 1;
+           margin: 0px auto;
            letter-spacing: 4px;
            list-style: none;
+           font-size: 1em;
+           
        }
        
        .elementoUno {
            display: flex;
-           width: 320px;
+           width: 285px;
            justify-content: space-between;
            align-items: center;
            color: green;
            font-variant: all-petite-caps;
            font-family: Arial, Helvetica, sans-serif;
-           font-size: 20px;
-       }
-       
-       .elementoDos {
-           display: flex;
-           flex-flow: column;
-           font-family: Arial, Helvetica, sans-serif;
-           font-variant: all-petite-caps;
-           font-size: 15px;
-           font-weight: 600;
+           font-size: 1em;
        }
        
        .listaDos {
-           display: inline;
+           margin: 0px auto;
            font-size: 2em;
            letter-spacing: 8px;
            list-style: none;
            text-align: end;
+           grid-column-start: 2;
+           grid-row-start: 1;
        }
        /* Efectos página home */
        
@@ -176,7 +157,60 @@
            }
            .columna {
                width: 200px;
-               height: 200px;
+               height: 133px;
+           }
+       }
+       
+       @media screen and (max-width: 650px) {
+           .contenedorColumnas {
+               width: 90%;
+               grid-row-gap: 8px;
+           }
+           .columna {
+               margin: auto 0px;
+               width: 200px;
+               height: 120px;
+           }
+           #columnaUno {
+               grid-row-start: 1;
+               grid-column-start: 2;
+           }
+           #menuTxt {
+               grid-row-start: 2;
+               grid-column-start: 2;
+           }
+           #columnaDos {
+               grid-row-start: 3;
+               grid-column-start: 2;
+           }
+           #reservaTxt {
+               grid-row-start: 4;
+               grid-column-start: 2;
+           }
+           #columnaTres {
+               grid-row-start: 5;
+               grid-column-start: 2;
+           }
+           #takeAwayTxt {
+               grid-row-start: 6;
+               grid-column-start: 2;
+           }
+           .contenedorGrid {
+               grid-row-gap: 20px;
+           }
+  
+           .listaUno{
+               
+           font-size: 0.9em;    
+           }
+           .listaDos {
+               grid-row-start: 2;
+               grid-column-start: 1;
+               font-size: 1.5em;
+           }
+           /* Efectos pagina home */
+           .columna:hover {
+               margin-top: 0px;
            }
        }
        /* Fin página Home */

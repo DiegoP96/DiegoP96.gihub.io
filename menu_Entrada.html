@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/mexican.png">
+    <link rel="stylesheet" href="menu_entradaestilo.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/codigo.js"></script>
+
     <title> Menu Entrada </title>
 </head>
 
-<body>  
+<body>
 
     <nav>
         <ul>
@@ -26,72 +30,79 @@
             <main>
                 <section>
                     <ul>
-                        <li> <div> <a> Nachos </a>
-                            <figure>
-                                 <img src="./img/nachos para el menu.JPG" width="60" height="70"/>
-                            </figure> </div>
+                        <li>
+
+                            <button class="contenedorBoton"> 
+
+                                    <img src="./img/nachos para el menu.JPG" width="60" height="70" class="imagenBoton"> <h3 class="nachosTxt">Nachos</h3>
+                                    
+                                </button>
+
+
+
+
                         </li>
-                        <li> Nachos Zapatistas 
+                        <li class="listaNachosZapatistas"> Nachos Zapatistas
                             <br>
-                            <p> Totopos gratinados con queso o salsa cheddar, acompañado de nuestro increíble guacamole y sale roja casera  </p>
+                            <p> Totopos gratinados con queso o salsa cheddar, acompañado de nuestro increíble guacamole y sale roja casera </p>
                         </li>
-                        <li> Nachimismos 
+                        <li class="nachisimos"> Nachimismos
                             <br>
                             <p>Totopos, acompañados de combinaciones de salsas (salsa mil islas, de queso azul, carne en su jugo, guacamole y nuestra salsa roja casera) </p>
                         </li>
-                        <li>  <a> chicharrón </a> 
+                        <li> <a> chicharrón </a>
                             <figure>
-                                <img src="./img/chicharrones para el menu.png" width="60" height="70"/>
-                           </figure>
-                       </li>
+                                <img src="./img/chicharrones para el menu.png" width="60" height="70" />
+                            </figure>
+                        </li>
                         <li> Chicharrón de Queso Vegetariano
                             <br>
                             <p>Delicioso queso expandido y dorado en la plancha, convertido en roll relleno de vegetales (cebolla-morrón-zucchini-zapallito-zanahoria-champiñón) </p>
                         </li>
-                        <li> Chicharrón de Queso Argentino 
+                        <li> Chicharrón de Queso Argentino
                             <br>
-                            <p>Delicioso queso expandido y dorado en la plancha, convertido en roll relleno de tiernos cubitos de ojo de bife argentino  </p>
+                            <p>Delicioso queso expandido y dorado en la plancha, convertido en roll relleno de tiernos cubitos de ojo de bife argentino </p>
                         </li>
-                        <li> <a> Papas </a> 
+                        <li> <a> Papas </a>
                             <figure>
-                                <img src="./img/papas para el menu.jpg" width="60" height="70"/>
-                           </figure>
+                                <img src="./img/papas para el menu.jpg" width="60" height="70" />
+                            </figure>
                         </li>
                         <li> Papas Zapatistas
                             <br>
-                            <p> Papas revolucionarias, gratinadas  con queso, cebolla de verdeo y panceta crocante, acompañadas por un dip de queso cheddar y chilli con carne. </p>
+                            <p> Papas revolucionarias, gratinadas con queso, cebolla de verdeo y panceta crocante, acompañadas por un dip de queso cheddar y chilli con carne. </p>
                         </li>
                         <li> <a> Pechugita </a>
                             <figure>
-                                <img src="./img/pechugas bufalo para el menu.JPG" width="60" height="70"/>
-                           </figure>  
+                                <img src="./img/pechugas bufalo para el menu.JPG" width="60" height="70" />
+                            </figure>
                         </li>
                         <li> Pechugitas buffalo recargadas
                             <br>
-                            <p>Nuestros archifamosos cubos de pechuga de pollo apanados y bañados en salsa BBQ, acompañadas con crema de queso azul y ahora con batatas.  </p>   
-                        </li> 
-                        <li> <a> Tamales </a> 
-                            <figure>
-                                <img src="./img/tamales para el menu.jpg" width="60" height="70"/>
-                           </figure>
+                            <p>Nuestros archifamosos cubos de pechuga de pollo apanados y bañados en salsa BBQ, acompañadas con crema de queso azul y ahora con batatas. </p>
                         </li>
-                        <li> Tamal en Cazuela 
+                        <li> <a> Tamales </a>
+                            <figure>
+                                <img src="./img/tamales para el menu.jpg" width="60" height="70" />
+                            </figure>
+                        </li>
+                        <li> Tamal en Cazuela
                             <br>
                             <p> Elotes (choclos) cocinados en salsa casera gratinada con queso y crocante panceta, adornados con totopos (triángulos de tortillas de maíz fritos) </p>
                         </li>
-                        <li> <a> Sopas </a> 
+                        <li> <a> Sopas </a>
                             <figure>
-                                <img src="./img/sopa para el menu.jpg" width="60" height="70"/>
-                           </figure>
+                                <img src="./img/sopa para el menu.jpg" width="60" height="70" />
+                            </figure>
                         </li>
                         <li> Sopas Azteca
                             <br>
-                            <p>Tradicional sopa azteca, preparada con la receta de la casa, acompañada de pechuga de pollo, aguacate, queso y crujientes tortillas.  </p>
+                            <p>Tradicional sopa azteca, preparada con la receta de la casa, acompañada de pechuga de pollo, aguacate, queso y crujientes tortillas. </p>
                         </li>
                         <li> Sopa de Lima
                             <br>
-                            <p> Fusión de pollo asado y cítricos, acompañado de tortillas crujientes  </p> 
-                        </li>   
+                            <p> Fusión de pollo asado y cítricos, acompañado de tortillas crujientes </p>
+                        </li>
                     </ul>
                 </section>
             </main>

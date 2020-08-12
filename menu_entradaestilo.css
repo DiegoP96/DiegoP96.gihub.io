@@ -1,0 +1,29 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+.contenedorBoton {
+    display: grid;
+    grid-template-columns: 60px 100px;
+    width: 100%;
+    background-color: gray;
+    border: transparent;
+    box-shadow: 20px coral;
+}
+
+.imagenBoton {
+    margin: 10px;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.nachosTxt {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    align-self: center;
+}

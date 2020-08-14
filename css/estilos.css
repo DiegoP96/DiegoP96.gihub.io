@@ -100,13 +100,6 @@
      font-size: 1.1em;
  }
  
- #nachos {
-     display: inline-block;
-     width: 200px;
-     height: 80px;
-     background-color: chocolate;
- }
- 
  .contenedorGrid {
      display: grid;
      max-width: 100%;

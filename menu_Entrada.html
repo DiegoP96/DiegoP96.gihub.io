@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/mexican.png">
-    <link rel="stylesheet" href="menu_entradaestilo.css">
+    <link rel="stylesheet" href="css/menu_entradaestilo.css">
+    <script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/codigo.js"></script>
 
@@ -14,18 +15,34 @@
 
 <body>
 
+    <header>
+
+        <section>
+
+            <div class="contenedorHeader">
+
+                <div class="transparencia"> </div>
+
+                <!-- <img src="./img/mexico.png" alt="El Mexicano Café" class="logoMexicano"> -->
+
+                <h1 class="tituloHome"> Menu </h1>
+
+            </div>
+
+        </section>
+
+
+    </header>
+
     <nav>
-        <ul>
+
+        <!-- <ul>
             <li> <a href="./menu_plato_principal.html"> Plato principal </a> </li>
             <li> <a href="./menu_postre.html"> Postres </a> </li>
             <li> <a href="./menu_bebidas.html"> Bebidas </a> </li>
-        </ul>
-        <nav>
+        </ul> -->
 
-            <header>
-                <h1> pa'botonear </h1>
-                <h3> Con los cuates </h3>
-            </header>
+        <nav>
 
             <main>
                 <section>
@@ -34,23 +51,46 @@
 
                             <button class="contenedorBoton"> 
 
-                                    <img src="./img/nachos para el menu.JPG" width="60" height="70" class="imagenBoton"> <h3 class="nachosTxt">Nachos</h3>
-                                    
+                                    <img src="./img/nachos.JPG" width="70" height="80" class="imagenBoton">
+
+                                    <h3 class="nachosTxt">Nachos</h3>
+
+                                    <p class="descripcionTxt">Descripcion</p>
+  
                                 </button>
 
-
-
-
                         </li>
-                        <li class="listaNachosZapatistas"> Nachos Zapatistas
-                            <br>
+
+                        <li class="listaNachosZapatistas">
+
+                            <div class="productoPrecio">
+
+                                <p>Nachos Zapatistas </p>
+                                <p class="precio"> $250 </p>
+
+                            </div>
+
                             <p> Totopos gratinados con queso o salsa cheddar, acompañado de nuestro increíble guacamole y sale roja casera </p>
+
+                            <a href="www.google.com" class="botonAgregarAlCarrito"><i class="fas fa-shopping-cart" ></i></a>
+
                         </li>
-                        <li class="nachisimos"> Nachimismos
-                            <br>
-                            <p>Totopos, acompañados de combinaciones de salsas (salsa mil islas, de queso azul, carne en su jugo, guacamole y nuestra salsa roja casera) </p>
+
+                        <li class="nachisimos">
+
+                            <div class="productoPrecio">
+
+                                <p> Nachisimos </p>
+                                <p class="precio"> $220 </p>
+
+                            </div>
+
+                            <p> Totopos, acompañados de combinaciones de salsas (salsa mil islas, de queso azul, carne en su jugo, guacamole y nuestra salsa roja casera) </p>
+
+                            <a href="www.google.com" class="botonAgregarAlCarrito"><i class="fas fa-shopping-cart" ></i></a>
                         </li>
-                        <li> <a> chicharrón </a>
+
+                        <!-- <li> <a> chicharrón </a>
                             <figure>
                                 <img src="./img/chicharrones para el menu.png" width="60" height="70" />
                             </figure>
@@ -102,7 +142,7 @@
                         <li> Sopa de Lima
                             <br>
                             <p> Fusión de pollo asado y cítricos, acompañado de tortillas crujientes </p>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
             </main>

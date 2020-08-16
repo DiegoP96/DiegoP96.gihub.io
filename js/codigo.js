@@ -42,7 +42,6 @@ $(document).ready(function(e) {
 
 var contador = 0;
 
-// while (contador != 2) {
 $(document).ready(function(e) {
 
     $(".contenedorBoton").click(function(e) {

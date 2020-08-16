@@ -31,12 +31,12 @@
 
 $(document).ready(function(e) {
 
-    $(".listaNachosZapatistas").toggle(
+    $(".listaProducto").toggle(
 
     );
-    $(".nachisimos").toggle(
+    // $(".nachisimos").toggle(
 
-    );
+    // );
 
 });
 

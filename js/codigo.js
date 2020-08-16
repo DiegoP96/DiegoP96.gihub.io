@@ -49,13 +49,13 @@ $(document).ready(function(e) {
 
         contador++;
 
-        $(".listaNachosZapatistas").show(e);
-        $(".nachisimos").show(e);
+        $(".listaProducto").show(e);
+        // $(".nachisimos").show(e);
 
         if (contador == 2) {
 
-            $(".listaNachosZapatistas").hide(e);
-            $(".nachisimos").hide(e);
+            $(".listaProducto").hide(e);
+            // $(".nachisimos").hide(e);
 
             contador = 0;
 

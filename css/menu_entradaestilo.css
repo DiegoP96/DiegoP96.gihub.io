@@ -46,16 +46,19 @@
 #plato_principal {
     background-color: #467B2B;
     grid-column-start: 2;
+    opacity: 0.7;
 }
 
 #texto_plato_principal {
     grid-row-start: 2;
     grid-column-start: 2;
+
 }
 
 #bebidas {
     background-color: rgb(112, 161, 215);
     grid-column-start: 3;
+    opacity: 0.7;
 }
 
 #texto_bebidas {
@@ -66,6 +69,7 @@
 #postres {
     background-color: #FF5348;
     grid-column-start: 4;
+    opacity: 0.7;
 }
 
 #texto_postres {
@@ -181,10 +185,10 @@ ul {
 }
 
 .botonAgregarAlCarrito {
-    align-self:flex-end;
+     align-self:flex-end;
     margin-right: 20px;
     display:inline-block;
-    padding:0.3em 1.2em;
+    padding:0.3em 0.2em;
     margin:0 0.1em 0.1em 0;
     border:0.16em solid rgba(255,255,255,0);
     border-radius:2em;

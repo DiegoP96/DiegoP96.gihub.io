@@ -1,33 +1,3 @@
-// $(document).ready(function(e) {
-//     $("#listaNachosZapatistas").toggle(
-
-//         function() {
-//             $("#listaNachosZapatistas").hide(e);
-//             $("#texto").hide(e);
-
-//         },
-
-//         $("#nachos").click(function(e) {
-
-
-//             $("#listaNachosZapatistas").show(e);
-//             $("#nachisimos").show(e);
-
-//         }),
-
-//         $("#nachos").click(function(e) {
-
-
-//             $("#listaNachosZapatistas").hide(e);
-//             $("#nachisimos").hide(e);
-
-//         })
-
-
-//     );
-// });
-
-
 $(document).ready(function(e) {
 
     $("#listaNachosZapatistas").toggle(
@@ -45,12 +15,32 @@ $(document).ready(function(e) {
 
     );
 
+    $("#listaPapasZapatistas").toggle(
+
+    );
+
+    $("#listaPechugitasBuffaloRecargadas").toggle(
+
+    );
+
+    $("#listaTamalesEnCazuela").toggle(
+
+    );
+
+    $("#listaSopasAzteca").toggle(
+
+    );
+
+    $("#listaSopadeLima").toggle(
+
+    );
+
 });
 
 
 
 $(document).ready(function(e) {
-var contador = 0;
+    var contador = 0;
     $("#contenedorBotonNachos").click(function(e) {
         console.log(contador)
 
@@ -86,6 +76,88 @@ $(document).ready(function(e) {
 
             $("#listaChicharronesQuesoVegetariano").hide(e);
             $("#listaChicharronesQuesoArgentino").hide(e);
+
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function(e) {
+    var contador = 0;
+    $("#contenedorBotonPapas").click(function(e) {
+        console.log(contador)
+
+
+        if (contador == 0) {
+            $("#listaPapasZapatistas").show(e);
+
+
+            contador++;
+        } else {
+            $("#listaPapasZapatistas").hide(e);
+
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function(e) {
+    var contador = 0;
+    $("#contenedorBotonPechugitas").click(function(e) {
+        console.log(contador)
+
+
+        if (contador == 0) {
+            $("#listaPechugitasBuffaloRecargadas").show(e);
+
+
+            contador++;
+        } else {
+            $("#listaPechugitasBuffaloRecargadas").hide(e);
+
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function(e) {
+    var contador = 0;
+    $("#contenedorBotonTamales").click(function(e) {
+        console.log(contador)
+
+
+        if (contador == 0) {
+            $("#listaTamalesEnCazuela").show(e);
+
+
+            contador++;
+        } else {
+            $("#listaTamalesEnCazuela").hide(e);
+
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function(e) {
+    var contador = 0;
+    $("#contenedorBotonSopas").click(function(e) {
+        console.log(contador)
+
+        if (contador == 0) {
+
+            $("#listaSopasAzteca").show(e);
+            $("#listaSopadeLima").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaSopasAzteca").hide(e);
+            $("#listaSopadeLima").hide(e);
 
             contador = 0;
         }

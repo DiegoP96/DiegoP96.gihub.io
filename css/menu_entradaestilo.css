@@ -97,11 +97,11 @@
     padding: 30px;
     position: relative;
     z-index: 1;
-    width: 100%;
+    max-width: 100%;
     color: white;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 40px;
+    font-size: 2em;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -119,16 +119,17 @@ ul {
 
 .contenedorBoton {
     display: grid;
+    padding: 50px;
     grid-template-columns: 60px 100px;
     grid-template-rows: 28px;
     grid-column-gap: 50px;
     width: 100%;
-    height: 110px;
+    height: 115px;
     align-content: center;
     background-color: white;
     border: none;
-    border-top: solid 2px gainsboro;
-    border-bottom: solid gainsboro 2px;
+    border-top: solid 1px gainsboro;
+    border-bottom: solid gainsboro 1px;
 }
 
 .imagenBoton {
@@ -163,6 +164,7 @@ ul {
 
 .listaProducto {
     display: flex;
+    padding: 8px;
     width: 100%;
     height: 100px;
     border-bottom: solid 2px gainsboro;
@@ -230,4 +232,87 @@ p {
     text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
     text-align: center;
     transition: all 0.2s;
+}
+
+.contenedorGrid {
+    display: grid;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0px auto;
+    margin-top: 35px;
+    grid-template-columns: auto;
+    background-color: #f9f9f9;
+}
+
+.listaUno {
+    margin: 10px auto;
+    letter-spacing: 4px;
+    list-style: none;
+    font-size: 1em;
+}
+
+.elementoUno {
+    display: flex;
+    width: 285px;
+    justify-content: space-around;
+    align-items: center;
+    color: green;
+    font-variant: all-petite-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.textoFooter {
+    margin-left: 0px;
+}
+
+.listaDos {
+    margin: 20px auto;
+    font-size: 2em;
+    letter-spacing: 8px;
+    list-style: none;
+    text-align: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+@media screen and (max-width: 650px) {
+    .contenedorGrid {
+        width: 90%;
+        grid-row-gap: 20px;
+    }
+    .listaUno {
+        font-size: 0.9em;
+    }
+    .textoFooter {
+        margin-left: 5px;
+    }
+    .listaDos {
+        margin: auto;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .contenedorGrid {
+        margin: auto;
+        width: 90%;
+        grid-row-gap: 15px;
+        justify-content: center;
+    }
+    .listaUno {
+        font-size: 0.6em;
+    }
+    .textoFooter {
+        margin-left: 5px;
+    }
+    .listaDos {
+        margin: auto;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        font-size: 1.5em;
+        text-align: center;
+    }
 }

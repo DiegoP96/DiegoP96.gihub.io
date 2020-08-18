@@ -160,14 +160,14 @@ button.boton_carrito {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    color: #0f800f;
+    color: #000000;
     /* color: #77DD77; */
     text-align: center;
     transition: all 0.2s;
 }
 
 button.boton_carrito:hover {
-    color: #0f800f;
+    color: #000000;
     background-color: #77DD77;
 }
 

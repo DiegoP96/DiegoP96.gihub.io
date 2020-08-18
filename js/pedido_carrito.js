@@ -89,14 +89,13 @@ function ready() {
         input.addEventListener('change', quantityChanged)
     }
 
-    var addToCartButtons = document.getElementsByClassName('shop-item-button')
-    for (var i = 0; i < addToCartButtons.length; i++) {
-        var button = addToCartButtons[i]
-        button.addEventListener('click', addToCartClicked)
-    }
+    // var addToCartButtons = document.getElementsByClassName('shop-item-button')
+    // for (var i = 0; i < addToCartButtons.length; i++) {
+    //     var button = addToCartButtons[i]
+    //     button.addEventListener('click', addToCartClicked)
+    // }
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-    // document.getElementsByClassName('boton_carrito')[0].addEventListener('click',)
 }
 
 function purchaseClicked() {

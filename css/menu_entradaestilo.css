@@ -265,12 +265,18 @@ p {
     margin-top: 5px;
 }
 
+.finDelContenedor {
+    padding: 0.8em 0 0.8em 0;
+    width: 100%;
+    background-color: rgba(96, 104, 216, 0.712);
+}
+
 .contenedorGrid {
     display: grid;
     padding: 10px;
     max-width: 100%;
     margin: 0px auto;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     grid-template-columns: auto;
     background-color: #f9f9f9;
 }

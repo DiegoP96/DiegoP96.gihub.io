@@ -4,10 +4,6 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-function alertCookie() {
-    console.log(document.cookie);
-}
-
 function getCookiePlates() {
 
     var name
@@ -35,19 +31,13 @@ function getCookiePlates() {
 }
 
 function getTitle(string) {
-    var i = 0
-    while (isNaN(string.charAt(i)) && i < string.length) {
-        i++
-    }
+    var i = string.indexOf('$')
     return string.substring(0, i)
 }
 
 function getPrice(string) {
-    var i = 0
-    while (isNaN(string.charAt(i)) && i < string.length) {
-        i++
-    }
-    return ("$" + string.substring(i))
+    var i = string.indexOf('$')
+    return (string.substring(i))
 }
 
 function checkPlates() {
@@ -58,23 +48,11 @@ function checkPlates() {
         for (var i = 0; i < plates.length; i++) {
             var title = getTitle(plates[i])
             var price = getPrice(plates[i])
-           addItemToCart(title, price)
+            addItemToCart(title, price)
         }
     }
 
 }
-
-// function checkCookie() {
-//     var user = getCookie("username");
-//     if (user != "") {
-//         alert("Welcome again " + user);
-//     } else {
-//         user = prompt("Please enter your name:", "");
-//         if (user != "" && user != null) {
-//             setCookie("username", user, 365);
-//         }
-//     }
-// }
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -89,11 +67,7 @@ function ready() {
         input.addEventListener('change', quantityChanged)
     }
 
-    // var addToCartButtons = document.getElementsByClassName('shop-item-button')
-    // for (var i = 0; i < addToCartButtons.length; i++) {
-    //     var button = addToCartButtons[i]
-    //     button.addEventListener('click', addToCartClicked)
-    // }
+    checkPlates()
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }

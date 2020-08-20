@@ -43,11 +43,13 @@ function getPrice(string) {
 function checkPlates() {
     var plates = getCookiePlates()
     if (plates == "") {
+        console.log('NOOOOOO')
         return
     } else {
         for (var i = 0; i < plates.length; i++) {
             var title = getTitle(plates[i])
             var price = getPrice(plates[i])
+            console.log(title + price)
             addItemToCart(title, price)
         }
     }
@@ -68,7 +70,6 @@ function ready() {
     }
 
     checkPlates()
-
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
@@ -85,6 +86,7 @@ function purchaseClicked() {
         while (cartItems.hasChildNodes()) {
             cartItems.removeChild(cartItems.firstChild)
         }
+        resetCookies()
         history.go(-1);
 
     }
@@ -93,8 +95,36 @@ function purchaseClicked() {
 
 function removeCartItem(event) {
     var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
+    var plato = buttonClicked.parentElement.parentElement
+    deleteCookie(plato.getElementsByClassName('cart-item-title')[0].innerText)
+    plato.remove()
     updateCartTotal()
+}
+
+function resetCookies() {
+    var ca = document.cookie.split(';')
+    for (i = 0; i < ca.length; i++) {
+        document.cookie = "plato" + i + "="
+    }
+}
+
+function deleteCookie(string) {
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        name = 'plato' + i + "="
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        title = getTitle(c.substring(name.length, c.length))
+        console.log(title)
+        console.log(string)
+        if (string == title) {
+            alert("Se quito " + string + " del pedido")
+            document.cookie = "plato" + i + "="
+
+        }
+    }
 }
 
 function quantityChanged(event) {
@@ -113,13 +143,6 @@ function addItemToCart(title, price) {
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
-            alert('This item is already added to the cart')
-            cartItems.getElementsByClassName('cart-quantity-input').value++
-            return
-        }
-    }
     var cartRowContents = `
         <div class="cart-item cart-column">
             <span class="cart-item-title">${title}</span>
@@ -127,7 +150,7 @@ function addItemToCart(title, price) {
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
+            <button class="btn btn-danger" type="button">QUITAR</button>
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)

@@ -32,6 +32,7 @@
      font-weight: bold;
      letter-spacing: 2px;
      padding: 0em 0em 0em 0.5em;
+     margin: 0.4em 0em 0em 0em;
      margin-bottom: 4em;
  }
  
@@ -155,6 +156,17 @@
  }
  
  @media screen and (max-width: 650px) {
+     .tituloHome {
+         padding: 0em 0em 0em 0.6em;
+         margin: 0.4em 0em 0em 0em;
+         margin-bottom: 12.5em;
+         font-size: 1em;
+     }
+     .logoMexicano {
+         width: 80px;
+         height: 70px;
+         padding: 0em 0em 0em 1em;
+     }
      .contenedorColumnas {
          width: 90%;
          grid-row-gap: 8px;
@@ -210,7 +222,7 @@
  @media screen and (max-width: 360px) {
      .transparencia {
          width: 100%;
-         height: 100px;
+         height: 270px;
      }
      .contenedorGrid {
          margin: auto;

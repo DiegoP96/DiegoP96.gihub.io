@@ -59,7 +59,7 @@ var i = 0
 
 function addToCartClicked(event) {
     var button = event.target
-    var shopItem = button.parentElement.parentElement
+    var shopItem = button.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio')[0].innerText
     if (checkPlatesDuplicate(title)) {

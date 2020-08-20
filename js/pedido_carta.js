@@ -19,7 +19,6 @@ function getCookiePlates() {
         }
         if (c.indexOf(name) == 0) {
             allPlates[i] = c.substring(name.length, c.length);
-            console.log(allPlates[i])
         }
     }
     if (allPlates[0] == 1) {
@@ -81,7 +80,6 @@ function checkPlatesDuplicate(string) {
             c = c.substring(1);
         }
         title = getTitle(c.substring(name.length, c.length))
-        console.log(title)
         if (string == title) {
             alert("Plato Ya Añadido. Revise El Pedido!")
             return true

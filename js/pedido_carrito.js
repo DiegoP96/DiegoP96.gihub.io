@@ -5,29 +5,45 @@ if (document.readyState == 'loading') {
 }
 
 function getCookiePlates() {
-
     var name
+    var q = 0
     var allPlates = [1]
     var ca = document.cookie.split(';');
+    var j = (getContador() - ca.length)
+    alert(j)
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + i + "="
-
+        name = 'plato' + j + "="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
-
         }
         if (c.indexOf(name) == 0) {
-            allPlates[i] = c.substring(name.length, c.length);
+            allPlates[j] = c.substring(name.length, c.length);
+            j++
+            q++
         }
     }
     if (allPlates[0] == 1) {
         return "";
     } else {
         return allPlates
-
     }
+}
 
+function getContador() {
+    var cookies = document.cookie.split(';')
+    for (i = 0; i < cookies.length; i++) {
+        var c = cookies[i]
+        name = "contador="
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+
+        }
+        if (c.indexOf(name) == 0) {
+            return Number(c.substring(name.length, c.length))
+
+        }
+    }
 }
 
 function getTitle(string) {
@@ -43,7 +59,6 @@ function getPrice(string) {
 function checkPlates() {
     var plates = getCookiePlates()
     if (plates == "") {
-        console.log('NOOOOOO')
         return
     } else {
         for (var i = 0; i < plates.length; i++) {
@@ -53,7 +68,6 @@ function checkPlates() {
             addItemToCart(title, price)
         }
     }
-
 }
 
 function ready() {
@@ -104,25 +118,26 @@ function removeCartItem(event) {
 function resetCookies() {
     var ca = document.cookie.split(';')
     for (i = 0; i < ca.length; i++) {
-        document.cookie = "plato" + i + "="
+        document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
     }
 }
 
 function deleteCookie(string) {
     var ca = document.cookie.split(';');
+    var j = (getContador() - ca.length)
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + i + "="
+        name = 'plato' + j + "="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
         title = getTitle(c.substring(name.length, c.length))
-        console.log(title)
-        console.log(string)
         if (string == title) {
             alert("Se quito " + string + " del pedido")
-            document.cookie = "plato" + i + "="
-
+            document.cookie = "plato" + j + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+        }
+        if (c.indexOf(name) == 0) {
+            j++
         }
     }
 }

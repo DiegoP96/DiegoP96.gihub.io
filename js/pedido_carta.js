@@ -71,9 +71,8 @@ function ready() {
 }
 if (getContador() == null) {
     document.cookie = "contador= 0"
-} else {
-    var i = getContador()
 }
+var i = getContador()
 
 
 function addToCartClicked(event) {

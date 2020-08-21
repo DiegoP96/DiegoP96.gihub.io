@@ -188,12 +188,21 @@ p.section-header {
 }
 
 .btn-primary {
+    position: absolute;
+    top: 8em;
     color: white;
     background-color: #56f297;
     border: none;
     width: 100%;
     /* border-radius: .3em; */
     font-weight: bold;
+}
+
+.footerPedido {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 20em;
 }
 
 .btn-primary:hover {
@@ -285,14 +294,16 @@ p.section-header {
 
 .cart-row {
     display: flex;
+    
 }
 
 .cart-item {
     width: 45%;
+    
 }
 
 .cart-price {
-    width: 20%;
+    width: 45%;
     font-size: 1.2em;
     color: #333;
 }

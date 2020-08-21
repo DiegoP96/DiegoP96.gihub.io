@@ -5,6 +5,7 @@ if (document.readyState == 'loading') {
 }
 
 function getCookiePlates() {
+    alert(getContador())
     var name
     var q = 0
     var allPlates = [1]
@@ -41,7 +42,6 @@ function getContador() {
         }
         if (c.indexOf(name) == 0) {
             return Number(c.substring(name.length, c.length))
-
         }
     }
 }

@@ -42,7 +42,6 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonNachos").click(function(e) {
-        console.log(contador)
 
 
         if (contador == 0) {

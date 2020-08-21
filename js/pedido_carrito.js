@@ -5,13 +5,11 @@ if (document.readyState == 'loading') {
 }
 
 function getCookiePlates() {
-    alert(getContador())
     var name
     var q = 0
     var allPlates = [1]
     var ca = document.cookie.split(';');
-    var j = (getContador() - ca.length)
-    alert(j)
+    var j = (getContador() - ca.length) + 1
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato' + j + "="
@@ -19,7 +17,7 @@ function getCookiePlates() {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            allPlates[j] = c.substring(name.length, c.length);
+            allPlates[q] = c.substring(name.length, c.length);
             j++
             q++
         }
@@ -124,7 +122,7 @@ function resetCookies() {
 
 function deleteCookie(string) {
     var ca = document.cookie.split(';');
-    var j = (getContador() - ca.length)
+    var j = (getContador() - ca.length) + 1
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato' + j + "="

@@ -53,7 +53,7 @@ function getContador() {
             return Number(c.substring(name.length, c.length))
         }
     }
-    return null
+    return -1
 }
 
 function ready() {
@@ -66,10 +66,10 @@ function ready() {
 
     document.getElementsByClassName('boton_carrito')[0].addEventListener('click', pedidoClicked)
 
-    // document.cookie = "contador= 0"
+//  document.cookie = "contador= 0"
 
 }
-if (getContador() == null) {
+if (getContador() == -1) {
     document.cookie = "contador= 0"
 }
 var i = getContador()

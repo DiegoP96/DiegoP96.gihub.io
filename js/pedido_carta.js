@@ -1,6 +1,7 @@
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
+
     ready()
 }
 
@@ -40,6 +41,21 @@ function getPrice(string) {
     return (string.substring(i))
 }
 
+function getContador() {
+    var cookies = document.cookie.split(';')
+    for (i = 0; i < cookies.length; i++) {
+        var c = cookies[i]
+        name = "contador="
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return Number(c.substring(name.length, c.length))
+        }
+    }
+    return null
+}
+
 function ready() {
 
     var addToCartButtons = document.getElementsByClassName('botonAgregarAlCarrito')
@@ -48,13 +64,17 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
+    document.getElementsByClassName('boton_carrito')[0].addEventListener('click', pedidoClicked)
+
+    // document.cookie = "contador= 0"
+
+}
+if (getContador() == null) {
+    document.cookie = "contador= 0"
+} else {
+    var i = getContador()
 }
 
-function getPosition() {
-    return document.cookie.split(';').length
-}
-
-var i = 0
 
 function addToCartClicked(event) {
     var button = event.target
@@ -86,4 +106,8 @@ function checkPlatesDuplicate(string) {
         }
     }
 
+}
+
+function pedidoClicked() {
+    document.cookie = "contador=" + i
 }

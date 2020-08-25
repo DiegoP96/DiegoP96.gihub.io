@@ -342,3 +342,16 @@ p {
         text-align: center;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .transparencia {
+        height: 213px;
+    }
+    .contenedor_botones {
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 60px 60px 60px 60px;
+    }
+    .texto {
+        margin-top: -10px;
+    }
+}

@@ -234,9 +234,16 @@ button.boton_carrito:hover {
     transition: all 0.2s;
 }
 
+.Plato {
+    font-style: normal;
+    font-weight:600;
+    letter-spacing: 1px;
+}
+
 p {
     margin-left: 22px;
     margin-top: 5px;
+    font-style: italic;
 }
 
 .finDelContenedor {

@@ -35,10 +35,10 @@ body {
 
 .grupoDos {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 450px;
-    letter-spacing: 2px;
+    /* justify-content: space-around;
+    align-items: center; */
+    /* min-width: 450px; */
+    letter-spacing: 30px;
     font-style: normal;
 }
 
@@ -188,10 +188,10 @@ body {
 
 @media screen and (max-width: 650px) {
     .contenedorHeaderFlex {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0em;
         padding-bottom: 0em;
-        align-items: baseline;
+        align-items: center;
     }
     .grupoUno {
         flex-direction: row;
@@ -208,8 +208,6 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        min-width: 400px;
-        letter-spacing: 2px;
         font-style: normal;
     }
     .tituloHome {

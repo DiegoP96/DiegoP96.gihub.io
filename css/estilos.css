@@ -189,9 +189,12 @@ body {
 @media screen and (max-width: 650px) {
     .contenedorHeaderFlex {
         flex-direction: column;
+        padding: 0em;
+        padding-bottom: 0em;
+        align-items: baseline;
     }
     .grupoUno {
-        display: flex;
+        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         min-width: 13em;
@@ -200,6 +203,14 @@ body {
         /*  width: 10px;
         height: 10px; */
         /* padding: 0em 0em 0em 1em; */
+    }
+    .grupoDos {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 400px;
+        letter-spacing: 2px;
+        font-style: normal;
     }
     .tituloHome {
         padding: 0em 0em 0em 0.6em;

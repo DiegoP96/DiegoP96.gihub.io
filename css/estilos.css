@@ -37,6 +37,15 @@ body {
     letter-spacing: 30px;
 }
 
+.fab {
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.fab:hover {
+    opacity: 1;
+    color: #77DD77;
+}
+
 .contenedorHeader {
     display: flex;
     flex-direction: column;
@@ -48,7 +57,7 @@ body {
 }
 
 .imagenInicio {
-    position: absolute;
+    transform: scale(1, 0.8);
     z-index: 1;
     max-width: 100%;
     height: auto;
@@ -82,7 +91,8 @@ body {
     display: grid;
     width: 100%;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 85px;
+    margin-bottom: 65px;
 }
 
 .columna {

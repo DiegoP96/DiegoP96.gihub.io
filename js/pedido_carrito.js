@@ -6,23 +6,26 @@ if (document.readyState == 'loading') {
 
 function getCookiePlates() {
     var name
-    var q = 0
+    // var q = 0
     var allPlates = [1]
     var ca = document.cookie.split(';');
-    var j = (getContador() - ca.length) + 1
+    // var j = (getContador() - ca.length) + 1
+    console.log("Llego")
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + j + "="
+        name = 'plato'
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            allPlates[q] = c.substring(name.length, c.length);
-            j++
-            q++
+            console.log(c.substring((name.length + 2), c.length))
+            allPlates[i] = c.substring((name.length + 2), c.length);
+            // j++
+            // q++
         }
     }
     if (allPlates[0] == 1) {
+        console.log("fallo")
         return "";
     } else {
         return allPlates
@@ -55,6 +58,7 @@ function getPrice(string) {
 }
 
 function checkPlates() {
+    console.log("llego")
     var plates = getCookiePlates()
     if (plates == "") {
         return

@@ -137,7 +137,8 @@ function resetCookies() {
 function deleteCookie(string) {
     var ca = document.cookie.split(';');
     var j = (getContador() - ca.length) + 1
-    for (var i = 0; i < getContador(); i++) {
+    var tam = getContador()
+    for (var i = 0; i < tam; i++) {
         var c = ca[i];
         name = 'plato' + i + "="
         while (c.charAt(0) == ' ') {

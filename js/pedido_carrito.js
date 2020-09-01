@@ -139,6 +139,7 @@ function deleteCookie(string) {
     var j = (getContador() - ca.length) + 1
     var tam = getContador()
     for (var i = 0; i < tam; i++) {
+        console.log(i)
         var c = ca[i];
         name = 'plato' + i + "="
         while (c.charAt(0) == ' ') {

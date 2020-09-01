@@ -8,7 +8,6 @@ function getCookiePlates() {
     var name
     var allPlates = [1]
     var ca = document.cookie.split(';');
-    // console.log("Llego")
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato'
@@ -16,32 +15,16 @@ function getCookiePlates() {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            // console.log(c.substring((name.length + 2), c.length))
             allPlates[i] = c.substring((name.length + 2), c.length);
         }
     }
     if (allPlates[0] == 1) {
-        // console.log("fallo")
         return "";
     } else {
         return allPlates
     }
 }
 
-// function getContador() {
-//     var cookies = document.cookie.split(';')
-//     for (i = 0; i < cookies.length; i++) {
-//         var c = cookies[i]
-//         name = "contador="
-//         while (c.charAt(0) == ' ') {
-//             c = c.substring(1);
-
-//         }
-//         if (c.indexOf(name) == 0) {
-//             return Number(c.substring(name.length, c.length))
-//         }
-//     }
-// }
 function getContador() {
     var cookies = document.cookie.split(';')
     for (i = 0; i < cookies.length; i++) {
@@ -135,7 +118,7 @@ function resetCookies() {
 }
 
 function deleteCookie(string) {
-    var ca = document.cookie.split(';')//" plato0=Nachos plato1=Tamales plato4=Papas title papas c= plato4=Papas string = papas"
+    var ca = document.cookie.split(';')
     var tam = getContador()
     var c
     for (var i = 0; i < tam; i++) {

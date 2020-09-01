@@ -22,6 +22,7 @@
     border-radius: 10%;
     border: 1px solid;
     border-color: black;
+    padding: 5px;
 }
 
 #entrada {
@@ -35,6 +36,7 @@
     font-weight: 400;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
 }
 
 #texto_entrada {
@@ -137,6 +139,7 @@ button.boton_carrito {
     color: #000000;
     text-align: center;
     transition: all 0.2s;
+    letter-spacing: 1px;
 }
 
 button.boton_carrito:hover {
@@ -194,7 +197,7 @@ button.boton_carrito:hover {
     padding: 8px 0px 8px;
     background-color: rgba(216, 216, 216, 0.185);
     width: 100%;
-    height: 100px;
+    height: 120px;
     border-bottom: solid 2px gainsboro;
     justify-content: space-evenly;
     align-items: baseline;
@@ -218,8 +221,8 @@ button.boton_carrito:hover {
     align-self: flex-end;
     margin-right: 20px;
     display: inline-block;
-    padding: 0.3em 0.2em;
-    margin: 0px 0.5em 0.1em 0;
+    padding: 0.4em 1em;
+    margin: 1em 0.5em 0em 0em;
     border: 0.16em solid rgba(255, 255, 255, 0);
     border-radius: 2em;
     box-sizing: border-box;
@@ -234,9 +237,17 @@ button.boton_carrito:hover {
     transition: all 0.2s;
 }
 
+.Plato {
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
 p {
     margin-left: 22px;
     margin-top: 5px;
+    font-style: italic;
+    max-width: 35em;
 }
 
 .finDelContenedor {
@@ -275,6 +286,7 @@ p {
 
 .textoFooter {
     margin-left: 0px;
+    font-style: normal;
 }
 
 .listaDos {
@@ -340,5 +352,18 @@ p {
         grid-column-start: 1;
         font-size: 1.5em;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .transparencia {
+        height: 213px;
+    }
+    .contenedor_botones {
+        grid-template-columns: 60px 60px 60px 60px;
+        grid-template-rows: 60px 60px 60px 60px;
+    }
+    .texto {
+        margin-top: -10px;
     }
 }

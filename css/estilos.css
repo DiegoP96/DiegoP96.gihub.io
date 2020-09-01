@@ -1,0 +1,317 @@
+/* Inicio página Home */
+
+body {
+    margin: 0px 0px 0px 0px;
+}
+
+.contenedorHeaderFlex {
+    display: flex;
+    padding: 0.6em;
+    padding-bottom: 0em;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(220, 220, 220, 0.513);
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.grupoUno {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 13em;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.logoMexicano {
+    width: 2.2em;
+    height: 2em;
+    /* padding: 0em 0em 0em 1em; */
+}
+
+.grupoDos {
+    display: flex;
+    align-items: center;
+    letter-spacing: 30px;
+}
+
+.fab {
+    color: rgba(0, 0, 0, 0.507);
+}
+
+.fab:hover {
+    opacity: 1;
+    color: #77DD77;
+}
+
+.contenedorHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    contain: content;
+}
+
+.imagenInicio {
+    transform: scale(1, 0.8);
+    z-index: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tituloHome {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0em 0em 0em 0.5em;
+    margin: 0.4em 0em 0em 0em;
+    margin-bottom: 4em;
+}
+
+.transparencia {
+    position: absolute;
+    background-color: rgb(63, 62, 62);
+    opacity: 0.4;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+}
+
+.contenedorMapaDelSitio {
+    display: grid;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.txtMapaDelSitio {
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mapaDelSitio {
+    width: 100%;
+}
+
+.contenedorColumnas {
+    display: grid;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 85px;
+    margin-bottom: 65px;
+}
+
+.columna {
+    grid-row-start: 1;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    contain: content;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.8;
+}
+
+#columnaUno {
+    background-image: url(../img/menu.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#columnaDos {
+    background-image: url(../img/reserva.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#columnaTres {
+    background-image: url(../img/takeaway.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.textoColumna {
+    grid-row-start: 2;
+    color: rgb(78, 119, 78);
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 1.1em;
+}
+
+.contenedorGrid {
+    display: grid;
+    max-width: 100%;
+    margin: 0px auto;
+    grid-template-columns: auto;
+    background-color: #f9f9f9;
+}
+
+.listaUno {
+    margin: 0px auto;
+    letter-spacing: 4px;
+    list-style: none;
+    font-size: 1em;
+}
+
+.elementoUno {
+    display: flex;
+    width: 285px;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+    font-variant: all-petite-caps;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.listaDos {
+    margin: 0px auto;
+    font-size: 2em;
+    letter-spacing: 8px;
+    list-style: none;
+    text-align: end;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+
+/* Efectos página home */
+
+.columna:hover {
+    box-shadow: 0px 5px 5px gray;
+    margin-top: -2px;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedorColumnas {
+        width: 100%;
+    }
+    .columna {
+        width: 200px;
+        height: 133px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .contenedorHeaderFlex {
+        flex-direction: row;
+        padding: 0em;
+        padding-bottom: 0em;
+        align-items: center;
+    }
+    .grupoUno {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-width: 13em;
+    }
+    .logoMexicano {
+        /*  width: 10px;
+        height: 10px; */
+        /* padding: 0em 0em 0em 1em; */
+    }
+    .grupoDos {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-style: normal;
+    }
+    .tituloHome {
+        padding: 0em 0em 0em 0.6em;
+        margin: 0.4em 0em 0em 0em;
+        margin-bottom: 12.5em;
+        font-size: 1em;
+    }
+    .contenedorColumnas {
+        width: 90%;
+        grid-row-gap: 8px;
+    }
+    .columna {
+        margin: auto 0px;
+        width: 200px;
+        height: 120px;
+    }
+    #columnaUno {
+        grid-row-start: 1;
+        grid-column-start: 2;
+    }
+    #menuTxt {
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+    #columnaDos {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+    #reservaTxt {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+    #columnaTres {
+        grid-row-start: 5;
+        grid-column-start: 2;
+    }
+    #takeAwayTxt {
+        grid-row-start: 6;
+        grid-column-start: 2;
+    }
+    .contenedorGrid {
+        width: 90%;
+        grid-row-gap: 20px;
+    }
+    .listaUno {
+        font-size: 0.9em;
+    }
+    .listaDos {
+        margin: auto;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        font-size: 1.5em;
+    }
+    /* Efectos pagina home */
+    .columna:hover {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .transparencia {
+        width: 100%;
+        height: 270px;
+    }
+    .contenedorGrid {
+        margin: auto;
+        width: 90%;
+        grid-row-gap: 15px;
+        justify-content: center;
+    }
+    .listaUno {
+        font-size: 0.6em;
+    }
+    .listaDos {
+        margin: auto;
+        grid-row-start: 2;
+        grid-column-start: 1;
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+
+/* Fin página Home */

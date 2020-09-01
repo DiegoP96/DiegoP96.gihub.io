@@ -6,11 +6,9 @@ if (document.readyState == 'loading') {
 
 function getCookiePlates() {
     var name
-    // var q = 0
     var allPlates = [1]
     var ca = document.cookie.split(';');
-    // var j = (getContador() - ca.length) + 1
-    console.log("Llego")
+    // console.log("Llego")
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato'
@@ -18,20 +16,32 @@ function getCookiePlates() {
             c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
-            console.log(c.substring((name.length + 2), c.length))
+            // console.log(c.substring((name.length + 2), c.length))
             allPlates[i] = c.substring((name.length + 2), c.length);
-            // j++
-            // q++
         }
     }
     if (allPlates[0] == 1) {
-        console.log("fallo")
+        // console.log("fallo")
         return "";
     } else {
         return allPlates
     }
 }
 
+// function getContador() {
+//     var cookies = document.cookie.split(';')
+//     for (i = 0; i < cookies.length; i++) {
+//         var c = cookies[i]
+//         name = "contador="
+//         while (c.charAt(0) == ' ') {
+//             c = c.substring(1);
+
+//         }
+//         if (c.indexOf(name) == 0) {
+//             return Number(c.substring(name.length, c.length))
+//         }
+//     }
+// }
 function getContador() {
     var cookies = document.cookie.split(';')
     for (i = 0; i < cookies.length; i++) {
@@ -39,12 +49,12 @@ function getContador() {
         name = "contador="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
-
         }
         if (c.indexOf(name) == 0) {
             return Number(c.substring(name.length, c.length))
         }
     }
+    return -1
 }
 
 function getTitle(string) {
@@ -58,7 +68,6 @@ function getPrice(string) {
 }
 
 function checkPlates() {
-    console.log("llego")
     var plates = getCookiePlates()
     if (plates == "") {
         return
@@ -128,16 +137,16 @@ function resetCookies() {
 function deleteCookie(string) {
     var ca = document.cookie.split(';');
     var j = (getContador() - ca.length) + 1
-    for (var i = 0; i < ca.length; i++) {
+    for (var i = 0; i < getContador(); i++) {
         var c = ca[i];
-        name = 'plato' + j + "="
+        name = 'plato' + i + "="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
         title = getTitle(c.substring(name.length, c.length))
         if (string == title) {
             alert("Se quito " + string + " del pedido")
-            document.cookie = "plato" + j + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+            document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
         }
         if (c.indexOf(name) == 0) {
             j++

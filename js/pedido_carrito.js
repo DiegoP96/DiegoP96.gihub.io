@@ -135,23 +135,20 @@ function resetCookies() {
 }
 
 function deleteCookie(string) {
-    var ca = document.cookie.split(';');
-    var j = (getContador() - ca.length) + 1
+    var ca = document.cookie.split(';')//" plato0=Nachos plato1=Tamales plato4=Papas title papas c= plato4=Papas string = papas"
     var tam = getContador()
+    var c
     for (var i = 0; i < tam; i++) {
-        console.log(i)
-        var c = ca[i];
-        name = 'plato' + i + "="
+        c = ca[i];
+        name = 'plato'
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
-        title = getTitle(c.substring(name.length, c.length))
-        if (string == title) {
+        title = getTitle(c.substring((name.length + 2), c.length))
+        if (string == title && c.indexOf(name) == 0) {
             alert("Se quito " + string + " del pedido")
-            document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
-        }
-        if (c.indexOf(name) == 0) {
-            j++
+            document.cookie = c.substring(0,name.length + 2)+"; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+            return
         }
     }
 }

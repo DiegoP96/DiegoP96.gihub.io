@@ -66,7 +66,6 @@ function ready() {
 
     document.getElementsByClassName('boton_carrito')[0].addEventListener('click', pedidoClicked)
 
-//  document.cookie = "contador= 0"
 
 }
 if (getContador() == -1) {
@@ -85,7 +84,6 @@ function addToCartClicked(event) {
     } else {
         document.cookie = "plato" + i + "=" + title + price
         i++
-        console.log(document.cookie)
     }
 
 }

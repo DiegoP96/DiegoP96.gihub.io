@@ -115,12 +115,13 @@ function removeCartItem(event) {
     deleteCookie(plato.getElementsByClassName('cart-item-title')[0].innerText)
     plato.remove()
     updateCartTotal()
+    console.log(document.cookie)
 }
 
 function resetCookies() {
     var ca = document.cookie.split(';')
     for (i = 0; i < ca.length; i++) {
-        document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+        document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
     }
 }
 
@@ -136,7 +137,7 @@ function deleteCookie(string) {
         title = getTitle(c.substring(name.length, c.length))
         if (string == title) {
             alert("Se quito " + string + " del pedido")
-            document.cookie = "plato" + j + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC;"
+            document.cookie = "plato" + j + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
         }
         if (c.indexOf(name) == 0) {
             j++

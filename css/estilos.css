@@ -50,43 +50,27 @@ body {
 .contenedorHeader {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    height: 16em;
-    margin: 0 auto;
+    /* justify-content: center; */
+    width: 100%;
+    height: 500px;
     contain: content;
+    background: url(../img/menu.jpg) no-repeat content-box;
+    background-position: center;
+    background-size: 100%;
+    filter: contrast(50%);
 }
 
-.imagenInicio {
+.tituloHome {
     width: 100%;
-    height: 30em;
-}
-
-.transparencia {
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    background-color: rgb(63, 62, 62);
-    opacity: 0.4;
-    width: 100%;
-    height: 20em;
-}
-
-
-/* .tituloHome {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    color: white;
-    text-align: left;
+    color: rgb(255, 4, 4);
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1.8em;
     font-weight: bold;
     letter-spacing: 2px;
-    padding: 0em 0em 0em 0.5em;
-    margin: 0.4em 0em 0em 0em;
-    margin-bottom: 4em;
-} */
+    margin: auto;
+    padding: auto;
+}
 
 .contenedorMapaDelSitio {
     display: grid;
@@ -200,6 +184,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+    .contenedorHeader {
+        background-position: top;
+    }
     .contenedorColumnas {
         width: 100%;
     }
@@ -222,23 +209,18 @@ body {
         align-items: center;
         min-width: 13em;
     }
-    .logoMexicano {
-        /*  width: 10px;
-        height: 10px; */
-        /* padding: 0em 0em 0em 1em; */
-    }
     .grupoDos {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         font-style: normal;
     }
-    .tituloHome {
+    /*  .tituloHome {
         padding: 0em 0em 0em 0.6em;
         margin: 0.4em 0em 0em 0em;
         margin-bottom: 12.5em;
         font-size: 1em;
-    }
+    } */
     .contenedorColumnas {
         width: 90%;
         grid-row-gap: 8px;

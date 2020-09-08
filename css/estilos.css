@@ -34,9 +34,11 @@ body {
 }
 
 .fondoLogo {
-  width: 3em;
+  width: 2.9em;
   height: 3em;
+  padding: center;
   border-radius: 50%;
+  padding-right: 1mm;
   margin-bottom: 0.5em;
   background-color: #f9f9f9;
 }

@@ -72,7 +72,7 @@ body {
   filter: contrast(50%);
 }
 
-.tituloHome {
+/* .tituloHome {
   position: absolute;
   width: 50%;
   margin-bottom: 200px;
@@ -87,7 +87,7 @@ body {
   color: rgb(255, 4, 4);
   background-color: RGB(192, 236, 204);
   /* border: solid 2px whitesmoke; */
-}
+} */
 
 .contenedorMapaDelSitio {
   display: grid;

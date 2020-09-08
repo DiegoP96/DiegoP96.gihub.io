@@ -51,12 +51,12 @@ body {
 }
 
 .fab {
-  color: #ffc530;
+  color: whitesmoke;
 }
 
 .fab:hover {
   opacity: 1;
-  color: #77dd77;
+  color: #ffc530;
 }
 
 .contenedorHeader {

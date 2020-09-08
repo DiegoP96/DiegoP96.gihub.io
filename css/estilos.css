@@ -9,8 +9,7 @@ body {
   padding: 0.6em;
   padding-bottom: 0em;
   justify-content: space-between;
-  /* background-color: rgba(96, 104, 216, 0.712); */
-  background-color: rgb(119, 221, 119);
+  background-color: rgba(96, 104, 216, 0.712);
   align-content: center;
   max-width: 100%;
   height: auto;

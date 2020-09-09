@@ -56,7 +56,7 @@
 
 #ninja-slider.fullscreen .slider-inner {
 	width: 100%;
-	max-width: 950px;
+	/* max-width: 950px; */
 }
 
 #ninja-slider ul {
@@ -347,5 +347,9 @@
 	#ninja-slider-next,
 	#ninja-slider-pager {
 		display: none;
+	}
+
+	#ninja-slider .slider-inner {
+		max-width: 100%;
 	}
 }

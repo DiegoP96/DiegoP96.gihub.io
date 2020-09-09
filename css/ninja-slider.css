@@ -91,6 +91,8 @@
 #ninja-slider .ns-img {
 	background-color: rgba(0, 0, 0, 0.3);
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	/*Note: If transitionType is zoom, it will be overridden to cover.*/
 	/*decorate border*/
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8), inset 0 0 2px rgba(255, 255, 255, 0.4);
@@ -100,8 +102,6 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-repeat: no-repeat;
-	background-position: center center;
 }
 
 /*---------- Captions -------------------*/
@@ -196,7 +196,7 @@
 	margin-top: -65px;
 	/*pager's height should also be counted*/
 	background-color: none;
-	background-color: #ccc\9;
+	background-color: #ccc9;
 	/*IE8 hack*/
 	backface-visibility: hidden;
 	color: gray;

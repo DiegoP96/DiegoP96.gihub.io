@@ -2,6 +2,7 @@
 
 body {
   margin: 0px 0px 0px 0px;
+  background-color: rgba(241, 240, 232);
 }
 
 .contenedorHeaderFlex {
@@ -148,7 +149,7 @@ body {
 
 .textoColumna {
   grid-row-start: 2;
-  color: rgb(78, 119, 78);
+  color: rgb(45, 45, 45);
   text-align: center;
   letter-spacing: 2px;
   font-weight: 700;

@@ -114,14 +114,11 @@ body {
 
 .contenedorColumnas {
 	display: grid;
-	margin-left: 3em;
-	padding: 5em;
-	width: 80%;
+	width: 100%;
 	justify-content: space-evenly;
 	align-items: center;
 	margin-top: 85px;
 	margin-bottom: 65px;
-	border: solid 5px rgba(96, 104, 216, 0.712);
 }
 
 .columna {

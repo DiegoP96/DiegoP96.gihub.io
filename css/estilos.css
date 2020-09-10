@@ -118,7 +118,8 @@ body {
     margin-left: 8.7%;
     margin-right: 8.7%;
     text-align: center;
-    font-style: italic;
+	font-family:'Times New Roman', Times, serif;
+	letter-spacing: 1.5px;
     grid-row: 1/2;
 }
 
@@ -281,7 +282,11 @@ body {
         margin: 0.4em 0em 0em 0em;
         margin-bottom: 12.5em;
         font-size: 1em;
-    } */
+	} */
+	.frase{
+		margin-top: -160px;
+		margin-bottom: 100px;
+	}
     .contenedorColumnas {
         width: 90%;
         justify-content: space-around;

@@ -298,6 +298,7 @@ body {
         grid-column: 2/3;
     }
     .descripcionColumna {
+        font-size: 0.9em;
         max-width: 200px;
     }
     .mapaDelSitio {
@@ -337,6 +338,10 @@ body {
         justify-content: space-around;
         grid-row-gap: 40px;
         margin-top: -160px;
+    }
+    .descripcionColumna {
+        font-size: 0.8em;
+        max-width: 200px;
     }
     .listaUno {
         font-size: 0.6em;

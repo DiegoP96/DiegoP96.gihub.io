@@ -10,7 +10,7 @@ body {
 	padding: 0.6em;
 	padding-bottom: 0em;
 	justify-content: space-between;
-	background-color: rgba(96, 104, 216, 0.712);
+	background-color:#4467C4; /* Han blue #4467C4   #515BD4  #3d88ee*/
 	align-content: center;
 	max-width: 100%;
 	height: auto;
@@ -143,13 +143,13 @@ body {
 #contenedorBotonMenu {
 	grid-row: 1/2;
 	grid-column: 1/2;
-	border: solid 3px #ff9aa2;
+	border: solid 3px  #f62e29;
 }
 
 #contenedorBotonReserva {
 	grid-row: 1/2;
 	grid-column: 2/3;
-	border: solid 3px #ffea7f;
+	border: solid 3px  #efce16;
 }
 
 #contenedorBotonTakeAway {

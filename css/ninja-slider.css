@@ -36,17 +36,19 @@
 }
 
 #ninja-slider .fs-icon::before {
-	content: "EXPAND";
+	content: "EXPANDANDIR";
+	font-size: 0.7em;
 	display: block;
 }
 
 #ninja-slider.fullscreen .fs-icon::before {
-	content: "CLOSE";
+	content: "CERRAR";
+	font-size: 0.7em;
 }
 
 #ninja-slider .slider-inner {
 	max-width: 70%;
-	max-height: 400px;
+	max-height: auto;
 	margin: 0 auto;
 	/*center-aligned */
 	font-size: 0px;
@@ -90,7 +92,7 @@
 
 #ninja-slider .ns-img {
 	background-color: rgba(0, 0, 0, 0.3);
-	background-size: cover;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 	/*Note: If transitionType is zoom, it will be overridden to cover.*/

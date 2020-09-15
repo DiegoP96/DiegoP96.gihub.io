@@ -92,9 +92,9 @@
 
 #ninja-slider .ns-img {
 	background-color: rgba(0, 0, 0, 0.3);
-	background-size: 100%;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 50% 50%;
 	/*Note: If transitionType is zoom, it will be overridden to cover.*/
 	/*decorate border*/
 	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8), inset 0 0 2px rgba(255, 255, 255, 0.4);

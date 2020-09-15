@@ -62,12 +62,12 @@ body {
 
 #iconoInstagram:hover {
 	opacity: 1;
-	color: #ffea7f;
+	color:  #f62e29 /*#ffea7f*/;
 }
 
 #iconoFacebook:hover {
 	opacity: 1;
-	color: #83c3ff;
+	color: #efce16 /* #83c3ff*/;
 }
 
 #iconoWhatsApp:hover {

@@ -223,8 +223,8 @@ body {
 	height: 140px;
 	margin-top: 50px;
 	justify-content: space-between;
-	align-content: space-around;
-	background-color: #4467c4;
+	align-items: space-around;
+	background-color: #295990; /*#438cc1  #266EF6 3081c3*/
 }
 
 .fondoLogoFooter {

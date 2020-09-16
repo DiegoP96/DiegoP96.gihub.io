@@ -220,7 +220,7 @@ body {
 .contenedorFooterFlex {
 	display: flex;
 	width: 100%;
-	height: 140px;
+	height: auto;
 	margin-top: 50px;
 	justify-content: space-between;
 	align-items: space-around;
@@ -228,11 +228,11 @@ body {
 }
 
 .fondoLogoFooter {
-	width: 5.1em;
-	height: 4.9em;
-	padding: center;
+	width: 5.2em;
+	height: 2.8em;
+	margin-top: 15px;
 	border-radius: 50%;
-	padding: 0em 0em 0.8em 0em;
+	padding: 0em 0.1em 3em 0.2em;
 	background-color: #f9f9f9;
 }
 
@@ -247,11 +247,10 @@ body {
 	text-align-last: initial;
 }
 .botonContactanos {
-	align-self: flex-end;
-	margin-right: 20px;
 	display: inline-block;
+	align-self: flex-end;
 	padding: 0.4em 1em;
-	margin: 1em 0.5em 0em 0em;
+	margin: 4em 0.5em 0em 0em;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	box-sizing: border-box;

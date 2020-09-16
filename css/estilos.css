@@ -219,17 +219,52 @@ body {
 
 .contenedorFooterFlex {
 	display: flex;
-	width: 100%;
-
+    width: 100%;
+    height: 140px;
+    margin-top: 50px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #4467c4;
 }
 
+.fondoLogoFooter {
+	width: 5.1em;
+	height: 5.1em;
+	padding: center;
+	border-radius: 50%;
+	padding-right: 1mm;
+	margin-bottom: 0.5em;
+	margin-top: 0.4em;
+	background-color: #f9f9f9;
+}
+
 .elementosFooter {
 	margin: 0em 3em 0em 3em;
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
+}
+
+.direccionFooter{
+    text-align-last: initial;
+}
+.botonContactanos{
+    align-self: flex-end;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 0.4em 1em;
+    margin: 1em 0.5em 0em 0em;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: white;
+    background-color: #FFC530;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    text-align: center;
+    transition: all 0.2s;
 }
 
 /* Efectos página home */

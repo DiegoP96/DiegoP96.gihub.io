@@ -10,7 +10,7 @@ body {
 	padding: 0.6em;
 	padding-bottom: 0em;
 	justify-content: space-between;
-	background-color:   #717beb ; /* Han blue #4467C4  #5d69ee  #515BD4  #3d88ee*/
+	background-color: #717beb; /* Han blue #4467C4  #5d69ee  #515BD4  #3d88ee*/
 	align-content: center;
 	max-width: 100%;
 	height: auto;
@@ -229,10 +229,10 @@ body {
 	margin-top: 50px;
 	justify-content: space-between;
 	align-items: space-around;
-	background-color: #717beb ; /*#438cc1  #266EF6 3081c3*/
+	background-color: #717beb; /*#438cc1  #266EF6 3081c3*/
 }
 
-.logoMexicanoFooter {
+.contenedorLogo {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -240,14 +240,13 @@ body {
 	width: 250px;
 }
 
-.tituloLogoFooter{
+.tituloLogoFooter {
 	font-family: "Marck Script", cursive;
 	font-style: italic;
 	font-size: 1.2em;
 	color: white;
 	margin-right: 10%;
 }
-
 
 .fondoLogoFooter {
 	width: 5.2em;
@@ -387,6 +386,20 @@ body {
 		grid-column-start: 1;
 		font-size: 1.5em;
 	}
+
+	.contenedorFooterFlex {
+		font-size: 0.8em;
+	}
+
+	.logoMexicanoFooter {
+		width: 65px;
+		height: 70px;
+	}
+
+	.contenedorLogo {
+		width: 200px;
+	}
+
 	/* Efectos pagina home */
 	.columna:hover {
 		margin-top: 1px;
@@ -432,6 +445,27 @@ body {
 		grid-column-start: 1;
 		font-size: 1.5em;
 		text-align: center;
+	}
+
+	.contenedorFooterFlex {
+		font-size: 0.7em;
+	}
+
+	.logoMexicanoFooter {
+		width: 55px;
+		height: 60px;
+	}
+
+	.contenedorLogo {
+		width: 180px;
+	}
+
+	.elementosFooter {
+		margin: 0em 1em 0em 1em;
+	}
+
+	.botonContactanos {
+		/* margin-top: 50px; */
 	}
 }
 

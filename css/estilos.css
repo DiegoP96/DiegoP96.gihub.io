@@ -215,6 +215,11 @@ body {
 	font-size: 1.7em;
 }
 
+.txtNumeros {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 0.8em;
+}
+
 .mapaDelSitio {
 	width: 90%;
 	justify-self: center;
@@ -229,6 +234,7 @@ body {
 	margin-top: 50px;
 	justify-content: space-between;
 	align-items: space-around;
+	letter-spacing: 1px;
 	background-color: #717beb; /*#438cc1  #266EF6 3081c3*/
 }
 

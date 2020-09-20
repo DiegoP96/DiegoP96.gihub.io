@@ -45,7 +45,7 @@
 }
 
 #plato_principal {
-    background-color: #467B2B;
+    background-color:#89e077 /* #467B2B*/;
     grid-column-start: 2;
     opacity: 0.7;
 }
@@ -67,7 +67,7 @@
 }
 
 #postres {
-    background-color: #FF5348;
+    background-color:  #f62e29/*#FF5348*/;
     grid-column-start: 4;
     opacity: 0.7;
 }

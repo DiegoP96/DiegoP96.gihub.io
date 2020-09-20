@@ -338,7 +338,7 @@ body {
 		margin-bottom: 100px;
 	}
 	.contenedorColumnas {
-		width: 80%;
+		width: 85%;
 		justify-content: space-around;
 		grid-row-gap: 40px;
 		margin-top: -50px;

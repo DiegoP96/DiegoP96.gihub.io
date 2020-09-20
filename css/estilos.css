@@ -338,7 +338,7 @@ body {
 		margin-bottom: 100px;
 	}
 	.contenedorColumnas {
-		width: 85%;
+		width: 90%;
 		justify-content: space-around;
 		grid-row-gap: 40px;
 		margin-top: -50px;
@@ -490,9 +490,6 @@ body {
 	.botonContactanos {
 		/* margin-top: 50px; */
 	}
-}
-
-@media screen and (max-width: 360px) {
 }
 
 /* Fin página Home */

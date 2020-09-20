@@ -338,7 +338,7 @@ body {
 		margin-bottom: 100px;
 	}
 	.contenedorColumnas {
-		width: 90%;
+		width: 80%;
 		justify-content: space-around;
 		grid-row-gap: 40px;
 		margin-top: -50px;
@@ -410,6 +410,11 @@ body {
 	.frase {
 		margin-top: -250px;
 		margin-bottom: 150px;
+	}
+	
+	.contenedorColumnas{
+		
+		width: 90%;
 	}
 }
 

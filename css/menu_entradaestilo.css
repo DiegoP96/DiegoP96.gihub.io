@@ -122,7 +122,7 @@ ul {
     display: flex;
     padding: 0.8em 0 0.8em 0;
     width: 100%;
-    background-color: rgba(96, 104, 216, 0.712);
+    background-color: #717beb /* rgba(96, 104, 216, 0.712)*/;
     justify-content: flex-end;
 }
 
@@ -253,7 +253,7 @@ p {
 .finDelContenedor {
     padding: 1.4em 0 1.4em 0;
     width: 100%;
-    background-color: rgba(96, 104, 216, 0.712);
+    background-color:#717beb/* rgba(96, 104, 216, 0.712);*/
 }
 
 .contenedorGrid {

@@ -78,28 +78,9 @@ function ready() {
     }
 
     checkPlates()
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('sumbit', purchaseClicked)
 }
 
-function purchaseClicked() {
-    numeroMesa = document.getElementsByClassName('number-table')[0].value
-    if (numeroMesa == '') {
-        alert('INGRESE NUMERO DE MESA')
-        return
-    } else {
-        console.log(numeroMesa);
-        var cartItems = document.getElementsByClassName('cart-items')[0]
-        var totalPurchased = document.getElementsByClassName('cart-total-price')[0].innerText
-        alert(`Gracias por su pedido ${totalPurchased}`)
-        while (cartItems.hasChildNodes()) {
-            cartItems.removeChild(cartItems.firstChild)
-        }
-        resetCookies()
-        history.go(-1);
-
-    }
-
-}
 
 function removeCartItem(event) {
     var buttonClicked = event.target
@@ -129,8 +110,8 @@ function deleteCookie(string) {
         }
         title = getTitle(c.substring((name.length + 2), c.length))
         if (string == title && c.indexOf(name) == 0) {
-            document.cookie = c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
             alert("Se quito " + string + " del pedido")
+            document.cookie = c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
             return
         }
     }
@@ -146,19 +127,20 @@ function quantityChanged(event) {
 
 
 function addItemToCart(title, price) {
-
-
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
-    var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
+    var priceConv = convertPrice(price)
+
     var cartRowContents = `
         <div class="cart-item cart-column">
-            <span class="cart-item-title">${title}</span>
+            <span class="cart-item-title" >${title}</span>
+            <input type = "text" hidden value="${title}" name="plato[]">
         </div>
         <span class="cart-price cart-column">${price}</span>
+        <input type = "number" hidden value=${priceConv} name="precio[]">
         <div class="cart-quantity cart-column">
-            <input class="cart-quantity-input" type="number" value="1">
+            <input class="cart-quantity-input" type="number" value="1" name="cantidad[]">
             <button class="btn btn-danger" type="button">QUITAR</button>
         </div>`
     cartRow.innerHTML = cartRowContents
@@ -182,4 +164,12 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function convertPrice(price){
+    var priceConv = price
+    while(priceConv.charAt(0)== '$'){
+        priceConv = priceConv.substring(1)
+    }
+    return Number(priceConv) 
 }

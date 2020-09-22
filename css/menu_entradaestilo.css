@@ -68,7 +68,11 @@
 }
 
 #postres {
-	background-color: #f62e29 /*#FF5348*/;
+    background-color: #f62e29 /*#FF5348*/;
+    margin-top: 0.1em;
+    padding: center;
+    padding-top: 0.77em;
+    padding-bottom: 0.7em;
 	grid-column-start: 4;
 	opacity: 0.7;
 }
@@ -303,8 +307,10 @@ p {
 }
 
 .textoFooter {
-	margin-left: 0px;
-    font-family: "Zilla Slab", serif;
+	margin-right: 0.3em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100px;
+    text-align: justify;
 }
 
 .listaDos {
@@ -320,6 +326,7 @@ p {
 
 a{
    text-decoration: none;
+   margin-top: 1em;
 }
 
 #iconoInstagram {
@@ -333,7 +340,8 @@ a{
 
 #iconoFacebook {
 	opacity: 1;
-	color: rgb(45, 45, 45);
+    color: rgb(45, 45, 45);
+    font-size: 1em;
 }
 
 #iconoFacebook:hover {

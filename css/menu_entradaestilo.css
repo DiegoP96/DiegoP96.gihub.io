@@ -68,11 +68,11 @@
 }
 
 #postres {
-    background-color: #f62e29 /*#FF5348*/;
-    margin-top: 0.1em;
-    padding: center;
-    padding-top: 0.77em;
-    padding-bottom: 0.7em;
+	background-color: #f62e29 /*#FF5348*/;
+	margin-top: 0.1em;
+	padding: center;
+	padding-top: 0.77em;
+	padding-bottom: 0.7em;
 	grid-column-start: 4;
 	opacity: 0.7;
 }
@@ -289,28 +289,28 @@ p {
 	width: 285px;
 	justify-content: space-around;
 	align-items: center;
-    color: #f62e29;
-    font-family: "Marck Script", cursive;
-    font-size: 1.4em;
+	color: #f62e29;
+	font-family: "Marck Script", cursive;
+	font-size: 1.4em;
 }
 
 .logoMexicanoFooter {
 	border-radius: 50%;
-    border: #f62e29 solid 2px;
-    box-sizing: border-box;
-    padding: center;
-    padding-left: -1.5em;
-    padding-right: 0.1em;
-    padding-top: -0.2em;
-    padding-bottom: 0.21em;
+	border: #f62e29 solid 2px;
+	box-sizing: border-box;
+	padding: center;
+	padding-left: -1.5em;
+	padding-right: 0.1em;
+	padding-top: -0.2em;
+	padding-bottom: 0.21em;
 	background: white;
 }
 
 .textoFooter {
 	margin-right: 0.3em;
-    font-family: 'Inter', sans-serif;
-    font-weight: 100px;
-    text-align: justify;
+	font-family: "Inter", sans-serif;
+	font-weight: 100px;
+	text-align: justify;
 }
 
 .listaDos {
@@ -323,25 +323,24 @@ p {
 	grid-row-start: 1;
 }
 
-
-a{
-   text-decoration: none;
-   margin-top: 1em;
+a {
+	text-decoration: none;
+	margin-top: 1em;
 }
 
 #iconoInstagram {
-    opacity: 1;
-	color:rgb(45, 45, 45);
+	opacity: 1;
+	color: rgb(45, 45, 45);
 }
 #iconoInstagram:hover {
-    opacity: 1;
+	opacity: 1;
 	color: #f62e29 /*#ffea7f*/;
 }
 
 #iconoFacebook {
 	opacity: 1;
-    color: rgb(45, 45, 45);
-    font-size: 1em;
+	color: rgb(45, 45, 45);
+	font-size: 1em;
 }
 
 #iconoFacebook:hover {
@@ -388,6 +387,46 @@ a{
 	.transparencia {
 		height: 240px;
 	}
+
+	.contenedor_botones {
+		height: 120px;
+		margin-top: 0px;
+	}
+
+	.boton_menu {
+		width: 60px;
+		margin-left: 10px;
+	}
+
+	.imgBoton {
+		width: 40px;
+		height: 45px;
+	}
+
+	.imgBotonPostres {
+		width: 30px;
+		height: 35px;
+	}
+
+	.texto {
+		font-size: 0.6em;
+		max-width: 60px;
+		margin-left: 9px;
+		margin-top: -60px;
+	}
+
+	.elementoUno {
+		width: 240px;
+	}
+	.listaUno {
+		font-size: 0.6em;
+	}
+	.textoFooter {
+		margin-top: 20px;
+		margin-left: 10px;
+		letter-spacing: 3px;
+	}
+
 	.contenedorVerMiPedido {
 		padding: 0.5em 0 0.5em 0;
 	}
@@ -401,15 +440,6 @@ a{
 		justify-content: center;
 	}
 
-	.elementoUno {
-		width: 240px;
-	}
-	.listaUno {
-		font-size: 0.6em;
-	}
-	.textoFooter {
-		margin-left: 5px;
-	}
 	.listaDos {
 		margin: auto;
 		grid-row-start: 2;
@@ -424,10 +454,20 @@ a{
 		height: 213px;
 	}
 	.contenedor_botones {
+		height: 110px;
+		margin-top: -10px;
 		grid-template-columns: 60px 60px 60px 60px;
 		grid-template-rows: 60px 60px 60px 60px;
 	}
 	.texto {
-		margin-top: -10px;
+		font-size: 0.5em;
+		margin-top: -20px;
+		margin-right: 0px;
+	}
+
+	.textoFooter {
+		margin-top: 20px;
+		margin-left: 10px;
+		letter-spacing: 2px;
 	}
 }

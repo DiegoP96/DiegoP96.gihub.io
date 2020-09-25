@@ -126,17 +126,19 @@ ul {
 
 .contenedorVerMiPedido {
 	display: flex;
-	padding: 0.8em 0 0.8em 0;
+	padding: 0.4em 0 0.4em 0;
 	width: 100%;
+	height: 50px;
 	background-color: #717beb /* rgba(96, 104, 216, 0.712)*/;
 	justify-content: flex-end;
+	align-items: center;
 }
 
 button.boton_carrito {
 	display: inline-block;
 	padding: 0.35em 1.3em;
 	border: 0.1em solid #ffffff;
-	margin: 0.3em 2em 0.3em 0em;
+	margin: 0.4em 2em 1.4em 0em;
 	border-radius: 0.12em;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -360,7 +362,7 @@ a {
 
 @media screen and (max-width: 650px) {
 	.contenedorVerMiPedido {
-		padding: 0.5em 0 0.5em 0;
+		padding: 0.3em 0 0.3em 0;
 	}
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
@@ -428,7 +430,7 @@ a {
 	}
 
 	.contenedorVerMiPedido {
-		padding: 0.5em 0 0.5em 0;
+		padding: 0.3em 0 0.3em 0;
 	}
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
@@ -454,14 +456,44 @@ a {
 		height: 213px;
 	}
 	.contenedor_botones {
+		justify-content: space-evenly;
 		height: 110px;
 		margin-top: -10px;
 		grid-template-columns: 60px 60px 60px 60px;
 		grid-template-rows: 60px 60px 60px 60px;
 	}
+
+	.boton_menu {
+		width: 50px;
+	}
+
+	#postres {
+		width: 50px;
+	}
+
+	.imgBoton {
+		width: 30px;
+		height: 35px;
+	}
+
+	.imgBotonPostres {
+		width: 20px;
+		height: 25px;
+	}
+
+	.imagenBoton {
+		width: 70px;
+		height: 70px;
+	}
+
+	p {
+		font-size: 0.8em;
+		max-width: 230px;
+	}
+
 	.texto {
 		font-size: 0.5em;
-		margin-top: -20px;
+		margin-top: -30px;
 		margin-right: 0px;
 	}
 

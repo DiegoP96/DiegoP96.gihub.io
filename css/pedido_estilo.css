@@ -5,25 +5,49 @@
 
 .cart-row {
 	display: flex;
-	justify-content: space-around;
+
 	width: 100%;
 	background-color: blueviolet;
 }
 
 .cart-item {
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 100%;
 }
 
 .cart-header {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	width: 100%;
 }
 
 .cart-column {
 	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.cart-items {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
+
+	width: 100%;
+}
+
+.cart-table {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+}
+
+.cart-quantity {
+	display: flex;
+	flex-direction: row;
+
 	width: 100%;
 }

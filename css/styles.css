@@ -39,7 +39,7 @@ div.contenedorImagen {
 a.botonIrMenuPrincipal {
 	padding-left: 0.2em;
 	position: absolute;
-	top: 1.1em;
+	top: 0em;
 	z-index: 1;
 }
 
@@ -191,7 +191,7 @@ p.section-header {
 }
 
 .btn-primary {
-	position: absolute;
+	/* position: absolute; */
 	top: 400px;
 	color: white;
 	background-color: #56f297;
@@ -393,4 +393,97 @@ p.section-header {
 	display: block;
 	margin: 40px auto 80px auto;
 	font-size: 1.75em;
+}
+
+.contenedorGrid {
+	position: relative;
+	top: 400px;
+	display: grid;
+	padding: 10px;
+	max-width: 100%;
+	margin: 0px auto;
+	/* margin-top: 35px; */
+	grid-template-columns: auto;
+	background-color: #f9f9f9;
+}
+
+.listaUno {
+	margin: 10px auto;
+	letter-spacing: 4px;
+	list-style: none;
+	font-size: 1em;
+}
+
+.elementoUno {
+	display: flex;
+	width: 285px;
+	justify-content: space-around;
+	align-items: center;
+	color: #f62e29;
+	font-family: "Marck Script", cursive;
+	font-size: 1.4em;
+}
+
+.logoMexicanoFooter {
+	border-radius: 50%;
+	border: #f62e29 solid 2px;
+	box-sizing: border-box;
+	padding: center;
+	padding-left: -1.5em;
+	padding-right: 0.1em;
+	padding-top: -0.2em;
+	padding-bottom: 0.21em;
+	background: white;
+}
+
+.textoFooter {
+	margin-right: 0.3em;
+	font-family: "Inter", sans-serif;
+	font-weight: 100px;
+	text-align: justify;
+}
+
+.listaDos {
+	margin: 20px auto;
+	font-size: 1.4em;
+	letter-spacing: 8px;
+	list-style: none;
+	text-align: end;
+	grid-column-start: 2;
+	grid-row-start: 1;
+}
+
+a {
+	text-decoration: none;
+	margin-top: 1em;
+}
+
+#iconoInstagram {
+	opacity: 1;
+	color: rgb(45, 45, 45);
+}
+#iconoInstagram:hover {
+	opacity: 1;
+	color: #f62e29 /*#ffea7f*/;
+}
+
+#iconoFacebook {
+	opacity: 1;
+	color: rgb(45, 45, 45);
+	font-size: 1em;
+}
+
+#iconoFacebook:hover {
+	opacity: 1;
+	color: #efce16 /* #83c3ff*/;
+}
+
+#iconoWhatsApp {
+	opacity: 1;
+	color: rgb(45, 45, 45);
+}
+
+#iconoWhatsApp:hover {
+	opacity: 1;
+	color: #89e077;
 }

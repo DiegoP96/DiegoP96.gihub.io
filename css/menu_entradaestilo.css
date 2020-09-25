@@ -27,6 +27,7 @@
 
 #entrada {
 	background-color: #ffc530;
+	padding:center;
 	grid-column-start: 1;
 }
 
@@ -47,8 +48,10 @@
 
 #plato_principal {
 	background-color: #89e077 /* #467B2B*/;
+	padding: center;
 	grid-column-start: 2;
 	opacity: 0.7;
+	box-sizing: border-box;
 }
 
 #texto_plato_principal {
@@ -59,6 +62,8 @@
 #bebidas {
 	background-color: rgb(112, 161, 215);
 	grid-column-start: 3;
+	padding: center;
+	padding-left: 0.8em;
 	opacity: 0.7;
 }
 
@@ -71,6 +76,7 @@
 	background-color: #f62e29 /*#FF5348*/;
 	margin-top: 0.1em;
 	padding: center;
+	padding-left: 0.7em;
 	padding-top: 0.77em;
 	padding-bottom: 0.7em;
 	grid-column-start: 4;

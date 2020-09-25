@@ -387,13 +387,83 @@ a {
 
 @media screen and (max-width: 450px) {
 	p {
-		max-width: 350px;
+		max-width: 370px;
 	}
 
 	.textoFooter {
 		margin-top: 20px;
 		margin-left: 10px;
 		letter-spacing: 2px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.transparencia {
+		height: 250px;
+	}
+
+	.contenedor_botones {
+		height: 120px;
+		margin-top: 0px;
+	}
+
+	.boton_menu {
+		width: 60px;
+		margin-left: 10px;
+	}
+
+	.imgBoton {
+		width: 40px;
+		height: 45px;
+	}
+
+	.imgBotonPostres {
+		width: 30px;
+		height: 35px;
+	}
+
+	p {
+		max-width: 320px;
+	}
+
+	.texto {
+		font-size: 0.6em;
+		max-width: 60px;
+		margin-left: 9px;
+		margin-top: -60px;
+	}
+
+	.elementoUno {
+		width: 240px;
+	}
+	.listaUno {
+		font-size: 0.6em;
+	}
+	.textoFooter {
+		margin-top: 20px;
+		margin-left: 10px;
+		letter-spacing: 3px;
+	}
+
+	.contenedorVerMiPedido {
+		padding: 0.3em 0 0.3em 0;
+	}
+	.finDelContenedor {
+		padding: 1.2em 0 1.2em 0;
+	}
+	.contenedorGrid {
+		margin: auto;
+		width: 90%;
+		grid-row-gap: 15px;
+		justify-content: center;
+	}
+
+	.listaDos {
+		margin: auto;
+		grid-row-start: 2;
+		grid-column-start: 1;
+		font-size: 1.5em;
+		text-align: center;
 	}
 }
 
@@ -420,6 +490,10 @@ a {
 	.imgBotonPostres {
 		width: 30px;
 		height: 35px;
+	}
+
+	p {
+		max-width: 320px;
 	}
 
 	.texto {

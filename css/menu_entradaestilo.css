@@ -385,6 +385,18 @@ a {
 	}
 }
 
+@media screen and (max-width: 450px) {
+	p {
+		max-width: 350px;
+	}
+
+	.textoFooter {
+		margin-top: 20px;
+		margin-left: 10px;
+		letter-spacing: 2px;
+	}
+}
+
 @media screen and (max-width: 360px) {
 	.transparencia {
 		height: 240px;

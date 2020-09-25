@@ -9,3 +9,21 @@
 	width: 100%;
 	background-color: blueviolet;
 }
+
+.cart-item {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.cart-header {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.cart-column {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}

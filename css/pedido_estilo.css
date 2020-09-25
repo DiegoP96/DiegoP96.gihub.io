@@ -1,0 +1,11 @@
+.contenedorPedidos {
+	width: 100%;
+	background-color: rgb(226, 226, 226);
+}
+
+.cart-row {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: blueviolet;
+}

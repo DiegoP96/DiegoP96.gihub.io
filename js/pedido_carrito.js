@@ -11,11 +11,13 @@ function getCookiePlates() {
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         name = 'plato'
+        console.log(name)
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
+        //console.log(c)
         if (c.indexOf(name) == 0) {
-            allPlates[i] = c.substring((name.length + 2), c.length);
+            allPlates[i] = c.substring((name.length + 4), c.length);
         }
     }
     if (allPlates[0] == 1) {
@@ -58,7 +60,7 @@ function checkPlates() {
         for (var i = 0; i < plates.length; i++) {
             var title = getTitle(plates[i])
             var price = getPrice(plates[i])
-            console.log(title + price)
+            //console.log(title + price)
             addItemToCart(title, price)
         }
     }
@@ -78,7 +80,7 @@ function ready() {
     }
 
     checkPlates()
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('sumbit', purchaseClicked)
+    //document.getElementsByClassName('btn-purchase')[0].addEventListener('sumbit', purchaseClicked)
 }
 
 
@@ -88,13 +90,28 @@ function removeCartItem(event) {
     deleteCookie(plato.getElementsByClassName('cart-item-title')[0].innerText)
     plato.remove()
     updateCartTotal()
-    console.log(document.cookie)
 }
+
+
+function get3D(num) {
+
+    switch (num.toString().length) {
+        case 3:
+            return num
+        case 2:
+            return "0" + num
+        case 1:
+            return "00" + num
+        default:
+            break;
+    }
+}
+
 
 function resetCookies() {
     var ca = document.cookie.split(';')
     for (i = 0; i < ca.length; i++) {
-        document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+        document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
     }
 }
 
@@ -108,10 +125,10 @@ function deleteCookie(string) {
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
-        title = getTitle(c.substring((name.length + 2), c.length))
+        title = getTitle(c.substring((name.length + 4), c.length))
         if (string == title && c.indexOf(name) == 0) {
             alert("Se quito " + string + " del pedido")
-            document.cookie = c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+            document.cookie = c.substring(0, name.length + 4) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
             return
         }
     }
@@ -166,10 +183,10 @@ function updateCartTotal() {
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
-function convertPrice(price){
+function convertPrice(price) {
     var priceConv = price
-    while(priceConv.charAt(0)== '$'){
+    while (priceConv.charAt(0) == '$') {
         priceConv = priceConv.substring(1)
     }
-    return Number(priceConv) 
+    return Number(priceConv)
 }

@@ -7,11 +7,11 @@
 	position: relative;
 }
 
-.botonIrIndex{
+.botonIrIndex {
 	position: absolute;
 	z-index: 100;
 	margin-left: 2.5%;
-    top: 436px;
+	top: 436px;
 	font-size: 20px;
 	align-content: inherit;
 	color: white;
@@ -37,7 +37,7 @@
 
 #entrada {
 	background-color: #ffc530;
-	padding:center;
+	padding: center;
 	grid-column-start: 1;
 }
 
@@ -297,17 +297,8 @@ p {
 
 .listaUno {
 	margin: 10px auto;
-	letter-spacing: 4px;
-	list-style: none;
-	font-size: 1em;
-}
 
-.elementoUno {
-	display: flex;
-	margin-left: 10px;
-	justify-content: space-around;
-	align-items: center;
-	
+	list-style: none;
 }
 
 /*.logoMexicanoFooter {
@@ -385,9 +376,7 @@ a {
 		width: 90%;
 		grid-row-gap: 20px;
 	}
-	.listaUno {
-		font-size: 0.9em;
-	}
+
 	.textoFooter {
 		margin-left: 5px;
 	}
@@ -405,9 +394,10 @@ a {
 	}
 
 	.textoFooter {
+		max-width: 350px;
 		margin-top: 20px;
 		margin-left: 10px;
-		letter-spacing: 2px;
+		letter-spacing: 0.6px;
 	}
 }
 
@@ -440,23 +430,11 @@ a {
 		max-width: 320px;
 	}
 
-	.texto {
-		font-size: 0.6em;
-		max-width: 60px;
-		margin-left: 9px;
-		margin-top: -60px;
-	}
-
-	.elementoUno {
-		width: 240px;
-	}
-	.listaUno {
-		font-size: 0.6em;
-	}
 	.textoFooter {
+		max-width: 330px;
 		margin-top: 20px;
 		margin-left: 10px;
-		letter-spacing: 3px;
+		letter-spacing: 0.5px;
 	}
 
 	.contenedorVerMiPedido {
@@ -510,23 +488,8 @@ a {
 		max-width: 320px;
 	}
 
-	.texto {
-		font-size: 0.6em;
-		max-width: 60px;
-		margin-left: 9px;
-		margin-top: -60px;
-	}
-
-	.elementoUno {
-		width: 240px;
-	}
-	.listaUno {
-		font-size: 0.6em;
-	}
 	.textoFooter {
-		margin-top: 20px;
-		margin-left: 10px;
-		letter-spacing: 3px;
+		letter-spacing: 0.8px;
 	}
 
 	.contenedorVerMiPedido {
@@ -591,15 +554,14 @@ a {
 		max-width: 230px;
 	}
 
-	.texto {
-		font-size: 0.5em;
-		margin-top: -30px;
-		margin-right: 0px;
+	.logoMexicanoFooter{
+		width: 270px;
+		height: 100px;
 	}
-
 	.textoFooter {
+    max-width: 280px;
 		margin-top: 20px;
 		margin-left: 10px;
-		letter-spacing: 2px;
+		letter-spacing: 0.8px;
 	}
 }

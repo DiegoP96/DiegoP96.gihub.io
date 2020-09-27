@@ -20,8 +20,6 @@ body {
 .grupoUno {
 	display: flex;
 	position: relative;
-	bottom: 15px;
-	right: 60px;
 	justify-content: space-around;
 	align-items: initial;
 	min-width: 13em;
@@ -29,16 +27,6 @@ body {
 
 
 
-.fondoLogo {
-	width: 2.9em;
-	height: 3em;
-	padding: center;
-	border-radius: 50%;
-	padding-right: 1mm;
-	margin-bottom: 0.5em;
-	margin-top: 0.4em;
-	background-color: #f9f9f9;
-}
 
 .grupoDos {
 	display: flex;

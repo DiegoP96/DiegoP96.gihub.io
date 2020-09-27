@@ -1,48 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="./img/mexican.png" />
-		<link rel="stylesheet" href="css/pedido_estilo.css" />
-		<script src="js/pedido_carrito.js" async></script>
-		<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
-		<title>Pedido</title>
-	</head>
 
-	<body>
-		<header>
-			<div class="contenedorImagen">
-				<a href="./menu_Entrada.html" class="botonIrMenuPrincipal">
-					<i class="fas fa-arrow-left"></i
-				></a>
 
-				<p class="section-header">Pedido</p>
-			</div>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/mexican.png">
+    <link rel="stylesheet" href="css/pedido_estilo.css" />
+    <script src="js/pedido_carrito.js"></script>
+    <script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
+    <title> Pedido </title>
+</head>
 
-		<main>
-			<section class="contenedorPedidos">
-				<div class="cart-row">
-					<span class="cart-item cart-header cart-column">Plato</span>
-					<span class="cart-price1 cart-header cart-column">Valor</span>
-					<span class="cart-quantity cart-header cart-column">Cantidad</span>
-					<span class="cart-options cart-header cart-column">Opciones</span>
-				</div>
-				<div class="cart-items"></div>
-				<div class="cart-table cart-quantity">
-					<br />
-					<br />
-					<br />
-					<input type="text" class="number-table" i />
-				</div>
-				<div class="cart-total">
-					<strong class="cart-total-title">Total</strong>
-					<span class="cart-total-price">$0</span>
-				</div>
+<body>
 
-				<button class="btn btn-primary btn-purchase" type="button">Pedir</button>
-			</section>
-		</main>
-	</body>
+    <header>
+
+        <div class="contenedorImagen">
+
+            <a href="./menu_Entrada.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
+
+
+            <p class="section-header">Pedido</p>
+
+        </div>
+
+    </header>
+
+    <main>
+
+
+<section>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+
+        .cart-quantity-input{
+
+            width: 40px;
+        }
+
+        .cart-item{
+  
+        width: 240px;
+}
+
+.dos{
+
+    width: 245px;
+}
+
+.tres{
+    width: 385px;
+    
+}
+
+.btn-purchase{
+
+    width: 100%;
+    height: 60px;
+    background-color: #C381FD;
+    border: none;
+}
+        </style>
+       
+        <body>
+     
+        <table class="container content-section">
+          <tr class="cart-row">
+            <th> <span class="cart-item cart-header cart-column"> Plato</span> </th>
+            <th> <span class="cart-price1 cart-header cart-column"> Valor </span></th>
+            <th> <span class="cart-quantity cart-header cart-column"> Cantidad </span></th>
+            <th> <span class="cart-options cart-header cart-column"> </span> Opciones </th>
+            
+          </tr>
+
+        </table>
+
+          <table class="cart-items">
+          <tr>
+          
+           
+            
+        </tr>
+          </table>
+
+    
+        <div class="cart-table cart-quantity">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="number-table" i>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+    
+
+    <!-- <section class="container content-section">
+
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">Plato</span>
+            <span class="cart-price1 cart-header cart-column">Valor</span>
+            <span class="cart-quantity cart-header cart-column">Cantidad</span>
+            <span class="cart-options cart-header cart-column">Opciones</span>
+        </div>
+        <div class="cart-items">
+
+        </div>
+        <div class="cart-table cart-quantity">
+            <br>
+            <br>
+            <br>
+            <input type="text" class="number-table" i>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+
+
+
+    </section> -->
+
+    <footer class="footerPedido"> 
+        <button class="btn btn-primary btn-purchase" type="button">Pedir</button> 
+    
+    </footer>
+</body>
+
 </html>

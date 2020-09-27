@@ -19,22 +19,15 @@ body {
 
 .grupoUno {
 	display: flex;
+	position: relative;
+	bottom: 15px;
+	right: 60px;
 	justify-content: space-around;
-	align-items: center;
+	align-items: initial;
 	min-width: 13em;
-	letter-spacing: 2px;
-	color: whitesmoke;
-	font-family: "Marck Script", cursive;
-	font-size: 20px;
-	font-style: italic;
 }
 
-.logoMexicano {
-	width: 3em;
-	height: 3em;
-	margin-bottom: 1em;
-	/* padding: 0em 0em 0em 1em; */
-}
+
 
 .fondoLogo {
 	width: 2.9em;

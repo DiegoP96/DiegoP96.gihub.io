@@ -6,22 +6,22 @@ $cantidades = $_POST['cantidad'];
 $mesa = $_POST['mesa'];
 
 if (empty($_POST['plato']) && empty($_POST['mesa'])) {
-    header("Location: http://localhost/Mexico/pedido.php?error=ninguno");
+    header("Location: http://mexicanocafe.com/pedido.php?error=ninguno");
     exit();
 } else {
     if (empty($_POST['mesa'])) {
-        header("Location: http://localhost/Mexico/pedido.php?error=noMesa");
+        header("Location: http://mexicanocafe.com//pedido.php?error=noMesa");
         exit();
     }
     if (empty($_POST['plato'])) {
-        header("Location: http://localhost/Mexico/pedido.php?error=noPlatos");
+        header("Location: http://mexicanocafe.com/pedido.php?error=noPlatos");
         exit();
     }
 }
 $host = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbname = "mexicano";
+$dbUsername = "joaking";
+$dbPassword = "toa3s[dBQpxg";
+$dbname = "restaurant2020";
 //create connection
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 
@@ -30,9 +30,9 @@ for ($i = 0; $i < sizeof($platos); $i++) {
     if (mysqli_connect_error()) {
         die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
     } else {
-        $INSERT = "INSERT Into pedidos (descripcion, cantidad, valor, cliente) values(?, ?, ?, ?)";
+        $INSERT = "INSERT Into pedidos (plato, cantidad, precio) values(?, ?, ?)";
         $stmt = $conn->prepare($INSERT);
-        $stmt->bind_param("siii", $platos[$i], $cantidades[$i], $precios[$i], $mesa);
+        $stmt->bind_param("sii", $platos[$i], $cantidades[$i], $precios[$i]);
         $stmt->execute();
         echo "New record inserted sucessfully";
     }
@@ -40,7 +40,7 @@ for ($i = 0; $i < sizeof($platos); $i++) {
 $stmt->close();
 $conn->close();
 
-header("Location: http://localhost/Mexico/");
+header("Location: http://mexicanocafe.com/menu_Entrada.html");
 exit();
 
 ?>

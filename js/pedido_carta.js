@@ -12,8 +12,8 @@ function getCookiePlates() {
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + i + "="
-
+        name = 'plato' + get3D(i) + "="
+        console.log(name)
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
 
@@ -26,7 +26,21 @@ function getCookiePlates() {
         return "";
     } else {
         return allPlates
+    }
 
+}
+
+function get3D(num) {
+
+    switch (num.toString().length) {
+        case 3:
+            return num
+        case 2:
+            return "0" + num
+        case 1:
+            return "00" + num
+        default:
+            break;
     }
 
 }
@@ -69,7 +83,7 @@ function ready() {
 
 }
 if (getContador() == -1) {
-    document.cookie = "contador= 0"
+    document.cookie = "contador= 0" + ";SameSite=Lax"
 }
 var i = getContador()
 
@@ -79,20 +93,18 @@ function addToCartClicked(event) {
     var shopItem = button.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio')[0].innerText
-    if (checkPlatesDuplicate(title)) {
+    if(checkPlatesDuplicate(title)){
         return
-    } else {
-        document.cookie = "plato" + i + "=" + title + price
-        i++
     }
-
+    document.cookie = "plato" + get3D(i) + "=" + title + price + ";SameSite=Lax"
+    i++
 }
 
 function checkPlatesDuplicate(string) {
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + i + "="
+        name = 'plato' + get3D(i) + "="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }
@@ -106,5 +118,5 @@ function checkPlatesDuplicate(string) {
 }
 
 function pedidoClicked() {
-    document.cookie = "contador=" + i
+    document.cookie = "contador=" + i + ";SameSite=Lax"
 }

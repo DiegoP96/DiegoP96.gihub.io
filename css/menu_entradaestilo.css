@@ -7,6 +7,16 @@
 	position: relative;
 }
 
+.botonIrIndex{
+	position: absolute;
+	z-index: 100;
+	margin-left: 2.5%;
+    top: 436px;
+	font-size: 20px;
+	align-content: inherit;
+	color: white;
+}
+
 .contenedor_botones {
 	display: grid;
 	grid-template-columns: 80px 80px 80px 80px;
@@ -294,15 +304,13 @@ p {
 
 .elementoUno {
 	display: flex;
-	width: 285px;
+	margin-left: 10px;
 	justify-content: space-around;
 	align-items: center;
-	color: #f62e29;
-	font-family: "Marck Script", cursive;
-	font-size: 1.4em;
+	
 }
 
-.logoMexicanoFooter {
+/*.logoMexicanoFooter {
 	border-radius: 50%;
 	border: #f62e29 solid 2px;
 	box-sizing: border-box;
@@ -312,7 +320,7 @@ p {
 	padding-top: -0.2em;
 	padding-bottom: 0.21em;
 	background: white;
-}
+}*/
 
 .textoFooter {
 	margin-right: 0.3em;

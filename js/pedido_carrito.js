@@ -23,6 +23,26 @@ function getCookiePlates() {
 	} else {
 		return allPlates;
 	}
+    var name
+    var allPlates = [1]
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        name = 'plato'
+        console.log(name)
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        //console.log(c)
+        if (c.indexOf(name) == 0) {
+            allPlates[i] = c.substring((name.length + 4), c.length);
+        }
+    }
+    if (allPlates[0] == 1) {
+        return "";
+    } else {
+        return allPlates
+    }
 }
 
 function getContador() {
@@ -51,6 +71,7 @@ function getPrice(string) {
 }
 
 function checkPlates() {
+<<<<<<< HEAD
 	var plates = getCookiePlates();
 	if (plates == "") {
 		return;
@@ -79,6 +100,36 @@ function ready() {
 
 	checkPlates();
 	document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
+=======
+    var plates = getCookiePlates()
+    if (plates == "") {
+        return
+    } else {
+        for (var i = 0; i < plates.length; i++) {
+            var title = getTitle(plates[i])
+            var price = getPrice(plates[i])
+            //console.log(title + price)
+            addItemToCart(title, price)
+        }
+    }
+}
+
+function ready() {
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i]
+        button.addEventListener('click', removeCartItem)
+    }
+
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
+    for (var i = 0; i < quantityInputs.length; i++) {
+        var input = quantityInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
+
+    checkPlates()
+    //document.getElementsByClassName('btn-purchase')[0].addEventListener('sumbit', purchaseClicked)
+>>>>>>> 3b4b4ff3459ec16c2ecc3c08ba9b1a3c64c68c0d
 }
 
 function purchaseClicked() {
@@ -108,6 +159,22 @@ function removeCartItem(event) {
 	console.log(document.cookie);
 }
 
+
+function get3D(num) {
+
+    switch (num.toString().length) {
+        case 3:
+            return num
+        case 2:
+            return "0" + num
+        case 1:
+            return "00" + num
+        default:
+            break;
+    }
+}
+
+
 function resetCookies() {
 	var ca = document.cookie.split(";");
 	for (i = 0; i < ca.length; i++) {
@@ -133,6 +200,29 @@ function deleteCookie(string) {
 			return;
 		}
 	}
+    var ca = document.cookie.split(';')
+    for (i = 0; i < ca.length; i++) {
+        document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+    }
+}
+
+function deleteCookie(string) {
+    var ca = document.cookie.split(';')
+    var tam = getContador()
+    var c
+    for (var i = 0; i < tam; i++) {
+        c = ca[i];
+        name = 'plato'
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        title = getTitle(c.substring((name.length + 4), c.length))
+        if (string == title && c.indexOf(name) == 0) {
+            alert("Se quito " + string + " del pedido")
+            document.cookie = c.substring(0, name.length + 4) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+            return
+        }
+    }
 }
 
 function quantityChanged(event) {

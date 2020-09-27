@@ -33,20 +33,66 @@
 <section>
 
     <style>
+
+/* div.contenedorImagen {
+    display: block;
+    position: fixed;
+    font-size: 1em;
+    margin: 0em 0em 0em 0em;
+    width: 100%;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: rgba(96, 104, 216, 0.712);
+    z-index: 2;
+}
+
+a.botonIrMenuPrincipal {
+    padding-left: 0.2em;
+    position: absolute;
+    top: 1.1em;
+    z-index: 1;
+}
+
+p.section-header {
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 2em;
+    z-index: 1;
+} */
+
         table {
           font-family: arial, sans-serif;
           border-collapse: collapse;
           width: 100%;
+          background-color: #ffffff;
+          
+          
+          
+        }
+
+        #tabla{
+            display: flex;
+           
+            
+            background-color: #717beb;
+            
         }
         
         td, th {
+            ;
           border: 1px solid #dddddd;
           text-align: left;
           padding: 8px;
+        
+          
+          
         }
         
         tr:nth-child(even) {
-          background-color: #dddddd;
+          background-color: #ffffff;
+          
         }
 
         .cart-quantity-input{
@@ -56,16 +102,58 @@
 
         .cart-item{
   
-        width: 240px;
+        width: 247px;
 }
 
 .dos{
 
-    width: 245px;
+    width: 247px;
 }
 
 .tres{
-    width: 385px;
+    width: 383px;
+    
+}
+
+.btn-danger {
+	display: inline-block;
+	padding: 0.35em 1.3em;
+	border: 0.1em solid #ffffff;
+	/* margin: 0.4em 2em 1.4em 0em; */
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+	color: #000000;
+	text-align: center;
+	transition: all 0.2s;
+	letter-spacing: 1px;
+}
+
+.btn-danger:hover {
+	color: #000000;
+	background-color: #77dd77;
+}
+
+
+.number-table{
+    width: 50px;
+    
+    background-color: #ffffff;
+	border: 0.1em solid #efce16;
+	/* margin: 0.4em 2em 1.4em 0em; */
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+		"Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+	color: #000000;
+	text-align: center;
+	transition: all 0.2s;
+    letter-spacing: 1px;
     
 }
 
@@ -76,11 +164,26 @@
     background-color: #C381FD;
     border: none;
 }
+
+.btn-purchase:hover{
+
+background-color: #b565fa;
+}
+
+.contenedorFlex{
+width: 100%;
+justify-content: right;
+height: 150px;
+display: grid;
+
+}
         </style>
        
         <body>
+
+            <main>
      
-        <table class="container content-section">
+        <table class="container content-section" id="tabla">
           <tr class="cart-row">
             <th> <span class="cart-item cart-header cart-column"> Plato</span> </th>
             <th> <span class="cart-price1 cart-header cart-column"> Valor </span></th>
@@ -99,46 +202,24 @@
         </tr>
           </table>
 
+          <div class="contenedorFlex"> 
     
-        <div class="cart-table cart-quantity">
+        <div class="cart-table cart-quantity" id="cantidad">
             <br>
             <br>
             <br>
-            <input type="text" class="number-table" i>
-        </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">$0</span>
-        </div>
-    
-
-    <!-- <section class="container content-section">
-
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">Plato</span>
-            <span class="cart-price1 cart-header cart-column">Valor</span>
-            <span class="cart-quantity cart-header cart-column">Cantidad</span>
-            <span class="cart-options cart-header cart-column">Opciones</span>
-        </div>
-        <div class="cart-items">
-
-        </div>
-        <div class="cart-table cart-quantity">
-            <br>
-            <br>
-            <br>
-            <input type="text" class="number-table" i>
+            <input type="text" class="number-table"> Nro de mesa
         </div>
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
 
+    </div>
 
-
-    </section> -->
-
-    <footer class="footerPedido"> 
+    </main>
+    
+    <footer> 
         <button class="btn btn-primary btn-purchase" type="button">Pedir</button> 
     
     </footer>

@@ -172,26 +172,6 @@ function deleteCookie(string) {
 	}
 }
 
-function deleteCookie(string) {
-	var ca = document.cookie.split(";");
-	var tam = getContador();
-	var c;
-	for (var i = 0; i < tam; i++) {
-		c = ca[i];
-		name = "plato";
-		while (c.charAt(0) == " ") {
-			c = c.substring(1);
-		}
-		title = getTitle(c.substring(name.length + 4, c.length));
-		if (string == title && c.indexOf(name) == 0) {
-			alert("Se quito " + string + " del pedido");
-			document.cookie =
-				c.substring(0, name.length + 4) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;";
-			return;
-		}
-	}
-}
-
 function quantityChanged(event) {
 	var input = event.target;
 	if (isNaN(input.value) || input.value <= 0) {

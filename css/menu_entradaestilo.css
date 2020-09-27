@@ -297,7 +297,6 @@ p {
 
 .listaUno {
 	margin: 10px auto;
-
 	list-style: none;
 }
 
@@ -554,12 +553,12 @@ a {
 		max-width: 230px;
 	}
 
-	.logoMexicanoFooter{
+	.logoMexicanoFooter {
 		width: 270px;
 		height: 100px;
 	}
 	.textoFooter {
-    max-width: 280px;
+		max-width: 280px;
 		margin-top: 20px;
 		margin-left: 10px;
 		letter-spacing: 0.8px;

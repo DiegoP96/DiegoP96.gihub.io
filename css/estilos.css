@@ -231,26 +231,11 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-top: 22px;
 	align-items: center;
-	width: 250px;
 }
 
-.tituloLogoFooter {
-	font-family: "Marck Script", cursive;
-	font-style: italic;
-	font-size: 1.2em;
-	color: white;
-	margin-right: 10%;
-}
 
-.fondoLogoFooter {
-	width: 5.2em;
-	height: 2.8em;
-	margin-top: 15px;
-	border-radius: 50%;
-	padding: 0em 0.1em 3em 0.2em;
-	background-color: #f9f9f9;
-}
 
 .elementosFooter {
 	margin: 0em 3em 0em 3em;

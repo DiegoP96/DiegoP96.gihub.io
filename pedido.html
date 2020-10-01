@@ -5,8 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/mexican.png">
+    <link rel="icon" href="./img/Logo Mexicano.png">
     <link rel="stylesheet" href="css/pedido_estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <script src="js/pedido_carrito.js"></script>
     <script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
     <title> Pedido </title>
@@ -38,6 +39,8 @@
 
             padding: 0px;
             margin: 0px;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 1px;
         }
 
     .contenedorImagen{
@@ -55,13 +58,17 @@
         margin-right: 10px;
     }
 
+    .section-header{
+        font-weight: 500;
+    }
+
         table {
-          font-family: arial, sans-serif;
+          
           border-collapse: collapse;
-          width: 100%;
-          background-color: #ffffff;
-          
-          
+          margin-left: auto;
+          margin-right:auto;
+          width: 90%;
+          background-color: #f2ede1;
           
           
         }
@@ -73,10 +80,10 @@
             background-color: #dadada;
             
         }
-        
+    
         td, th {
             
-          border: 1px solid #dddddd;
+          border: 1px solid #efce16;
           text-align: left;
           padding: 8px;
         
@@ -85,27 +92,32 @@
         }
         
         tr:nth-child(even) {
-          background-color: #ffffff;
+          background-color: #f2ede1;
           
         }
 
         .cart-quantity-input{
-
+            
             width: 40px;
+        }
+
+        .cart-quantity{
+  
+        margin-top: -56px; 
         }
 
         .cart-item{
   
-        width: 247px;
+        width: 224px;
 }
 
 .dos{
 
-    width: 247px;
+    width: 219px;
 }
 
 .tres{
-    width: 383px;
+    width: 355px;
     
 }
 
@@ -151,24 +163,38 @@
     
 }
 
-.btn-purchase{
+.contenedorMesaPrecioTotal{
+    margin-top: 50px;
+padding: 1em;
+    border: solid #717beb 1px;
+    background-color: #f2ede1;
+}
 
+.btn-purchase{
+    
+  position: absolute;
+  bottom: 0;
     width: 100%;
     height: 60px;
-    background-color: #C381FD;
+    margin-top: 120px;
+    background-color: #1ef361;
     border: none;
 }
 
 .btn-purchase:hover{
 
-background-color: #b565fa;
+background-color: #18bd4c;
 }
 
 .contenedorFlex{
-width: 100%;
+    
+width: 95%;
+margin-right: 30em;
 justify-content: right;
-height: 150px;
+height: 50px;
 display: grid;
+
+
 
 }
         </style>
@@ -190,32 +216,41 @@ display: grid;
 
           <table class="cart-items">
           <tr>
-          
-           
-            
+              
         </tr>
           </table>
 
-          <div class="contenedorFlex"> 
+          <section class="contenedorFlex"> 
+
+            <div class="contenedorMesaPrecioTotal">
     
         <div class="cart-table cart-quantity" id="cantidad">
             <br>
             <br>
             <br>
             <input type="text" class="number-table"> Nro de mesa
+            <br> <br>
         </div>
+
+       
         <div class="cart-total">
+
             <strong class="cart-total-title">Total</strong>
             <span class="cart-total-price">$0</span>
         </div>
 
     </div>
 
+          </section>
+
+
+    <button class="btn btn-primary btn-purchase" type="button">Pedir</button> 
     </main>
     
     <footer> 
-        <button class="btn btn-primary btn-purchase" type="button">Pedir</button> 
-    
+        
+        
+
     </footer>
 </body>
 

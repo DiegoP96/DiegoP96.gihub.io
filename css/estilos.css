@@ -251,14 +251,14 @@ body {
 	margin: 6px auto;
 }
 .botonContactanos {
-	margin: 2.6em 2em 0em 3em;
+	margin: 3.6em 2em 0em 3em;
 	border: solid 4px rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	box-sizing: border-box;
 	font-family: "Zilla Slab", serif;
 	font-weight: 400;
 	font-size: 0.9em;
-	
+
 	color: white;
 	background-color: #ffc530;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);

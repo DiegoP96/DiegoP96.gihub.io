@@ -287,41 +287,30 @@ p {
 
 .contenedorGrid {
 	display: grid;
-	padding: 10px;
-	max-width: 100%;
+	/* padding: 10px; */
+	width: 100%;
 	margin: 0px auto;
 	/* margin-top: 35px; */
 	grid-template-columns: auto;
 	background-color: #f9f9f9;
 }
 
-.listaUno {
-	margin: 10px auto;
-	list-style: none;
+.elementosFooter {
+	display: flex;
+
+	justify-content: space-around;
+	align-items: center;
 }
 
+.contenedorRedes {
+	letter-spacing: 10px;
 
-.textoFooter {
-	margin-right: 0.3em;
-	font-family: "Inter", sans-serif;
-	font-weight: 100px;
-	border: solid yellow;
-	text-align: justify;
-}
-
-.listaDos {
-	margin: 40px auto;
-	font-size: 1.4em;
-	letter-spacing: 8px;
-	list-style: none;
-	text-align: end;
-	grid-column-start: 2;
-	grid-row-start: 1;
+	/*! margin-top: 3px; */
 }
 
 a {
 	text-decoration: none;
-	margin-top: 1em;
+	font-size: 1.4em;
 }
 
 #iconoInstagram {
@@ -336,7 +325,7 @@ a {
 #iconoFacebook {
 	opacity: 1;
 	color: rgb(45, 45, 45);
-	font-size: 1em;
+	/*! font-size: 1em; */
 }
 
 #iconoFacebook:hover {
@@ -366,11 +355,10 @@ a {
 		grid-row-gap: 20px;
 	}
 
-	.listaDos {
-		margin-left: auto;
-		grid-row-start: 2;
-		grid-column-start: 1;
-		font-size: 1.5em;
+	.elementosFooter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }
 

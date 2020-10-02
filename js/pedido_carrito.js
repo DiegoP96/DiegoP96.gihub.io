@@ -199,7 +199,7 @@ function addItemToCart(title, price) {
 	cartRow
 		.getElementsByClassName("cart-quantity-input")[0]
 		.addEventListener("change", quantityChanged);
-	updateCartTotal();
+	updateCartTotal()
 }
 
 function updateCartTotal() {

@@ -247,7 +247,7 @@ body {
 }
 
 .contactanosTxt{
-
+ letter-spacing: 1px;
 	margin: 6px auto;
 }
 .botonContactanos {
@@ -258,7 +258,7 @@ body {
 	font-family: "Zilla Slab", serif;
 	font-weight: 400;
 	font-size: 0.9em;
-	/*! letter-spacing: 1px; */
+	
 	color: white;
 	background-color: #ffc530;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);

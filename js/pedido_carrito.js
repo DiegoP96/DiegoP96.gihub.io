@@ -58,7 +58,6 @@ function checkPlates() {
 		for (var i = 0; i < plates.length; i++) {
 			var title = getTitle(plates[i]);
 			var price = getPrice(plates[i]);
-			console.log(title + price);
 			addItemToCart(title, price);
 		}
 	}

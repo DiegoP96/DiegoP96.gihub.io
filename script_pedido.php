@@ -48,10 +48,10 @@ exit();
 
 
 
-
+<!-- 
 <script>
     var ca = document.cookie.split(';')
     for (i = 0; i < ca.length; i++) {
         document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
     }
-</script>
+</script> -->

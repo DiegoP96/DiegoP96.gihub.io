@@ -139,8 +139,7 @@ function deleteCookie(string) {
 		}
 		title = getTitle(c.substring(name.length + 2, c.length));
 		if (string == title && c.indexOf(name) == 0) {
-			document.cookie =
-				c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;";
+			document.cookie = c.substring(0, name.length + 2) + "; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;";
 			alert("Se quito " + string + " del pedido");
 			return;
 		}

@@ -77,26 +77,26 @@ function ready() {
 	}
 
 	checkPlates();
-	document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
+	//document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked);
 }
 
-function purchaseClicked() {
-	numeroMesa = document.getElementsByClassName("number-table")[0].value;
-	if (numeroMesa == "") {
-		alert("INGRESE NUMERO DE MESA");
-		return;
-	} else {
-		console.log(numeroMesa);
-		var cartItems = document.getElementsByClassName("cart-items")[0];
-		var totalPurchased = document.getElementsByClassName("cart-total-price")[0].innerText;
-		alert(`Gracias por su pedido ${totalPurchased}`);
-		while (cartItems.hasChildNodes()) {
-			cartItems.removeChild(cartItems.firstChild);
-		}
-		resetCookies();
-		history.go(-1);
-	}
-}
+// function purchaseClicked() {
+// 	numeroMesa = document.getElementsByClassName("number-table")[0].value;
+// 	if (numeroMesa == "") {
+// 		alert("INGRESE NUMERO DE MESA");
+// 		return;
+// 	} else {
+// 		console.log(numeroMesa);
+// 		var cartItems = document.getElementsByClassName("cart-items")[0];
+// 		var totalPurchased = document.getElementsByClassName("cart-total-price")[0].innerText;
+// 		alert(`Gracias por su pedido ${totalPurchased}`);
+// 		while (cartItems.hasChildNodes()) {
+// 			cartItems.removeChild(cartItems.firstChild);
+// 		}
+// 		resetCookies();
+// 		history.go(-1);
+// 	}
+// }
 
 function removeCartItem(event) {
 	var buttonClicked = event.target;
@@ -145,10 +145,10 @@ function deleteCookie(string) {
 			return;
 		}
 	}
-	var ca = document.cookie.split(";");
-	for (i = 0; i < ca.length; i++) {
-		document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;";
-	}
+	// var ca = document.cookie.split(";");
+	// for (i = 0; i < ca.length; i++) {
+	// 	document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;";
+	// }
 }
 
 function quantityChanged(event) {
@@ -163,7 +163,6 @@ function addItemToCart(title, price) {
 	var cartRow = document.createElement("tr");
 	cartRow.classList.add("cart-row");
 	var cartItems = document.getElementsByClassName("cart-items")[0];
-	var cartItemNames = cartItems.getElementsByClassName("cart-item-title");
 	var cartRowContents = `
         <td class="cart-item cart-column">
             <span class="cart-item-title"> ${title}</span>

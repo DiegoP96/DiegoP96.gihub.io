@@ -15,26 +15,6 @@ function getCookiePlates() {
 			c = c.substring(1);
 		}
 		if (c.indexOf(name) == 0) {
-			allPlates[i] = c.substring(name.length + 2, c.length);
-		}
-	}
-	if (allPlates[0] == 1) {
-		return "";
-	} else {
-		return allPlates;
-	}
-	var name;
-	var allPlates = [1];
-	var ca = document.cookie.split(";");
-	for (var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		name = "plato";
-		console.log(name);
-		while (c.charAt(0) == " ") {
-			c = c.substring(1);
-		}
-		//console.log(c)
-		if (c.indexOf(name) == 0) {
 			allPlates[i] = c.substring(name.length + 4, c.length);
 		}
 	}

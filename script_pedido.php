@@ -19,9 +19,9 @@ if (empty($_POST['plato']) && empty($_POST['mesa'])) {
     }
 }
 $host = "localhost";
-$dbUsername = "joaking";
-$dbPassword = "toa3s[dBQpxg";
-$dbname = "restaurant2020";
+$dbUsername = "root";
+$dbPassword = "";
+$dbname = "pedidos";
 //create connection
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 
@@ -48,10 +48,10 @@ exit();
 
 
 
-
+<!-- 
 <script>
     var ca = document.cookie.split(';')
     for (i = 0; i < ca.length; i++) {
         document.cookie = "plato" + i + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
     }
-</script>
+</script> -->

@@ -7,16 +7,6 @@
 	position: relative;
 }
 
-.botonIrIndex {
-	position: absolute;
-	z-index: 100;
-	margin-left: 2.5%;
-	top: 436px;
-	font-size: 20px;
-	align-content: inherit;
-	color: white;
-}
-
 .contenedor_botones {
 	display: grid;
 	grid-template-columns: 80px 80px 80px 80px;
@@ -142,19 +132,24 @@ ul {
 
 .contenedorVerMiPedido {
 	display: flex;
-	padding: 0.4em 0 0.4em 0;
-	width: 100%;
+	padding: 0.3em 2em;
+	max-width: 100%;
 	height: 50px;
 	background-color: #717beb /* rgba(96, 104, 216, 0.712)*/;
-	justify-content: flex-end;
+	justify-content: space-between;
 	align-items: center;
+}
+
+.botonIrIndex {
+/*   margin-left: 0.8em ;  */
+	color: white;
 }
 
 button.boton_carrito {
 	display: inline-block;
 	padding: 0.35em 1.3em;
 	border: 0.1em solid #ffffff;
-	margin: 0.4em 2em 1.4em 0em;
+/* 	margin: 0em 2em; */
 	border-radius: 0.12em;
 	box-sizing: border-box;
 	text-decoration: none;
@@ -287,19 +282,17 @@ p {
 
 .contenedorGrid {
 	display: grid;
-	/* padding: 10px; */
 	width: 100%;
 	margin: 0px auto;
-	/* margin-top: 35px; */
-	grid-template-columns: auto;
 	background-color: #f9f9f9;
+	justify-content: center;
+	align-items: center;
 }
 
 .elementosFooter {
-	display: flex;
-
-	justify-content: space-around;
+	/*! display: flex; */
 	align-items: center;
+	padding: 2em;
 }
 
 .contenedorRedes {
@@ -344,24 +337,11 @@ a {
 }
 
 @media screen and (max-width: 650px) {
-	.contenedorVerMiPedido {
-		padding: 0.3em 0 0.3em 0;
-	}
+	
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
 	}
-	.contenedorGrid {
-		width: 90%;
-		grid-row-gap: 20px;
-	}
-
-	.elementosFooter {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 0px auto;
-	}
-}
+	
 
 @media screen and (max-width: 450px) {
 	p {
@@ -370,6 +350,12 @@ a {
 }
 
 @media screen and (max-width: 375px) {
+	
+	.contenedorVerMiPedido{
+		
+		max-width: 100%;
+	}
+
 	.transparencia {
 		height: 250px;
 	}
@@ -398,26 +384,16 @@ a {
 		max-width: 320px;
 	}
 
-	.contenedorVerMiPedido {
-		padding: 0.3em 0 0.3em 0;
-	}
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
+		width: 100;
 	}
-	.contenedorGrid {
-		margin: auto;
-		width: 90%;
-		grid-row-gap: 15px;
-		justify-content: center;
-	}
+.elementosFooter {
+	
+	padding: 1em;
+}
 
-	.listaDos {
-		margin: auto;
-		grid-row-start: 2;
-		grid-column-start: 1;
-		font-size: 1.5em;
-		text-align: center;
-	}
+	
 }
 
 @media screen and (max-width: 360px) {
@@ -459,20 +435,13 @@ a {
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
 	}
-	.contenedorGrid {
-		margin: auto;
-		width: 90%;
-		grid-row-gap: 15px;
-		justify-content: center;
-	}
-
-	.listaDos {
-		margin: auto;
-		grid-row-start: 2;
-		grid-column-start: 1;
-		font-size: 1.5em;
-		text-align: center;
-	}
+	
+	.elementosFooter {
+	
+	padding: 0.5em;
+		
+}
+	
 }
 
 @media screen and (max-width: 320px) {

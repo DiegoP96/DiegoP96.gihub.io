@@ -15,7 +15,7 @@ function getCookiePlates() {
 			c = c.substring(1);
 		}
 		if (c.indexOf(name) == 0) {
-			allPlates[i] = c.substring(name.length + 2, c.length);
+			allPlates[i] = c.substring(name.length + 4, c.length);
 		}
 	}
 	if (allPlates[0] == 1) {

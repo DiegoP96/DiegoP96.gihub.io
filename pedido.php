@@ -5,8 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/mexican.png">
+    <link rel="icon" href="./img/Logo Mexicano.png">
     <link rel="stylesheet" href="css/pedido_estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
     <script src="js/pedido_carrito.js" async></script>
     <script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
     <title> Pedido </title>

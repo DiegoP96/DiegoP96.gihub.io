@@ -63,7 +63,7 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonChicharrones").click(function(e) {
-        console.log(contador)
+        
 
         if (contador == 0) {
 
@@ -85,7 +85,6 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonPapas").click(function(e) {
-        console.log(contador)
 
 
         if (contador == 0) {
@@ -105,7 +104,6 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonPechugitas").click(function(e) {
-        console.log(contador)
 
 
         if (contador == 0) {
@@ -125,7 +123,6 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonTamales").click(function(e) {
-        console.log(contador)
 
 
         if (contador == 0) {
@@ -145,7 +142,6 @@ $(document).ready(function(e) {
 $(document).ready(function(e) {
     var contador = 0;
     $("#contenedorBotonSopas").click(function(e) {
-        console.log(contador)
 
         if (contador == 0) {
 

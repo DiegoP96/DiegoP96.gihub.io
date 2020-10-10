@@ -23,13 +23,14 @@
     <form action="script_pedido.php" method="POST">
         <section class="container content-section">
 
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">Plato</span>
-                <span class="cart-price1 cart-header cart-column">Valor</span>
-                <span class="cart-quantity cart-header cart-column">Cantidad</span>
-                <span class="cart-options cart-header cart-column">Opciones</span>
-            </div>
-            <div class="cart-items">
+            <table class="tablaPedidos">
+                <tr class="headerCarrito">
+                    <th class="platoTitulo">Plato</th>
+                    <th class="valorTitulo">Valor</th>
+                    <th class="cantidadTitulo">Cantidad</th>
+                    <th class="opcionesTitulo">Opciones</th>
+                </tr>
+            </table>
                 <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noPlatos' || $_GET['error'] == 'ninguno') {
@@ -37,7 +38,7 @@
                     }
                 }
                 ?>
-            </div>
+         
             <div class="cart-table cart-quantity">
                 <br>
                 <br>

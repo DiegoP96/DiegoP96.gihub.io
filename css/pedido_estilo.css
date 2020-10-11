@@ -78,9 +78,14 @@ td {
 }
 
 .contedorMesaPrecio {
-	width: 230px;
+	display: flex;
+	max-width: 73%;
+	padding-left: 50px;
+	padding-right: 50px;
+	justify-content: space-between;
+
 	border: solid 1px #1ef361;
-	margin: -30px 135px;
+	margin: 0px auto;
 
 	/* display: flex;
 	flex-direction: column; */
@@ -106,6 +111,11 @@ td {
 	text-align: center;
 	transition: all 0.2s;
 	letter-spacing: 1px;
+}
+
+.botonBorrarPedidos {
+	background-color: white;
+	border: none;
 }
 
 .btn-danger:hover {

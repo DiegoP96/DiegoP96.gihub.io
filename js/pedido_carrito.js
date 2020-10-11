@@ -1,4 +1,3 @@
-
 // Revisa el estado de la pagina para ver si cargo, sino esta cargada espera a que termine y luego ejecuta ready()
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready);
@@ -23,6 +22,8 @@ function ready() {
     }
 
     checkPlates();
+
+    document.getElementsByClassName('botonBorrarPedidos')[0].addEventListener('click', resetCookies)
 }
 
 
@@ -35,7 +36,7 @@ function checkPlates() {
         for (var i = 0; i < plates.length; i++) {
             var title = getTitle(plates[i])
             var price = getPrice(plates[i])
-            console.log(title + price)
+            // console.log(title + price)
             addItemToCart(title, price)
         }
     }
@@ -164,6 +165,7 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+    document.getElementsByClassName('inputTotal')[0].value = total  
 }
 
 //Convierte el string de price a un numero
@@ -178,4 +180,26 @@ function quantityChanged(event) {
         input.value = 1
     }
     updateCartTotal()
+}
+
+//Convierte un numero a 3 digitos
+function get3D(num) {
+	switch (num.toString().length) {
+		case 3:
+			return num;
+		case 2:
+			return "0" + num;
+		case 1:
+			return "00" + num;
+		default:
+			break;
+	}
+}
+
+//Borra todas las cookies
+function resetCookies() {
+    var tam = getContador()
+    for (i = 0; i < tam; i++) {
+        document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
+    }
 }

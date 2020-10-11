@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./img/Logo Mexicano.png" />
+		<link rel="stylesheet" href="css/menu_entradaestilo.css" />
+		<!-- <link rel="stylesheet" href="css/estilos.css"> -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/codigo.js"></script>
+		<script src="js/pedido_carta.js"></script>
+
+		<title>Menu Entrada</title>
+	</head>
+
+	<body>
+		<header>
+			<section>
+				<div class="contenedorHeader">
+					<div class="transparencia"></div>
+					<h1 class="tituloHome">Menú</h1>
+				</div>
+			</section>
+		</header>
+
+		<div class="contenedor_botones">
+			<button  class="boton_menu" id="entrada">
+				<a href="./menu_entrada.html"><img src="./img/botonMenuEntrada.png" width="60px" height="60px" class="imgBoton" /></a>
+			</button>
+			<h5 class="texto" id="texto_entrada">Entradas</h5>
+			<button class="boton_menu" id="plato_principal">
+				<a href="menu_platos_principales.html"><img src="./img/botonMenuPlatoPrincipal.png" width="60px" height="60px" class="imgBoton" /></a>
+			</button>
+			<h5 class="texto" id="texto_plato_principal">Platos Principales</h5>
+			<button class="boton_menu" id="bebidas">
+				<a href="menu_bebidas.html "><img src="./img/botonMenuBebidas.png" width="60px" height="60px" class="imgBoton" /> </a>
+			</button>
+			<h5 class="texto" id="texto_bebidas">Bebidas</h5>
+			<button  class="boton_menu" id="postres">
+				<a href="menu_cafeteria_y_postres.html "> <img src="./img/botonMenuCafeteria.png" width="50px" height="50px"class="imgBotonPostres"/> </a>
+			</button>
+			<h5 class="texto" id="texto_postres">Cafetería y Postres</h5>
+        </div>
+        <style>
+            
+            #entrada{
+                opacity: 0.7;
+            }
+            
+            #bebidas{
+                opacity: 0.7;
+            }
+            #postres{
+                opacity: 1;
+            }
+
+        </style>
+
+		<section>
+			<div class="contenedorVerMiPedido">
+				<a href="./index.html" class="botonIrIndex"> <i class="fas fa-home"></i></a>
+				<a href="pedido.php"><button class="boton_carrito">Mi Pedido</button></a>
+			</div>
+		</section>
+
+		<main>
+			<section class="menu">
+				<ul>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonNachos">
+							<img src="./img/nachos.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Nachos</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaNachosZapatistas">
+						<div class="productoPrecio">
+							<p class="Plato">Nachos Zapatistas</p>
+
+							<p class="Precio">$250</p>
+						</div>
+
+						<p>
+							Totopos gratinados con queso o salsa cheddar, acompañado de nuestro increíble
+							guacamole y salsa roja casera
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaNachisimos">
+						<div class="productoPrecio">
+							<p class="Plato">Nachisimos</p>
+
+							<p class="Precio">$220</p>
+						</div>
+
+						<p>
+							Totopos, acompañados de combinaciones de salsas (salsa mil islas, de queso azul, carne
+							en su jugo, guacamole y nuestra salsa roja casera)
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonChicharrones">
+							<img
+								src="./img/chicharrones para el menu.png"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Chicharrones</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaChicharronesQuesoVegetariano">
+						<div class="productoPrecio">
+							<p class="Plato">Chicharrón de Queso Vegetariano</p>
+
+							<p class="Precio">$180</p>
+						</div>
+
+						<p>
+							Delicioso queso expandido y dorado en la plancha, convertido en roll relleno de
+							vegetales (cebolla-morrón-zucchini-zapallito-zanahoria-champiñón)
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaChicharronesQuesoArgentino">
+						<div class="productoPrecio">
+							<p class="Plato">Chicharrón de Queso Argentino</p>
+
+							<p class="Precio">$170</p>
+						</div>
+
+						<p>
+							Delicioso queso expandido y dorado en la plancha, convertido en roll relleno de
+							tiernos cubitos de ojo de bife argentino
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonPapas">
+							<img
+								src="./img/papas para el menu 2.jpg"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Papas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaPapasZapatistas">
+						<div class="productoPrecio">
+							<p class="Plato">Papas Zapatistas</p>
+
+							<p class="Precio">$380</p>
+						</div>
+
+						<p>
+							Papas revolucionarias, gratinadas con queso, cebolla de verdeo y panceta crocante,
+							acompañadas por un dip de queso cheddar y chilli con carne.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonPechugitas">
+							<img
+								src="./img/pechugas bufalo para el menu.JPG"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Pechugitas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaPechugitasBuffaloRecargadas">
+						<div class="productoPrecio">
+							<p class="Plato">Pechugitas buffalo recargadas</p>
+
+							<p class="Precio">$400</p>
+						</div>
+
+						<p>
+							Nuestros archifamosos cubos de pechuga de pollo apanados y bañados en salsa BBQ,
+							acompañadas con crema de queso azul y ahora con batatas.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonTamales">
+							<img
+								src="./img/tamales para el menu1.jpg"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Tamales</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaTamalesEnCazuela">
+						<div class="productoPrecio">
+							<p class="Plato">Tamales en Cazuela</p>
+
+							<p class="Precio">$400</p>
+						</div>
+
+						<p>
+							Elotes (choclos) cocinados en salsa casera gratinada con queso y crocante panceta,
+							adornados con totopos (triángulos de tortillas de maíz fritos)
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonSopas">
+							<img src="./img/sopa para el menu.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Sopas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaSopasAzteca">
+						<div class="productoPrecio">
+							<p class="Plato">Sopas Azteca</p>
+
+							<p class="Precio">$250</p>
+						</div>
+
+						<p>
+							Tradicional sopa azteca, preparada con la receta de la casa, acompañada de pechuga de
+							pollo, aguacate, queso y crujientes tortillas.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaSopadeLima">
+						<div class="productoPrecio">
+							<p class="Plato">Sopa de Lima</p>
+
+							<p class="Precio">$220</p>
+						</div>
+
+						<p>Fusión de pollo asado y cítricos, acompañado de tortillas crujientes</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+				</ul>
+
+				<div class="finDelContenedor">
+					<br />
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="contenedorGrid">
+				<div class="elementosFooter">
+					<img
+						src="img/logo mexicano footer.jpg"
+						alt="logoMexicano"
+						width="330"
+						height="115"
+						class="logoMexicanoFooter"
+					/>
+
+					<div class="contenedorRedes">
+						<a
+							href="https://www.instagram.com/mexicanocafebariloche/"
+							class="fab fa-instagram"
+							id="iconoInstagram"
+							target="blank"
+						>
+						</a>
+						<a
+							href="https://www.facebook.com/elmexicanobariloche"
+							target="_blank"
+							class="fab fa-facebook-f"
+							id="iconoFacebook"
+						>
+						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
+							target="_blank"
+							class="fab fa-whatsapp"
+							id="iconoWhatsApp"
+						>
+						</a>
+					</div> 
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

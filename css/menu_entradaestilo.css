@@ -141,7 +141,8 @@ ul {
 }
 
 .botonIrIndex {
-/*   margin-left: 0.8em ;  */
+	margin-bottom: 0em;
+    font-size: 1.5em;
 	color: white;
 }
 
@@ -281,10 +282,11 @@ p {
 }
 
 .contenedorGrid {
-	display: grid;
+	display: flex;
 	width: 100%;
 	margin: 0px auto;
 	background-color: #f9f9f9;
+	flex-direction:column ;
 	justify-content: center;
 	align-items: center;
 }
@@ -296,14 +298,17 @@ p {
 }
 
 .contenedorRedes {
-	letter-spacing: 10px;
+	letter-spacing: 5px;
+	margin-left: 39% ;
 
 	/*! margin-top: 3px; */
 }
 
 a {
 	text-decoration: none;
-	font-size: 1.4em;
+	font-size: 1em;
+	color: grey;
+	
 }
 
 #iconoInstagram {

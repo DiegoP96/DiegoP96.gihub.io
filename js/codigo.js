@@ -40,6 +40,13 @@ $(document).ready(function (e) {
 
     );
 
+    $("#listaEnsaladaMexicana").toggle(
+
+    );
+    $("#listaEnsaladaAcapulco").toggle(
+
+    );
+
 });
 
 
@@ -165,6 +172,29 @@ $(document).ready(function (e) {
             $("#listaSopasAzteca").hide(e);
             $("#listaSopadeLima").hide(e);
 
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonEnsaladas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaEnsaladaMexicana").show(e);
+            $("#listaEnsaladaAcapulco").show(e);
+            // $("#listaEnsaladaAcapulco").show(e);
+            // $("#listaEnsaladaAcapulco").show(e);
+            contador++;
+        } else {
+
+            $("#listaEnsaladaMexicana").hide(e);
+            $("#listaEnsaladaAcapulco").hide(e);
+            // $("#listaEnsaladaAcapulco").hide(e); 
+            // $("#listaEnsaladaAcapulco").hide(e);
             contador = 0;
         }
     });

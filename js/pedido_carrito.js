@@ -23,7 +23,7 @@ function ready() {
 
     checkPlates();
 
-    document.getElementsByClassName('botonBorrarPedidos')[0].addEventListener('click', resetCookies)
+    document.getElementsByClassName('botonBorrarPedidos')[0].addEventListener('click', limpiarCarro)
 }
 
 
@@ -202,4 +202,10 @@ function resetCookies() {
     for (i = 0; i < tam; i++) {
         document.cookie = "plato" + get3D(i) + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; Secure;"
     }
+}
+
+function limpiarCarro(){
+    resetCookies()
+    alert("Pedido Vaciado")
+    location.reload()
 }

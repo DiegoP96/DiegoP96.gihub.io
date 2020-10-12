@@ -75,12 +75,13 @@
                 ?>
             </div>
 
-           <button class="botonBorrarPedidos"> <i class="fas fa-trash"></i></button>
+           <button class="botonBorrarPedidos" type="button"> <i class="fas fa-trash"></i></button>
 
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 
                 <span class="cart-total-price">$0</span>
+                <input type="number" class="inputTotal" hidden name="total">
             </div>
 
             </div>

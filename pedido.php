@@ -79,15 +79,61 @@
 
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
+                
                 <span class="cart-total-price">$0</span>
             </div>
 
             </div>
 
+            <div> 
+
+            <input class="btn btn-primary btn-purchase" type="submit" value="Pedir">
+
+            </div>
+
         </section>
 
-        <footer class="footerPedido">
-            <input class="btn btn-primary btn-purchase" type="submit" value="Pedir">
+        <footer>
+
+        <div class="franjaFooter"> <br></div>
+
+        <div class="contenedorGrid">
+
+				<div class="elementosFooter">
+					<img
+						src="img/logo mexicano footer.jpg"
+						alt="logoMexicano"
+						width="330"
+						height="115"
+						class="logoMexicanoFooter"
+					/>
+
+					<div class="contenedorRedes">
+						<a
+							href="https://www.instagram.com/mexicanocafebariloche/"
+							class="fab fa-instagram"
+							id="iconoInstagram"
+							target="blank"
+						>
+						</a>
+						<a
+							href="https://www.facebook.com/elmexicanobariloche"
+							target="_blank"
+							class="fab fa-facebook-f"
+							id="iconoFacebook"
+						>
+						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
+							target="_blank"
+							class="fab fa-whatsapp"
+							id="iconoWhatsApp"
+						>
+						</a>
+					</div> 
+				</div>
+			</div>
+            
         </footer>
     </form>
 

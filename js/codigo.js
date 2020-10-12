@@ -1,4 +1,5 @@
-$(document).ready(function(e) {
+// Togle inicial para todos los objetos de la lista
+$(document).ready(function (e) {
 
     $("#listaNachosZapatistas").toggle(
 
@@ -16,6 +17,10 @@ $(document).ready(function(e) {
     );
 
     $("#listaPapasZapatistas").toggle(
+
+    );
+
+    $("#listaPapas").toggle(
 
     );
 
@@ -38,10 +43,10 @@ $(document).ready(function(e) {
 });
 
 
-
-$(document).ready(function(e) {
+// READY NACHOS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonNachos").click(function(e) {
+    $("#contenedorBotonNachos").click(function (e) {
 
 
         if (contador == 0) {
@@ -59,11 +64,11 @@ $(document).ready(function(e) {
 
 });
 
-
-$(document).ready(function(e) {
+// READY CHICHARRONES
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonChicharrones").click(function(e) {
-        
+    $("#contenedorBotonChicharrones").click(function (e) {
+
 
         if (contador == 0) {
 
@@ -82,18 +87,21 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY PAPAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonPapas").click(function(e) {
+    $("#contenedorBotonPapas").click(function (e) {
 
 
         if (contador == 0) {
             $("#listaPapasZapatistas").show(e);
+            $("#listaPapas").show(e);
 
 
             contador++;
         } else {
             $("#listaPapasZapatistas").hide(e);
+            $("#listaPapas").hide(e);
 
             contador = 0;
         }
@@ -101,9 +109,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY PECHUGAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonPechugitas").click(function(e) {
+    $("#contenedorBotonPechugitas").click(function (e) {
 
 
         if (contador == 0) {
@@ -120,9 +129,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY TAMALES
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonTamales").click(function(e) {
+    $("#contenedorBotonTamales").click(function (e) {
 
 
         if (contador == 0) {
@@ -139,9 +149,10 @@ $(document).ready(function(e) {
 
 });
 
-$(document).ready(function(e) {
+// READY SOPAS
+$(document).ready(function (e) {
     var contador = 0;
-    $("#contenedorBotonSopas").click(function(e) {
+    $("#contenedorBotonSopas").click(function (e) {
 
         if (contador == 0) {
 

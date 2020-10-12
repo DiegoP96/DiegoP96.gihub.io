@@ -204,6 +204,7 @@ function resetCookies() {
     }
 }
 
+// Vacia el pedido
 function limpiarCarro(){
     resetCookies()
     alert("Pedido Vaciado")

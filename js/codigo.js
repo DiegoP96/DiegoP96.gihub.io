@@ -49,6 +49,9 @@ $(document).ready(function (e) {
     $("#listaEnsaladaCesar").toggle(
 
     );
+    $("#listaEnsaladaQuinoa").toggle(
+
+    );
 });
 
 
@@ -189,14 +192,14 @@ $(document).ready(function (e) {
             $("#listaEnsaladaMexicana").show(e);
             $("#listaEnsaladaAcapulco").show(e);
             $("#listaEnsaladaCesar").show(e);
-            // $("#listaEnsaladaAcapulco").show(e);
+            $("#listaEnsaladaQuinoa").show(e);
             contador++;
         } else {
 
             $("#listaEnsaladaMexicana").hide(e);
             $("#listaEnsaladaAcapulco").hide(e);
             $("#listaEnsaladaCesar").hide(e);
-            // $("#listaEnsaladaAcapulco").hide(e);
+            $("#listaEnsaladaQuinoa").hide(e);
             contador = 0;
         }
     });

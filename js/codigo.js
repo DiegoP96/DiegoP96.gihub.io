@@ -46,7 +46,9 @@ $(document).ready(function (e) {
     $("#listaEnsaladaAcapulco").toggle(
 
     );
+    $("#listaEnsaladaCesar").toggle(
 
+    );
 });
 
 
@@ -186,14 +188,14 @@ $(document).ready(function (e) {
 
             $("#listaEnsaladaMexicana").show(e);
             $("#listaEnsaladaAcapulco").show(e);
-            // $("#listaEnsaladaAcapulco").show(e);
+            $("#listaEnsaladaCesar").show(e);
             // $("#listaEnsaladaAcapulco").show(e);
             contador++;
         } else {
 
             $("#listaEnsaladaMexicana").hide(e);
             $("#listaEnsaladaAcapulco").hide(e);
-            // $("#listaEnsaladaAcapulco").hide(e); 
+            $("#listaEnsaladaCesar").hide(e);
             // $("#listaEnsaladaAcapulco").hide(e);
             contador = 0;
         }

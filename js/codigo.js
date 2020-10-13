@@ -67,6 +67,21 @@ $(document).ready(function (e) {
     $("#listaTacosAsada").toggle(
 
     );
+    $("#listaQuesadillasChilorio").toggle(
+
+    );
+    $("#listaQuesadillasPilbil").toggle(
+
+    );
+    $("#listaQuesadillasPollo").toggle(
+
+    );
+    $("#listaQuesadillasVerdura").toggle(
+
+    );
+    $("#listaQuesadillasAsada").toggle(
+
+    );
 
 });
 
@@ -244,5 +259,31 @@ $(document).ready(function (e) {
             contador = 0;
         }
     });
+    
 
 });
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonQuesadillas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaQuesadillasChilorio").show(e);
+            $("#listaQuesadillasPilbil").show(e);
+            $("#listaQuesadillasPollo").show(e);
+            $("#listaQuesadillasVerdura").show(e);
+            $("#listaQuesadillasAsada").show(e);
+            contador++;
+        } else {
+
+            $("#listaQuesadillasChilorio").hide(e);
+            $("#listaQuesadillasPilbil").hide(e);
+            $("#listaQuesadillasPollo").hide(e);
+            $("#listaQuesadillasVerdura").hide(e);
+            $("#listaQuesadillasAsada").hide(e);
+            contador = 0;
+        }
+    });
+});
+

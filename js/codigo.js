@@ -52,6 +52,22 @@ $(document).ready(function (e) {
     $("#listaEnsaladaQuinoa").toggle(
 
     );
+    $("#listaTacosChilorio").toggle(
+
+    );
+    $("#listaTacosPilbil").toggle(
+
+    );
+    $("#listaTacosPollo").toggle(
+
+    );
+    $("#listaTacosVerdura").toggle(
+
+    );
+    $("#listaTacosAsada").toggle(
+
+    );
+
 });
 
 
@@ -200,6 +216,31 @@ $(document).ready(function (e) {
             $("#listaEnsaladaAcapulco").hide(e);
             $("#listaEnsaladaCesar").hide(e);
             $("#listaEnsaladaQuinoa").hide(e);
+            contador = 0;
+        }
+    });
+
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTacos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaTacosChilorio").show(e);
+            $("#listaTacosPilbil").show(e);
+            $("#listaTacosPollo").show(e);
+            $("#listaTacosVerdura").show(e);
+            $("#listaTacosAsada").show(e);
+            contador++;
+        } else {
+
+            $("#listaTacosChilorio").hide(e);
+            $("#listaTacosPilbil").hide(e);
+            $("#listaTacosPollo").hide(e);
+            $("#listaTacosVerdura").hide(e);
+            $("#listaTacosAsada").hide(e);
             contador = 0;
         }
     });

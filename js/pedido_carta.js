@@ -77,10 +77,19 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
+    var addToCartButtonsDoble = document.getElementsByClassName('botonAgregarAlCarritoDoble')
+    for (var i = 0; i < addToCartButtonsDoble.length; i++) {
+        var button1 = addToCartButtonsDoble[i]
+        button1.addEventListener('click', addToCartClickedDoble)
+    }
+
+    var addToCartButtonsSimple = document.getElementsByClassName('botonAgregarAlCarritoSimple')
+    for (var i = 0; i < addToCartButtonsDoble.length; i++) {
+        var button2 = addToCartButtonsSimple[i]
+        button2.addEventListener('click', addToCartClickedSimple)
+    }
 
     document.getElementsByClassName('boton_carrito')[0].addEventListener('click', pedidoClicked)
-
-
 }
 if (getContador() == -1) {
     document.cookie = "contador= 0" + ";SameSite=Lax"
@@ -93,7 +102,31 @@ function addToCartClicked(event) {
     var shopItem = button.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio')[0].innerText
-    if(checkPlatesDuplicate(title)){
+    if (checkPlatesDuplicate(title)) {
+        return
+    }
+    document.cookie = "plato" + get3D(i) + "=" + title + price + ";SameSite=Lax"
+    i++
+}
+
+function addToCartClickedDoble(event) {
+    var button = event.target
+    var shopItem = button.parentElement
+    var title = shopItem.getElementsByClassName('Plato')[0].innerText
+    var price = shopItem.getElementsByClassName('Precio2')[0].innerText
+    if (checkPlatesDuplicate(title + " Doble")) {
+        return
+    }
+    document.cookie = "plato" + get3D(i) + "=" + title + " Doble" + price + ";SameSite=Lax"
+    i++
+}
+
+function addToCartClickedSimple(event) {
+    var button = event.target
+    var shopItem = button.parentElement
+    var title = shopItem.getElementsByClassName('Plato')[0].innerText
+    var price = shopItem.getElementsByClassName('Precio1')[0].innerText
+    if (checkPlatesDuplicate(title)) {
         return
     }
     document.cookie = "plato" + get3D(i) + "=" + title + price + ";SameSite=Lax"

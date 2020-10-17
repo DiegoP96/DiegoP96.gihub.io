@@ -17,9 +17,9 @@ body {
 	opacity: 0.9;
 }
 
-.logoMexicano{
-	width:200.43px;
-	height:60.74px;
+.logoMexicano {
+	width: 200.43px;
+	height: 60.74px;
 }
 
 .grupoUno {
@@ -32,9 +32,6 @@ body {
 	margin-left: 0.8%;
 	min-width: 13em;
 }
-
-
-
 
 .grupoDos {
 	display: flex;
@@ -130,14 +127,12 @@ body {
 	align-items: center;
 	width: 328px;
 	height: 400px;
-
 }
 
 #contenedorBotonMenu {
 	grid-row: 1/2;
 	grid-column: 1/2;
 	border: solid 3px #f62e29;
-	
 }
 
 #contenedorBotonReserva {
@@ -151,7 +146,6 @@ body {
 	grid-row: 1/2;
 	grid-column: 3/4;
 	border: solid 3px #89e077;
-	
 }
 
 .columna {
@@ -225,63 +219,28 @@ body {
 
 .contenedorFooterFlex {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: space-between;
 	box-sizing: border-box;
+	padding: 0px 6em;
+	align-items: center;
 	width: 100%;
-	height: 10%;
-	font-family: "Zilla Slab", serif;
-	font-weight: 600;
+	height: 150px;
 	margin-top: 50px;
-	letter-spacing: 1px;
 	background-color: #717beb; /*#438cc1  #266EF6 3081c3*/
 }
 
-
-.elementosFooter {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.fab {
+	text-decoration: none;
+	letter-spacing: 30px;
+	font-size: 1.4em;
 }
 
-.logoMexicanoFooter{
+.logoMexicanoFooter {
 	/*border: solid black 10px;*/
-	width:264px;
-	height:92px;
-	margin-top: 1em;
-	margin-left: 3.1em;
-	justify-content: initial;
-}
-
-.direccionFooter {
-	text-align-last: initial;
-	margin-left: 2em;
-}
-
-.contactanosTxt{
- letter-spacing: 1px;
-	margin: 6px auto;
-}
-
-.mailFooter{
-
-	margin-right: 2em;
-	margin-top: none;
-}
-.botonContactanos {
-	margin: 3.4em 4em 0em 3em;
-	border: solid 4px rgba(255, 255, 255, 0);
-	border-radius: 2em;
-	box-sizing: border-box;
-	font-family: "Zilla Slab", serif;
-	font-weight: 400;
-	font-size: 0.9em;
-
-	color: white;
-	background-color: #ffc530;
-	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-	text-align: center;
-	width: 150px;
-    height: 40px;
+	width: 264px;
+	height: 92px;
+	box-sizing: content-box;
 }
 
 /* Efectos página home */
@@ -292,8 +251,19 @@ body {
 	opacity: 1;
 }
 
-@media screen and (max-width: 1100px)  {
+.fa-instagram:hover {
+	color: #f62e29;
+}
 
+.fa-facebook-f:hover {
+	color: #efce16;
+}
+
+.fa-whatsapp:hover {
+	color: #89e077;
+}
+
+@media screen and (max-width: 1100px) {
 	.contenedorHeader {
 		background-position: top;
 	}
@@ -311,13 +281,11 @@ body {
 	}
 	.columna {
 		width: 220px;
-		 height: 140px;
-		
+		height: 140px;
 	}
 }
 
 @media screen and (max-width: 1000px) {
-
 	.contenedorBotones {
 		display: flex;
 		flex-direction: column;
@@ -328,16 +296,12 @@ body {
 	}
 	.columna {
 		width: 180px;
-		 height: 140px;
-		
+		height: 140px;
 	}
-	
-	.descripcionColumna{
 
+	.descripcionColumna {
 		font-size: 0.8em;
 	}
-
-
 }
 
 @media screen and (max-width: 700px) {
@@ -429,16 +393,17 @@ body {
 	}
 
 	.contenedorFooterFlex {
-		font-size: 0.8em;
+		flex-direction: column;
+		height: auto;
+		padding: 1em 1em;
+		align-items: center;
+		justify-content: center;
 	}
 
-	.logoMexicanoFooter {
-		width: 20%;
-		height: 10%;
-	}
-
-	.contenedorLogo {
-		width: 200px;
+	.contenedorRedes {
+		width: 264px;
+		margin-top: 45px;
+		margin-left: 160px;
 	}
 
 	/* Efectos pagina home */
@@ -448,9 +413,9 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-	.logoMexicano{
-		width:180.38px;
-		height:54.66px;
+	.logoMexicano {
+		width: 180.38px;
+		height: 54.66px;
 		margin-top: 3px;
 	}
 	.frase {
@@ -477,9 +442,9 @@ body {
 }
 
 @media screen and (max-width: 375px) and (min-width: 360px) {
-    .logoMexicano{
-		width:162.34px;
-		height:49.19px;
+	.logoMexicano {
+		width: 162.34px;
+		height: 49.19px;
 		margin-top: 3px;
 	}
 
@@ -536,125 +501,43 @@ body {
 	}
 
 	.contenedorFooterFlex {
-		font-size: 0.5em;
+		padding: 2em 2em;
 	}
-	.contenedorFooterFlex {
-		height: 95px;
-	}
+}
 
-	.logoMexicanoFooter {
-		margin-left: 3px;
-		margin-bottom: 3px;
-		width: 20%;
-		height: 10%;
+@media screen and (max-width: 320px) {
+	.logoMexicano {
+		width: 146.11px;
+		height: 44.27px;
+		margin-top: 3px;
 	}
 
-	.fondoLogoFooter {
-		padding: 0em 0em 2em 0em;
+	.frase {
+		margin-top: -330px;
+		margin-bottom: 100px;
+	}
+	.grupoUno {
+		font-size: 0.6em;
 	}
 
-	.botonContactanos {
-		margin: 4em 2.7em 0em 1.9em;
+	.grupoDos {
+		letter-spacing: 8px;
+		font-size: 0.6em;
+	}
+	.contenedorGrid {
+		margin: auto;
+		width: 100%;
+		grid-row-gap: 15px;
+		justify-content: center;
 	}
 
-	.contenedorLogo {
-		width: 140px;
-	}
-
-	.elementosFooter {
-		margin: 0em 1em 0em 1em;
-	}
-
-	.botonContactanos {
-		/* margin-top: 50px; */
-	}
-
-	}
-
-	@media screen and (max-width: 320px) {
-
-		.logoMexicano{
-			width:146.11px;
-			height:44.27px;
-			margin-top: 3px;
-		}
-
-		.frase {
-			margin-top: -330px;
-			margin-bottom: 100px;
-		}
-		.grupoUno {
-			font-size: 0.6em;
-		}
-
-		.grupoDos {
-			letter-spacing: 8px;
-			font-size: 0.6em;
-		}
-		.contenedorGrid {
-			margin: auto;
-			width: 100%;
-			grid-row-gap: 15px;
-			justify-content: center;
-		}
-
-		.contenedorBotones {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-evenly;
-			align-items: center;
-			width: 240px;
-			height: 350px;
-		}
-
-		.contenedorFooterFlex {
-			display: flex;
-			/* flex-direction: column; */
-			width: 100%;
-			height: 150px;
-			font-family: "Zilla Slab", serif;
-			font-weight: 600;
-			margin-top: 50px;
-			justify-content: space-between;
-			align-items: space-around;
-			letter-spacing: 1px;
-			background-color: #717beb; /*#438cc1  #266EF6 3081c3*/
-		}
-		
-		.contenedorLogo {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			align-items: center;
-			width: 250px;
-		}
-
-		.contenedorFooterFlex {
-			font-size: 0.5em;
-		}
-		.contenedorFooterFlex {
-			height: 100px;
-		}
-	
-		.logoMexicanoFooter {
-			margin-left: 3px;
-			width: 20%;
-			height: 10%;
-		}
-	
-		.fondoLogoFooter {
-			width: 4.2em;
-			height: 2.4em;
-			padding: 0em 0em 2em 0em;
-		}
-	
-		.botonContactanos {
-			margin: 3.5em 2.5em 0em 1.9em;
-		}
-	
-		.contenedorLogo {
-			width: 125px;
-		}
+	.contenedorBotones {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 240px;
+		height: 350px;
 	}
 }
 

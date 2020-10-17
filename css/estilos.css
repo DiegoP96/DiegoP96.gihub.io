@@ -417,6 +417,11 @@ body {
 		text-align: center;
 	}
 
+	.contenedorBotones {
+		width: 330px;
+		height: 400px;
+	}
+
 	.txtMapaDelSitio {
 		font-size: 0.8em;
 	}

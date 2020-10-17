@@ -91,6 +91,15 @@ $(document).ready(function (e) {
     $("#listaFlautasPuerco").toggle(
 
     );
+    $("#listaPepsi").toggle(
+
+    );
+    $("#listaAgua").toggle(
+
+    );
+    $("#listaJugos").toggle(
+
+    );
 
 
 
@@ -337,6 +346,28 @@ $(document).ready(function (e) {
             $("#listaFlautasRes").hide(e);
             $("#listaFlautasPollo").hide(e);
             $("#listaFlautasPuerco").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonRefrescos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaPepsi").show(e);
+            $("#listaAgua").show(e);
+            $("#listaJugos").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaPepsi").hide(e);
+            $("#listaAgua").hide(e);
+            $("#listaJugos").hide(e);
 
             contador = 0;
         }

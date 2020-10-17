@@ -43,10 +43,6 @@ body {
 	font-size: 1em;
 }
 
-.fab {
-	color: whitesmoke;
-}
-
 #iconoInstagram:hover {
 	opacity: 1;
 	color: #f62e29 /*#ffea7f*/;
@@ -236,6 +232,7 @@ body {
 	text-decoration: none;
 	letter-spacing: 30px;
 	font-size: 1.4em;
+	color: white;
 }
 .contenedorRedes {
 	margin-top: 16px;
@@ -271,22 +268,6 @@ body {
 	.contenedorHeader {
 		background-position: top;
 	}
-	/* .contenedorColumnas {
-		width: 100%;
-	}
-
-	.contenedorBotones {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		width: 300px;
-		height: 400px;
-	}
-	.columna {
-		width: 220px;
-		height: 140px;
-	} */
 }
 
 @media screen and (max-width: 1300px) {
@@ -362,6 +343,15 @@ body {
 		justify-content: center;
 	}
 
+	#icono {
+		font-size: 1.1em;
+		letter-spacing: 20px;
+	}
+	.fab {
+		font-size: 1em;
+		letter-spacing: 5px;
+	}
+
 	/* Efectos pagina home */
 	.columna:hover {
 		margin-top: 1px;
@@ -388,13 +378,8 @@ body {
 	}
 
 	#icono {
-		font-size: 1em;
+		font-size: 0.7em;
 		letter-spacing: 14px;
-	}
-
-	.fab {
-		font-size: 1em;
-		letter-spacing: 5px;
 	}
 }
 

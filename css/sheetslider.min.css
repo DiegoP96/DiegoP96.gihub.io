@@ -82,7 +82,7 @@
 	font-weight: 500;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
-	color: #009688;
+	color: #717beb;
 }
 .sh__btns {
 	bottom: 0;
@@ -445,5 +445,5 @@
 .sheetSlider input:nth-child(7):checked ~ .sh__btns label:nth-child(7),
 .sheetSlider input:nth-child(8):checked ~ .sh__btns label:nth-child(8),
 .sheetSlider input:nth-child(9):checked ~ .sh__btns label:nth-child(9) {
-	background-color: #009688;
+	background-color: #717beb;
 }

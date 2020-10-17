@@ -39,6 +39,10 @@ body {
 	letter-spacing: 30px;
 }
 
+#icono {
+	font-size: 1em;
+}
+
 .fab {
 	color: whitesmoke;
 }

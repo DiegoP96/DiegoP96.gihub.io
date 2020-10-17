@@ -47,11 +47,6 @@ body {
 	color: whitesmoke;
 }
 
-/* .fab:hover {
-	opacity: 1;
-	color: #ffc530;
-} */
-
 #iconoInstagram:hover {
 	opacity: 1;
 	color: #f62e29 /*#ffea7f*/;
@@ -110,18 +105,22 @@ body {
 	margin-left: 8.7%;
 	margin-right: 8.7%;
 	text-align: center;
-	font-family: 'Cormorant', serif;
+	font-family: "Cormorant", serif;
 	letter-spacing: 1.4px;
 	grid-row: 1/2;
 }
 
 .contenedorColumnas {
 	display: grid;
-	width: 100%;
-	justify-content: space-evenly;
-	margin-top: 85px;
-	margin-bottom: 65px;
-	box-sizing: border-box;
+	width: 80%;
+	height: auto;
+	grid-template-columns: 0.5fr 0.5fr auto;
+	grid-template-rows: auto;
+	grid-row-gap: 50px;
+	/* max-width: 50%; */
+	justify-content: space-around;
+	margin: 80px auto;
+	box-sizing: content-box;
 }
 
 .contenedorBotones {
@@ -131,6 +130,7 @@ body {
 	align-items: center;
 	width: 328px;
 	height: 400px;
+	box-sizing: border-box;
 }
 
 #contenedorBotonMenu {
@@ -140,23 +140,21 @@ body {
 }
 
 #contenedorBotonReserva {
-	grid-row: 1/2;
-	grid-column: 2/3;
+	/* grid-row: 1/2;
+	grid-column: 2/3; */
 	border: solid 3px #efce16;
 	padding: 0;
 }
 
 #contenedorBotonTakeAway {
-	grid-row: 1/2;
-	grid-column: 3/4;
+	/* grid-row: 1/2;
+	grid-column: 3/4; */
 	border: solid 3px #89e077;
 }
 
 .columna {
 	width: 300px;
 	height: 200px;
-	box-sizing: border-box;
-	contain: content;
 	border-radius: 1%;
 	opacity: 0.8;
 }
@@ -270,7 +268,7 @@ body {
 	.contenedorHeader {
 		background-position: top;
 	}
-	.contenedorColumnas {
+	/* .contenedorColumnas {
 		width: 100%;
 	}
 
@@ -285,25 +283,13 @@ body {
 	.columna {
 		width: 220px;
 		height: 140px;
-	}
+	} */
 }
 
-@media screen and (max-width: 1000px) {
-	.contenedorBotones {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		width: 220px;
-		height: 400px;
-	}
-	.columna {
-		width: 180px;
-		height: 140px;
-	}
-
-	.descripcionColumna {
-		font-size: 0.8em;
+@media screen and (max-width: 1300px) {
+	.contenedorColumnas {
+		grid-template-rows: auto;
+		grid-template-columns: auto;
 	}
 }
 
@@ -336,36 +322,6 @@ body {
 		margin-top: -120px;
 		margin-bottom: 100px;
 	}
-	.contenedorColumnas {
-		width: 80%;
-		justify-content: space-around;
-		grid-row-gap: 40px;
-		margin-top: -50px;
-	}
-	.columna {
-		width: 200px;
-		height: 120px;
-	}
-	.contenedorBotones {
-		width: 240px;
-		height: 350px;
-	}
-	#contenedorBotonMenu {
-		grid-row: 1/2;
-		grid-column: 2/3;
-	}
-	#contenedorBotonReserva {
-		grid-row: 2/3;
-		grid-column: 2/3;
-	}
-	#contenedorBotonTakeAway {
-		grid-row: 3/4;
-		grid-column: 2/3;
-	}
-	.descripcionColumna {
-		font-size: 0.9em;
-		max-width: 200px;
-	}
 
 	.txtMapaDelSitio {
 		font-size: 1em;
@@ -381,9 +337,9 @@ body {
 	.txtMapaDelSitio {
 		width: 100%;
 	}
-	.contenedorGrid {
-		width: 90%;
-		grid-row-gap: 20px;
+
+	.contenedorColumnas {
+		margin-top: -80px;
 	}
 	.listaUno {
 		font-size: 0.9em;
@@ -425,15 +381,6 @@ body {
 		margin-bottom: 150px;
 	}
 
-	.contenedorColumnas {
-		width: 90%;
-	}
-
-	.columna {
-		width: 220px;
-		height: 120px;
-	}
-
 	.txtMapaDelSitio {
 		font-size: 0.9em;
 	}
@@ -445,6 +392,11 @@ body {
 	#icono {
 		font-size: 1em;
 		letter-spacing: 14px;
+	}
+
+	.fab {
+		font-size: 1em;
+		letter-spacing: 5px;
 	}
 }
 
@@ -462,28 +414,7 @@ body {
 	.grupoDos {
 		letter-spacing: 15px;
 	}
-	.contenedorGrid {
-		margin: auto;
-		width: 90%;
-		grid-row-gap: 15px;
-		justify-content: center;
-	}
 
-	.frase {
-		margin-top: -330px;
-		margin-bottom: 200px;
-	}
-
-	.contenedorColumnas {
-		width: 95%;
-		justify-content: space-around;
-		grid-row-gap: 40px;
-		margin-top: -160px;
-	}
-	.descripcionColumna {
-		font-size: 0.8em;
-		max-width: 200px;
-	}
 	.listaUno {
 		font-size: 0.6em;
 	}
@@ -510,19 +441,6 @@ body {
 	.contenedorFooterFlex {
 		padding: 2em 2em;
 	}
-
-	/* .contenedorFooterFlex {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		box-sizing: border-box;
-		padding: 0px 6em;
-		width: 100%;
-		height: 150px;
-		margin-top: 50px;
-		background-color: #717beb;
-	} */
 }
 
 @media screen and (max-width: 320px) {
@@ -544,11 +462,9 @@ body {
 		letter-spacing: 8px;
 		font-size: 0.6em;
 	}
-	.contenedorGrid {
-		margin: auto;
-		width: 100%;
-		grid-row-gap: 15px;
-		justify-content: center;
+
+	.contenedorColumnas {
+		margin-top: -40px;
 	}
 
 	.contenedorBotones {
@@ -556,8 +472,13 @@ body {
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
-		width: 240px;
+		width: 280px;
 		height: 350px;
+	}
+
+	.columna {
+		width: 230px;
+		height: 140px;
 	}
 }
 

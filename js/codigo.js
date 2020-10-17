@@ -82,6 +82,16 @@ $(document).ready(function (e) {
     $("#listaQuesadillasAsada").toggle(
 
     );
+    $("#listaFlautasRes").toggle(
+
+    );
+    $("#listaFlautasPollo").toggle(
+
+    );
+    $("#listaFlautasPuerco").toggle(
+
+    );
+
 
 });
 
@@ -259,7 +269,7 @@ $(document).ready(function (e) {
             contador = 0;
         }
     });
-    
+
 
 });
 
@@ -282,6 +292,28 @@ $(document).ready(function (e) {
             $("#listaQuesadillasPollo").hide(e);
             $("#listaQuesadillasVerdura").hide(e);
             $("#listaQuesadillasAsada").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonFlautas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaFlautasRes").show(e);
+            $("#listaFlautasPollo").show(e);
+            $("#listaFlautasPuerco").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaFlautasRes").hide(e);
+            $("#listaFlautasPollo").hide(e);
+            $("#listaFlautasPuerco").hide(e);
+
             contador = 0;
         }
     });

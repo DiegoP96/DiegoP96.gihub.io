@@ -89,7 +89,8 @@ function ready() {
         button2.addEventListener('click', addToCartClickedSimple)
     }
 
-    document.getElementsByClassName('boton_carrito')[0].addEventListener('click', pedidoClicked)
+    document.getElementsByClassName('boton_carrito')[0].addEventListener('click', guardarContador)
+    document.getElementsByClassName('boton_menu')[0].addEventListener('click', guardarContador)
 }
 if (getContador() == -1) {
     document.cookie = "contador= 0" + ";SameSite=Lax"
@@ -150,6 +151,6 @@ function checkPlatesDuplicate(string) {
 
 }
 
-function pedidoClicked() {
+function guardarContador() {
     document.cookie = "contador=" + i + ";SameSite=Lax"
 }

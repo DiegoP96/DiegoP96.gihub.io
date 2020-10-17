@@ -6,7 +6,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/estilos.css" />
-		<link rel="stylesheet" href="./css/ninja-slider.css" />
+		<link rel="stylesheet" href="https://cdn.rawgit.com/zkreations/SheetSlider/master/dist/sheetslider.min.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;500;600&display=swap" rel="stylesheet">
@@ -95,35 +95,60 @@
 				</div>
 			</section>
 
-			<section>
-				<div id="ninja-slider">
-					<div class="slider-inner">
-						<ul>
-							<li>
-								<!-- <a class="ns-img" href="img/image (7).png"></a> -->
-								<img src="img/image (7).jpg" alt="" class="ns-img" />
-							</li>
-							<li>
-								<!-- <a class="ns-img" href="img/image (11).png"></a> -->
-								<img src="img/image (11).jpg" alt="" class="ns-img" />
-							</li>
-							<li>
-								<!-- <a class="ns-img" href="img/image (14).png"></a> -->
-								<img src="img/image (14).jpg" alt="" class="ns-img" />
-							</li>
-
-							<!-- <li>
-								<a class="ns-img" href="img/comida.jpg"></a>
-							</li>
-
-							<li>
-								<a class="ns-img" href="img/comida.jpg"> </a>
-							</li> -->
-						</ul>
-						<div class="fs-icon"></div>
-					</div>
-				</div>
-			</section>
+			<!--Sheet Slider-->
+<div class="sheetSlider sh--default">
+	<input id="s1" type="radio" name="slide1" checked/>
+	<input id="s2" type="radio" name="slide1"/>
+	<input id="s3" type="radio" name="slide1"/>
+	<div class="sh__content">
+  
+	   <!-- Slider Item -->
+	   <div class="sh__item">
+		  <img src="img/image (11).jpg" alt="imgText" width="100%" height="100%">
+		  <!-- Item Info -->
+		  <div class="sh__meta">
+			 <h4>2 Weeks</h4>
+			 <span>Secondary text <a href="#urlPage">with link</a></span>
+		  </div>
+	   </div>
+  
+	   <!-- Slider Item -->
+	   <div class="sh__item">
+		  <img src="img/image (14).jpg" alt="imgText" width="100%" height="100%">
+		  <!-- Item Info -->
+		  <div class="sh__meta">
+			 <h4>Artwork surreal</h4>
+			 <span>Secondary text without link</span>
+		  </div>
+	   </div>
+  
+	   <!-- Slider Item -->
+	   <div class="sh__item">
+		  <img src="img/image (7).jpg" alt="imgText" width="100%" height="100%">
+		  <!-- Item Info -->
+		  <div class="sh__meta">
+			 <h4>Cat under a carpet</h4>
+			 <span>Secondary text without link</span>
+		  </div>
+	   </div>
+  
+	</div><!-- .sh__content -->
+  
+	<!--botones-->
+	<div class="sh__btns">
+	   <label for="s1"></label>
+	   <label for="s2"></label>
+	   <label for="s3"></label>
+	</div><!-- .sh__btns -->
+  
+	<!--flechas-->
+	<div class="sh__arrows">
+	   <label for="s1"></label>
+	   <label for="s2"></label>
+	   <label for="s3"></label>
+	</div><!-- .sh__arrows -->
+   
+ </div><!-- .sheetSlider -->
 		</main>
 
 		<footer>

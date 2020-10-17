@@ -54,7 +54,7 @@ for ($i = 0; $i < sizeof($platos); $i++){
 echo"</div>";
 echo"<p class='lineaTotal'>Total:$ $total</p>";
 echo"<br>";
-echo"<a href='http://localhost/Mexico/index.html' ><i class='fas fa-home'></i></a>";
+echo"<a href='./index.html' ><i class='fas fa-home'></i></a>";
 exit();
 
 ?>

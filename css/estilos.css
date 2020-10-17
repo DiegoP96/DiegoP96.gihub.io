@@ -237,6 +237,9 @@ body {
 	letter-spacing: 30px;
 	font-size: 1.4em;
 }
+.contenedorRedes{
+   margin-top: 16px;
+}
 
 .logoMexicanoFooter {
 	/*border: solid black 10px;*/

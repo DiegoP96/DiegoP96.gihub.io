@@ -237,8 +237,8 @@ body {
 	letter-spacing: 30px;
 	font-size: 1.4em;
 }
-.contenedorRedes{
-   margin-top: 16px;
+.contenedorRedes {
+	margin-top: 16px;
 }
 
 .logoMexicanoFooter {
@@ -360,11 +360,6 @@ body {
 		padding: 1em 1em;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.contenedorRedes {
-		margin-top: 45px;
-		margin-left: 60px;
 	}
 
 	/* Efectos pagina home */

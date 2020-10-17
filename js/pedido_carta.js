@@ -90,14 +90,7 @@ function ready() {
     }
 
     document.getElementsByClassName('boton_carrito')[0].addEventListener('click', guardarContador)
-    
-    var botonesMenu = document.getElementsByClassName('boton_menu')
-    for(var i = 0; i < botonesMenu; i++){
-        var button3 = botonesMenu[i]
-        button3.addEventListener('click', function guardarContador(event) {
-            document.cookie = "contador=" + i + ";SameSite=Lax"
-        })
-    }
+
 }
 if (getContador() == -1) {
     document.cookie = "contador= 0" + ";SameSite=Lax"

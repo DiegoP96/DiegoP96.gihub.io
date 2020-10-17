@@ -385,6 +385,17 @@
 	display: block;
 	float: left;
 }
+
+@media (max-width: 1366px) and (min-width: 1280px) {
+	.sheetSlider {
+		height: 500px;
+	}
+
+	.sheetSlider img {
+		height: 500px;
+	}
+}
+
 @media (max-width: 575px) {
 	.sheetSlider img {
 		height: 100%;

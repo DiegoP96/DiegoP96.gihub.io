@@ -100,9 +100,18 @@ $(document).ready(function (e) {
     $("#listaJugos").toggle(
 
     );
+    $("#listaCorona").toggle(
 
+    );
+    $("#listaPatagonia").toggle(
 
+    );
+    $("#listaStella").toggle(
 
+    );
+    $("#listaQuilmes").toggle(
+
+    );
 
 });
 
@@ -368,6 +377,31 @@ $(document).ready(function (e) {
             $("#listaPepsi").hide(e);
             $("#listaAgua").hide(e);
             $("#listaJugos").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonCervezas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaCorona").show(e);
+            $("#listaPatagonia").show(e);
+            $("#listaStella").show(e);
+            $("#listaQuilmes").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaCorona").hide(e);
+            $("#listaPatagonia").hide(e);
+            $("#listaStella").hide(e);
+            $("#listaQuilmes").hide(e);
 
             contador = 0;
         }

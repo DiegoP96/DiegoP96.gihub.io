@@ -190,6 +190,10 @@ button.boton_carrito:hover {
 	border: solid 2px gainsboro;
 }
 
+#imagenBotonRefresco {
+	border: none;
+}
+
 .productoTxt {
 	grid-column-start: 1;
 	grid-row-start: 1;
@@ -534,9 +538,8 @@ a {
 		width: 30px;
 		height: 35px;
 	}
-	
-	.descripcionPlato{
-		
+
+	.descripcionPlato {
 		font-size: 0.6em;
 	}
 

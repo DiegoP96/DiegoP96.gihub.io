@@ -1,6 +1,7 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .menu {
@@ -36,8 +37,6 @@
 	margin-left: 0%;
 	font-weight: 400;
 	text-align: center;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
 	letter-spacing: 2px;
 }
 
@@ -154,8 +153,6 @@ button.boton_carrito {
 	border-radius: 0.12em;
 	box-sizing: border-box;
 	text-decoration: none;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
 	font-weight: 300;
 	color: #000000;
 	text-align: center;
@@ -196,8 +193,6 @@ button.boton_carrito:hover {
 .productoTxt {
 	grid-column-start: 1;
 	grid-row-start: 1;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
 	color: black;
 	font-weight: 400;
 	text-align: initial;
@@ -207,8 +202,6 @@ button.boton_carrito:hover {
 
 .descripcionTxt {
 	grid-column-start: 1;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-		"Open Sans", "Helvetica Neue", sans-serif;
 	color: rgb(192, 189, 189);
 	text-align: initial;
 	letter-spacing: 2px;
@@ -263,7 +256,6 @@ button.boton_carrito:hover {
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 0.8em;
 	color: white;
@@ -289,7 +281,6 @@ button.boton_carrito:hover {
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 0.8em;
 	color: white;
@@ -306,7 +297,6 @@ button.boton_carrito:hover {
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
-	font-family: "Roboto", sans-serif;
 	font-weight: 300;
 	font-size: 0.8em;
 	color: white;
@@ -390,204 +380,214 @@ a {
 		padding: 1.2em 0 1.2em 0;
 	}
 
-	.listaProducto{
-
+	.listaProducto {
 		grid-row-gap: 10px;
 	}
 
-	.descripcionPlato{
-
+	.descripcionPlato {
 		font-size: 0.8em;
 	}
 
-	.botonAgregarAlCarrito{
-
-		width: 120px;
-		font-size: 0.7em;
-	}
-	
-	.botonAgregarAlCarritoSimple, .botonAgregarAlCarritoDoble{
-		
+	.botonAgregarAlCarrito {
 		width: 120px;
 		font-size: 0.7em;
 	}
 
+	.botonAgregarAlCarritoSimple,
+	.botonAgregarAlCarritoDoble {
+		width: 120px;
+		font-size: 0.7em;
+	}
 }
 
-	 @media screen and (max-width: 450px) {
-		 
-		 .listaProducto{
-			 
-			 grid-row-gap: 20px;
-		 }
-		 
-		 .botonAgregarAlCarrito{
-			 
-			 grid-column: 1/2;
-		 }
-		 
-		.descripcionPlato {
-			max-width: 400px;
-		}
-		 
-		 .contenedorBotonesDobles{
-			 flex-direction: row;
-			 justify-content: normal;
-			 grid-column: 1/2;
-			 grid-row: 3/4;
-		 }
-		 
-		 .botonAgregarAlCarritoDoble {
-			 
-			 margin-left: 2em; 
-			 
-		 }
-	} 
-
-	@media screen and (max-width: 375px) {
-		.contenedorVerMiPedido {
-			max-width: 100%;
-		}
-
-		.transparencia {
-			height: 250px;
-		}
-
-		.contenedor_botones {
-			height: 120px;
-			margin-top: 0px;
-		}
-
-		.boton_menu {
-			width: 60px;
-			margin-left: 10px;
-		}
-
-		.imgBoton {
-			width: 40px;
-			height: 45px;
-		}
-
-		.imgBotonPostres {
-			width: 30px;
-			height: 35px;
-		}
-		
-		.contenedorVerMiPedido{
-			
-			margin-top: 1em;
-		}
-		
-		.descripcionPlato {
-			max-width: 300px;
-			font-size: 0.7em;
-		}
-		
-		.listaProducto{
-			 
-			 grid-row-gap: 15px;
-		 }
-
-		.finDelContenedor {
-			padding: 1.2em 0 1.2em 0;
-			width: 100;
-		}
-		.elementosFooter {
-			padding: 1em;
-		}
-	}
-
-	@media screen and (max-width: 360px) {
-		.transparencia {
-			height: 240px;
-		}
-
-		.contenedor_botones {
-			height: 120px;
-			margin-top: 0px;
-		}
-
-		.boton_menu {
-			width: 60px;
-			margin-left: 10px;
-		}
-
-		.imgBoton {
-			width: 40px;
-			height: 45px;
-		}
-
-		.imgBotonPostres {
-			width: 30px;
-			height: 35px;
-		}
-
-		.textoFooter {
-			letter-spacing: 0.8px;
-		}
-
-		.contenedorVerMiPedido {
-			padding: 0.3em 1em 0.3em 1.3em;
-		}
-		.finDelContenedor {
-			padding: 1.2em 0 1.2em 0;
-		}
-
-		.elementosFooter {
-			padding: 0.5em;
-		}
-	}
-
-	@media screen and (max-width: 320px) {
-		.transparencia {
-			height: 213px;
-		}
-		.contenedor_botones {
-			justify-content: space-evenly;
-			height: 110px;
-			margin-top: -10px;
-			grid-template-columns: 60px 60px 60px 60px;
-			grid-template-rows: 50px 50px;
-		}
-
-		.boton_menu {
-			width: 50px;
-		}
-
-		#postres {
-			width: 50px;
-		}
-
-		.imgBoton {
-			width: 30px;
-			height: 35px;
-		}
-
-		.imgBotonPostres {
-			width: 20px;
-			height: 25px;
-		}
-
-		.imagenBoton {
-			width: 70px;
-			height: 70px;
-		}
-		
-		.texto{
-			margin-top: -15px;
-			margin-left: 1.1em;
-			font-size: 0.5em;
-			
-		}
-		
-		p {
-			font-size: 0.8em;
-			max-width: 230px;
-		}
-
-		.logoMexicanoFooter {
-			width: 270px;
-			height: 100px;
-		}
+@media screen and (max-width: 450px) {
 	
+	.Plato{
+		
+		font-size: 0.8em;
+	}
+	
+	.Precio, P{
+		
+		font-size: 0.8em;
+	}
+	
+	.listaProducto {
+		grid-row-gap: 15px;
+	}
+
+	.botonAgregarAlCarrito {
+		grid-column: 1/2;
+	}
+
+	.descripcionPlato {
+		max-width: 400px;
+		font-size: 0.7em;
+	}
+
+	.contenedorBotonesDobles {
+		flex-direction: row;
+		justify-content: normal;
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	.botonAgregarAlCarritoDoble {
+		margin-left: 2em;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.contenedorVerMiPedido {
+		max-width: 100%;
+	}
+
+	.transparencia {
+		height: 250px;
+	}
+
+	.contenedor_botones {
+		height: 120px;
+		margin-top: 5px;
+		grid-template-rows: 80px 60px;
+	}
+
+	.boton_menu {
+		width: 65px;
+		margin-left: 10px;
+	}
+
+	.imgBoton {
+		width: 40px;
+		height: 45px;
+	}
+
+	.imgBotonPostres {
+		width: 30px;
+		height: 35px;
+	}
+	
+	.texto{
+		margin-left: 1em; 
+		font-size: 0.6em;
+	}
+
+	.contenedorVerMiPedido {
+		margin-top: 1em;
+	}
+	
+	.listaProducto{
+		
+		padding: 1.7em;
+	}
+
+	.descripcionPlato {
+		max-width: 400px;
+		font-size: 0.7em;
+	}
+
+	.listaProducto {
+		grid-row-gap: 10px;
+	}
+
+	.finDelContenedor {
+		padding: 1.2em 0 1.2em 0;
+		width: 100;
+	}
+	.elementosFooter {
+		padding: 1em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.transparencia {
+		height: 240px;
+	}
+
+	.contenedor_botones {
+		height: 120px;
+		margin-top: 0px;
+	}
+
+	.boton_menu {
+		width: 60px;
+		margin-left: 10px;
+	}
+
+	.imgBoton {
+		width: 40px;
+		height: 45px;
+	}
+
+	.imgBotonPostres {
+		width: 30px;
+		height: 35px;
+	}
+
+	.textoFooter {
+		letter-spacing: 0.8px;
+	}
+
+	.contenedorVerMiPedido {
+		padding: 0.3em 1em 0.3em 1.3em;
+	}
+	.finDelContenedor {
+		padding: 1.2em 0 1.2em 0;
+	}
+
+	.elementosFooter {
+		padding: 0.5em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.transparencia {
+		height: 213px;
+	}
+	.contenedor_botones {
+		justify-content: space-evenly;
+		height: 110px;
+		margin-top: -10px;
+		grid-template-columns: 60px 60px 60px 60px;
+		grid-template-rows: 50px 50px;
+	}
+
+	.boton_menu {
+		width: 50px;
+	}
+
+	#postres {
+		width: 50px;
+	}
+
+	.imgBoton {
+		width: 30px;
+		height: 35px;
+	}
+
+	.imgBotonPostres {
+		width: 20px;
+		height: 25px;
+	}
+
+	.imagenBoton {
+		width: 70px;
+		height: 70px;
+	}
+
+	.texto {
+		margin-top: -15px;
+		margin-left: 1.1em;
+		font-size: 0.5em;
+	}
+
+	p {
+		font-size: 0.8em;
+		max-width: 230px;
+	}
+
+	.logoMexicanoFooter {
+		width: 270px;
+		height: 100px;
+	}
 }

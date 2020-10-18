@@ -100,9 +100,18 @@ $(document).ready(function (e) {
     $("#listaJugos").toggle(
 
     );
+    $("#Tortatresleches").toggle(
 
+     );
+    $("#Crepeé").toggle(
 
+    );
+    $("#PandePlatanos").toggle(
 
+     );
+     $("#RollDeCanela").toggle(
+
+    );
 
 });
 
@@ -374,3 +383,25 @@ $(document).ready(function (e) {
     });
 });
 
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonNachos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#Tortatresleches").show(e);
+            $("#Crepeé").show(e);
+            $("#PandePlatanos").show(e);
+            $("#RollDeCanela").show(e);
+
+            contador++;
+        } else {
+
+            $("#Tortatresleches").hide(e);
+            $("#Crepeé").hide(e);
+            $("#PandePlatanos").hide(e);
+            $("#RollDeCanela").hide(e);
+            contador = 0;
+        }
+    });
+});

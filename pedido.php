@@ -80,7 +80,7 @@
             <div class="cart-total">
                 <strong class="cart-total-title">Total</strong>
                 
-                <span class="cart-total-price">$0</span>
+                <span class="cart-total-price" name="total">$0</span>
                 <input type="number" class="inputTotal" hidden name="total">
             </div>
 

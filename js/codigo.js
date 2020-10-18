@@ -100,8 +100,72 @@ $(document).ready(function (e) {
     $("#listaJugos").toggle(
 
     );
+    $("#Tortatresleches").toggle(
 
+    );
+    $("#Crepeé").toggle(
 
+    );
+    $("#PandePlatanos").toggle(
+
+    );
+    $("#RollDeCanela").toggle(
+
+    );
+    $("#listaCorona").toggle(
+
+    );
+    $("#listaPatagonia").toggle(
+
+    );
+    $("#listaStella").toggle(
+
+    );
+    $("#listaQuilmes").toggle(
+
+    );
+
+    $("#Marquise").toggle(
+
+    );
+    $("#Chocolatosa").toggle(
+    
+    );
+     $("#Cheescake").toggle(
+    
+     );
+     $("#DonasMexicanas").toggle(
+    
+    );
+    $("#Churros").toggle(
+    
+    );
+    
+    $("#Medialunas").toggle(
+
+    );
+    $("#tortasDeJamon ").toggle(
+        
+    );
+    $("#tostadas").toggle(
+        
+    );
+    $("#platoDeFrutas").toggle(
+        
+    );
+    $("#HuevosRancheros").toggle(
+    
+    );
+        
+    $("#HuevosDivorciados").toggle(
+    
+    );
+    $("#Chilaquiles").toggle(
+            
+    );
+    $("#desayunoVoladorDelDia").toggle(
+            
+    );
 
 
 });
@@ -374,3 +438,107 @@ $(document).ready(function (e) {
     });
 });
 
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonNachos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#Tortatresleches").show(e);
+            $("#Crepeé").show(e);
+            $("#PandePlatanos").show(e);
+            $("#RollDeCanela").show(e);
+
+            contador++;
+        } else {
+
+            $("#Tortatresleches").hide(e);
+            $("#Crepeé").hide(e);
+            $("#PandePlatanos").hide(e);
+            $("#RollDeCanela").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonCervezas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaCorona").show(e);
+            $("#listaPatagonia").show(e);
+            $("#listaStella").show(e);
+            $("#listaQuilmes").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaCorona").hide(e);
+            $("#listaPatagonia").hide(e);
+            $("#listaStella").hide(e);
+            $("#listaQuilmes").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPasteleria").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#Marquise").show(e);
+            $("#Chocolatosa").show(e);
+            $("#Cheescake").show(e);
+            $("#DonasMexicanas").show(e);
+            $("#Churros").show(e);
+            $("#Medialunas").show(e);
+            $("#tortasDeJamon ").show(e);
+            $("#tostadas").show(e);
+            $("#platoDeFrutas").show(e);
+            contador++;
+        } else {
+
+            $("#Marquise").hide(e);
+            $("#Chocolatosa").hide(e);
+            $("#Cheescake").hide(e);
+            $("#DonasMexicanas").hide(e);
+            $("#Churros").hide(e);
+            $("#Medialunas").hide(e);
+            $("#tortasDeJamon ").hide(e);
+            $("#tostadas").hide(e);
+            $("#platoDeFrutas").hide(e);
+
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonDesayunos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#HuevosRancheros").show(e);
+            $("#HuevosDivorciados").show(e);
+            $("#Chilaquiles").show(e);
+            $("#desayunoVoladorDelDia").show(e);
+
+            contador++;
+        } else {
+
+            $("#HuevosRancheros").hide(e);
+            $("#HuevosDivorciados").hide(e);
+            $("#Chilaquiles").hide(e);
+            $("#desayunoVoladorDelDia").hide(e);
+            contador = 0;
+        }
+    });
+});

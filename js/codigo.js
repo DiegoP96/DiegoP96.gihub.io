@@ -144,7 +144,7 @@ $(document).ready(function (e) {
     $("#Medialunas").toggle(
 
     );
-    $("#tortasDeJamon").toggle(
+    $("#tortasDeJamon ").toggle(
         
     );
     $("#tostadas").toggle(
@@ -152,6 +152,19 @@ $(document).ready(function (e) {
     );
     $("#platoDeFrutas").toggle(
         
+    );
+    $("#HuevosRancheros").toggle(
+    
+    );
+        
+    $("#HuevosDivorciados").toggle(
+    
+    );
+    $("#Chilaquiles").toggle(
+            
+    );
+    $("#desayunoVoladorDelDia").toggle(
+            
     );
 
 
@@ -485,7 +498,7 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").show(e);
             $("#Churros").show(e);
             $("#Medialunas").show(e);
-            $("#tortasDeJamon").show(e);
+            $("#tortasDeJamon ").show(e);
             $("#tostadas").show(e);
             $("#platoDeFrutas").show(e);
             contador++;
@@ -497,11 +510,34 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").hide(e);
             $("#Churros").hide(e);
             $("#Medialunas").hide(e);
-            $("#tortasDeJamon").hide(e);
+            $("#tortasDeJamon ").hide(e);
             $("#tostadas").hide(e);
             $("#platoDeFrutas").hide(e);
 
 
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonDesayunos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#HuevosRancheros").show(e);
+            $("#HuevosDivorciados").show(e);
+            $("#Chilaquiles").show(e);
+            $("#desayunoVoladorDelDia").show(e);
+
+            contador++;
+        } else {
+
+            $("#HuevosRancheros").hide(e);
+            $("#HuevosDivorciados").hide(e);
+            $("#Chilaquiles").hide(e);
+            $("#desayunoVoladorDelDia").hide(e);
             contador = 0;
         }
     });

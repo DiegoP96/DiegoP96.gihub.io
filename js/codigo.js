@@ -102,14 +102,26 @@ $(document).ready(function (e) {
     );
     $("#Tortatresleches").toggle(
 
-     );
+    );
     $("#Crepeé").toggle(
 
     );
     $("#PandePlatanos").toggle(
 
-     );
-     $("#RollDeCanela").toggle(
+    );
+    $("#RollDeCanela").toggle(
+
+    );
+    $("#listaCorona").toggle(
+
+    );
+    $("#listaPatagonia").toggle(
+
+    );
+    $("#listaStella").toggle(
+
+    );
+    $("#listaQuilmes").toggle(
 
     );
 
@@ -401,6 +413,31 @@ $(document).ready(function (e) {
             $("#Crepeé").hide(e);
             $("#PandePlatanos").hide(e);
             $("#RollDeCanela").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonCervezas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaCorona").show(e);
+            $("#listaPatagonia").show(e);
+            $("#listaStella").show(e);
+            $("#listaQuilmes").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaCorona").hide(e);
+            $("#listaPatagonia").hide(e);
+            $("#listaStella").hide(e);
+            $("#listaQuilmes").hide(e);
+
             contador = 0;
         }
     });

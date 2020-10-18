@@ -125,6 +125,36 @@ $(document).ready(function (e) {
 
     );
 
+    $("#Marquise").toggle(
+
+    );
+    $("#Chocolatosa").toggle(
+    
+    );
+     $("#Cheescake").toggle(
+    
+     );
+     $("#DonasMexicanas").toggle(
+    
+    );
+    $("#Churros").toggle(
+    
+    );
+    
+    $("#Medialunas").toggle(
+
+    );
+    $("#tortasDeJamon ").toggle(
+        
+    );
+    $("#tostadas").toggle(
+        
+    );
+    $("#platoDeFrutas").toggle(
+        
+    );
+
+
 });
 
 
@@ -437,6 +467,40 @@ $(document).ready(function (e) {
             $("#listaPatagonia").hide(e);
             $("#listaStella").hide(e);
             $("#listaQuilmes").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPasteleria").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#Marquise").show(e);
+            $("#Chocolatosa").show(e);
+            $("#Cheescake").show(e);
+            $("#DonasMexicanas").show(e);
+            $("#Churros").show(e);
+            $("#Medialunas").show(e);
+            $("#tortasDeJamon ").show(e);
+            $("#tostadas").show(e);
+            $("#platoDeFrutas").show(e);
+            contador++;
+        } else {
+
+            $("#Marquise").hide(e);
+            $("#Chocolatosa").hide(e);
+            $("#Cheescake").hide(e);
+            $("#DonasMexicanas").hide(e);
+            $("#Churros").hide(e);
+            $("#Medialunas").hide(e);
+            $("#tortasDeJamon ").hide(e);
+            $("#tostadas").hide(e);
+            $("#platoDeFrutas").hide(e);
+
 
             contador = 0;
         }

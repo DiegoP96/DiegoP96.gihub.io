@@ -1,450 +1,488 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./img/Logo Mexicano.png" />
+		<link rel="stylesheet" href="css/menu_entradaestilo.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/codigo.js"></script>
+		<script src="js/pedido_carta.js"></script>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="./img/Logo Mexicano.png" />
-	<link rel="stylesheet" href="css/menu_entradaestilo.css" />
-	<!-- <link rel="stylesheet" href="css/estilos.css"> -->
-	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro&display=swap"
-		rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/codigo.js"></script>
-	<script src="js/pedido_carta.js"></script>
+		<title>Menu Entrada</title>
+	</head>
 
-	<title>Menu Entrada</title>
-</head>
+	<body>
+		<header>
+			<section>
+				<div class="contenedorHeader">
+					<div class="transparencia"></div>
+					<h1 class="tituloHome">Menú</h1>
+				</div>
+			</section>
+		</header>
 
-<body>
-	<header>
-		<section>
-			<div class="contenedorHeader">
-				<div class="transparencia"></div>
-				<h1 class="tituloHome">Menú</h1>
-			</div>
-		</section>
-	</header>
-
-	<div class="contenedor_botones">
-		<button class="boton_menu" id="entrada">
-			<a href="./menu_Entrada.html"><img src="./img/botonMenuEntrada.png" width="60px" height="60px"
-					class="imgBoton" /></a>
-		</button>
-		<h5 class="texto" id="texto_entrada">Entradas</h5>
-		<button class="boton_menu" id="plato_principal">
-			<a href="menu_platos_principales.html"><img src="./img/botonMenuPlatoPrincipal.png" width="60px"
-					height="60px" class="imgBoton" /></a>
-		</button>
-		<h5 class="texto" id="texto_plato_principal">Platos Principales</h5>
-		<button class="boton_menu" id="bebidas">
-			<a href="menu_bebidas.html "><img src="./img/botonMenuBebidas.png" width="60px" height="60px"
-					class="imgBoton" /> </a>
-		</button>
-		<h5 class="texto" id="texto_bebidas">Bebidas</h5>
-		<button class="boton_menu" id="postres">
-			<a href="menu_cafeteria_y_postres.html "> <img src="./img/botonMenuCafeteria.png" width="50px" height="50px"
-					class="imgBotonPostres" /> </a>
-		</button>
-		<h5 class="texto" id="texto_postres">Cafetería y Postres</h5>
-	</div>
-
-	<style>
-		#entrada {
-			opacity: 0.7;
-		}
-
-		#plato_principal {
-			opacity: 1;
-		}
-	</style>
-
-	<section>
-		<div class="contenedorVerMiPedido">
-			<a href="./index.html" class="botonIrIndex"> <i class="fas fa-home"></i></a>
-			<a href="pedido.php"><button class="boton_carrito">Mi Pedido</button></a>
+		<div class="contenedor_botones">
+			<button class="boton_menu" id="entrada">
+				<a href="./menu_Entrada.html"
+					><img src="./img/botonMenuEntrada.png" width="60px" height="60px" class="imgBoton"
+				/></a>
+			</button>
+			<h5 class="texto" id="texto_entrada">Entradas</h5>
+			<button class="boton_menu" id="plato_principal">
+				<a href="menu_platos_principales.html"
+					><img src="./img/botonMenuPlatoPrincipal.png" width="60px" height="60px" class="imgBoton"
+				/></a>
+			</button>
+			<h5 class="texto" id="texto_plato_principal">Platos Principales</h5>
+			<button class="boton_menu" id="bebidas">
+				<a href="menu_bebidas.html "
+					><img src="./img/botonMenuBebidas.png" width="60px" height="60px" class="imgBoton" />
+				</a>
+			</button>
+			<h5 class="texto" id="texto_bebidas">Bebidas</h5>
+			<button class="boton_menu" id="postres">
+				<a href="menu_cafeteria_y_postres.html ">
+					<img
+						src="./img/botonMenuCafeteria.png"
+						width="50px"
+						height="50px"
+						class="imgBotonPostres"
+					/>
+				</a>
+			</button>
+			<h5 class="texto" id="texto_postres">Cafetería y Postres</h5>
 		</div>
-	</section>
 
-	<main>
-		<section class="menu">
-			<ul>
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonEnsaladas">
-						<img src="./img/salad_stock.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Ensaladas</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="listaEnsaladaMexicana">
-					<div class="productoPrecio">
-						<p class="Plato">Mexicana</p>
-
-						<p class="Precio">$440</p>
-					</div>
-
-					<p>
-						Jitomates, verdes de estacion, pollo, totopos rotos, cebolla, frijoles y aguacate,
-						con aderezo de cilantro picoso
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="listaEnsaladaAcapulco">
-					<div class="productoPrecio">
-						<p class="Plato">Acapulco</p>
-
-						<p class="Precio">$440</p>
-					</div>
-
-					<p>
-						(Vegetariana)
-					</p>
-
-					<p>
-						Jitomate, frijoles, totopos rotos, cebolla,
-						verdes de estación. naranjas, aguacate y aderezo especial "suave como las olas de acapulco"
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="listaEnsaladaCesar">
-					<div class="productoPrecio">
-						<p class="Plato">Cesar</p>
-
-						<p class="Precio">$440</p>
-					</div>
-
-					<p>
-						Hojas verdes y totopos rotos. Aderezo de la casa.
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="listaEnsaladaQuinoa">
-					<div class="productoPrecio">
-						<p class="Plato">Quinoa</p>
-
-						<p class="Precio">$440</p>
-					</div>
-
-					<p>
-						Quinoa cocida con tomate concasse fresco, cebolla morada fresca y jalapeño encurtido en
-						colchón de mix de verdes
-					</p>
-					<p>
-						Opcional tempura de pollo y huevo poché con aderezo de miel , naranja y aceto
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonTacos">
-						<img src="./img/tacos_stock.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Tacos</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="listaTacosChilorio">
-					<div class="productoPrecio">
-						<p class="Plato">Tacos de Chilorio</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Carne de res deshebrada de cocción larga con especias
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaTacosPilbil">
-					<div class="productoPrecio">
-						<p class="Plato">Tacos de Cochinita Pilbil</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Carne de cerdo deshebrada de cocción larga con naranja agria y achiote !
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaTacosPollo">
-					<div class="productoPrecio">
-						<p class="Plato">Tacos de Pollo</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Pollo dorado en bastones con especias cebollas y mostaza
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaTacosVerdura">
-					<div class="productoPrecio">
-						<p class="Plato">Tacos de Verduras Grilladas</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Verduras de estación grilladas y salteadas estilo oriental
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaTacosAsada">
-					<div class="productoPrecio">
-						<p class="Plato">Tacos de Carne Asada</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						De carne asada, picada y sazonada
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonQuesadillas">
-						<img src="./img/stock_quesadillas.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Quesadillas</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="listaQuesadillasChilorio">
-					<div class="productoPrecio">
-						<p class="Plato">Quesadillas de Chilorio</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Carne de res deshebrada de cocción larga con especias
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaQuesadillasPilbil">
-					<div class="productoPrecio">
-						<p class="Plato">Quesadillas de Cochinita Pilbil</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Carne de cerdo deshebrada de cocción larga con naranja agria y achiote !
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaQuesadillasPollo">
-					<div class="productoPrecio">
-						<p class="Plato">Quesadillas de Pollo</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Pollo dorado en bastones con especias cebollas y mostaza
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaQuesadillasVerdura">
-					<div class="productoPrecio">
-						<p class="Plato">Quesadillas de Verduras Grilladas</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Verduras de estación grilladas y salteadas estilo oriental
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaQuesadillasAsada">
-					<div class="productoPrecio">
-						<p class="Plato">Quesadillas de Carne Asada</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						De carne asada, picada y sazonada
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonSopas">
-						<img src="./img/sopa para el menu.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Sopas</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="listaSopasAzteca">
-					<div class="productoPrecio">
-						<p class="Plato">Sopas Azteca</p>
-
-						<p class="Precio">$390</p>
-					</div>
-
-					<p>
-						Consomé de pollo, con limón, suavemente picante y especias secretas de
-						Montezuma. Con tortillas de maíz frita.
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="listaSopadeLima">
-					<div class="productoPrecio">
-						<p class="Plato">Sopa del dia</p>
-
-						<p class="Precio">$340</p>
-					</div>
-
-					<p>Consulte al Mesero/a</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonFlautas">
-						<img src="./img/sotck_enchiladas.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Enchiladas</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="listaFlautasRes">
-					<div class="productoPrecio">
-						<p class="Plato">Enchiladas de Res</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Clásica Botana de Sinaloa, que consiste en tacos de carne deshebrada los cuales se enrollan bien
-						apretaditos
-						para después freírlos en aceite bien caliente para que queden bien bien crujientes.
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-
-				<li class="listaProducto" id="listaFlautasPollo">
-					<div class="productoPrecio">
-						<p class="Plato">Faluta de Pollo</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Clásica Botana de Sinaloa, que consiste en tacos de pollo deshebrado los cuales se enrollan bien
-						apretaditos
-						para después freírlos en aceite bien caliente para que queden bien bien crujientes.
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-				<li class="listaProducto" id="listaFlautasPuerco">
-					<div class="productoPrecio">
-						<p class="Plato">Faluta de Puerco</p>
-
-						<p class="Precio1">$390</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Clásica Botana de Sinaloa, que consiste en tacos de puerco deshebrado los cuales se enrollan bien
-						apretaditos
-						para después freírlos en aceite bien caliente para que queden bien bien crujientes.
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
-					<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
-				</li>
-
-			</ul>
-
-			<div class="finDelContenedor">
-				<br />
+		<style>
+			#entrada {
+				opacity: 0.7;
+			}
+
+			#plato_principal {
+				opacity: 1;
+			}
+		</style>
+
+		<section>
+			<div class="contenedorVerMiPedido">
+				<a href="./index.html" class="botonIrIndex"> <i class="fas fa-home"></i></a>
+				<a href="pedido.php"><button class="boton_carrito">Mi Pedido</button></a>
 			</div>
 		</section>
-	</main>
 
-	<footer>
-		<div class="contenedorGrid">
-			<div class="elementosFooter">
-				<img src="img/logo mexicano footer.jpg" alt="logoMexicano" width="330" height="115"
-					class="logoMexicanoFooter" />
+		<main>
+			<section class="menu">
+				<ul>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonEnsaladas">
+							<img src="./img/salad_stock.jpg" width="70" height="80" class="imagenBoton" />
 
-				<div class="contenedorRedes">
-					<a href="https://www.instagram.com/mexicanocafebariloche/" class="fab fa-instagram"
-						id="iconoInstagram" target="blank">
-					</a>
-					<a href="https://www.facebook.com/elmexicanobariloche" target="_blank" class="fab fa-facebook-f"
-						id="iconoFacebook">
-					</a>
-					<a href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
-						target="_blank" class="fab fa-whatsapp" id="iconoWhatsApp">
-					</a>
+							<h3 class="productoTxt">Ensaladas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaEnsaladaMexicana">
+						<div class="productoPrecio">
+							<p class="Plato">Mexicana</p>
+
+							<p class="Precio">$440</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Jitomates, verdes de estacion, pollo, totopos rotos, cebolla, frijoles y aguacate, con
+							aderezo de cilantro picoso
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaEnsaladaAcapulco">
+						<div class="productoPrecio">
+							<p class="Plato">Acapulco</p>
+
+							<p class="Precio">$440</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Jitomate, frijoles, totopos rotos, cebolla, verdes de estación. naranjas, aguacate y
+							aderezo especial "suave como las olas de acapulco" <br />
+							(Vegetariana).
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaEnsaladaCesar">
+						<div class="productoPrecio">
+							<p class="Plato">Cesar</p>
+
+							<p class="Precio">$440</p>
+						</div>
+
+						<p class="descripcionPlato">Hojas verdes y totopos rotos. Aderezo de la casa.</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaEnsaladaQuinoa">
+						<div class="productoPrecio">
+							<p class="Plato">Quinoa</p>
+
+							<p class="Precio">$440</p>
+						</div>
+
+						<p class="descripcionPlato" id="Quinoa">
+							Quinoa cocida con tomate concasse fresco, cebolla morada fresca y jalapeño encurtido
+							en colchón de mix de verdes. <br />
+
+							<strong
+								>Opcional tempura de pollo y huevo poché con aderezo de miel, naranja y
+								aceto.</strong
+							>
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonTacos">
+							<img src="./img/tacos_stock.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Tacos</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaTacosChilorio">
+						<div class="productoPrecio">
+							<p class="Plato">Tacos de Chilorio</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">Carne de res deshebrada de cocción larga con especias.</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaTacosPilbil">
+						<div class="productoPrecio">
+							<p class="Plato">Tacos de Cochinita Pilbil</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Carne de cerdo deshebrada de cocción larga con naranja agria y achiote!
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaTacosPollo">
+						<div class="productoPrecio">
+							<p class="Plato">Tacos de Pollo</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Pollo dorado en bastones con especias cebollas y mostaza.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaTacosVerdura">
+						<div class="productoPrecio">
+							<p class="Plato">Tacos de Verduras Grilladas</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Verduras de estación grilladas y salteadas estilo oriental.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaTacosAsada">
+						<div class="productoPrecio">
+							<p class="Plato">Tacos de Carne Asada</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">De carne asada, picada y sazonada.</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonQuesadillas">
+							<img src="./img/stock_quesadillas.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Quesadillas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaQuesadillasChilorio">
+						<div class="productoPrecio">
+							<p class="Plato">Quesadillas de Chilorio</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">Carne de res deshebrada de cocción larga con especias.</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaQuesadillasPilbil">
+						<div class="productoPrecio">
+							<p class="Plato">Quesadillas de Cochinita Pilbil</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Carne de cerdo deshebrada de cocción larga con naranja agria y achiote!
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaQuesadillasPollo">
+						<div class="productoPrecio">
+							<p class="Plato">Quesadillas de Pollo</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Pollo dorado en bastones con especias cebollas y mostaza.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaQuesadillasVerdura">
+						<div class="productoPrecio">
+							<p class="Plato">Quesadillas de Verduras Grilladas</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Verduras de estación grilladas y salteadas estilo oriental.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaQuesadillasAsada">
+						<div class="productoPrecio">
+							<p class="Plato">Quesadillas de Carne Asada</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">De carne asada, picada y sazonada.</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonSopas">
+							<img src="./img/sopa para el menu.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Sopas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaSopasAzteca">
+						<div class="productoPrecio">
+							<p class="Plato">Sopas Azteca</p>
+
+							<p class="Precio">$390</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Consomé de pollo, con limón, suavemente picante y especias secretas de Montezuma. Con
+							tortillas de maíz frita.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="listaSopadeLima">
+						<div class="productoPrecio">
+							<p class="Plato">Sopa del dia</p>
+
+							<p class="Precio">$340</p>
+						</div>
+
+						<p class="descripcionPlato">Consulte al Mesero/a</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonFlautas">
+							<img src="./img/sotck_enchiladas.jpg" width="70" height="80" class="imagenBoton" />
+
+							<h3 class="productoTxt">Enchiladas</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="listaFlautasRes">
+						<div class="productoPrecio">
+							<p class="Plato">Enchiladas de Res</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Clásica Botana de Sinaloa, que consiste en tacos de carne deshebrada los cuales se
+							enrollan bien apretaditos para después freírlos en aceite bien caliente para que
+							queden bien bien crujientes.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+
+					<li class="listaProducto" id="listaFlautasPollo">
+						<div class="productoPrecio">
+							<p class="Plato">Faluta de Pollo</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Clásica Botana de Sinaloa, que consiste en tacos de pollo deshebrado los cuales se
+							enrollan bien apretaditos para después freírlos en aceite bien caliente para que
+							queden bien bien crujientes.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="listaFlautasPuerco">
+						<div class="productoPrecio">
+							<p class="Plato">Faluta de Puerco</p>
+
+							<p class="Precio1">$390</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Clásica Botana de Sinaloa, que consiste en tacos de puerco deshebrado los cuales se
+							enrollan bien apretaditos para después freírlos en aceite bien caliente para que
+							queden bien bien crujientes.
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Simple</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Doble</button>
+						</div>
+					</li>
+				</ul>
+
+				<div class="finDelContenedor">
+					<br />
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="contenedorGrid">
+				<div class="elementosFooter">
+					<img
+						src="img/logo mexicano footer.jpg"
+						alt="logoMexicano"
+						width="330"
+						height="115"
+						class="logoMexicanoFooter"
+					/>
+
+					<div class="contenedorRedes">
+						<a
+							href="https://www.instagram.com/mexicanocafebariloche/"
+							class="fab fa-instagram"
+							id="iconoInstagram"
+							target="blank"
+						>
+						</a>
+						<a
+							href="https://www.facebook.com/elmexicanobariloche"
+							target="_blank"
+							class="fab fa-facebook-f"
+							id="iconoFacebook"
+						>
+						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
+							target="_blank"
+							class="fab fa-whatsapp"
+							id="iconoWhatsApp"
+						>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</body>
-
+		</footer>
+	</body>
 </html>

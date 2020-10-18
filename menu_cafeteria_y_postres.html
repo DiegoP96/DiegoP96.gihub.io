@@ -1,545 +1,483 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./img/Logo Mexicano.png" />
+		<link rel="stylesheet" href="css/menu_entradaestilo.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/codigo.js"></script>
+		<script src="js/pedido_carta.js"></script>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" href="./img/Logo Mexicano.png" />
-	<link rel="stylesheet" href="css/menu_entradaestilo.css" />
-	<!-- <link rel="stylesheet" href="css/estilos.css"> -->
-	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Source+Sans+Pro&display=swap"
-		rel="stylesheet" />
-	<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
-	<script src="js/jquery-3.5.1.min.js"></script>
-	<script src="js/codigo.js"></script>
-	<script src="js/pedido_carta.js"></script>
+		<title>Menu Entrada</title>
+	</head>
 
-	<title>Menu Entrada</title>
-</head>
+	<body>
+		<header>
+			<section>
+				<div class="contenedorHeader">
+					<div class="transparencia"></div>
+					<h1 class="tituloHome">Menú</h1>
+				</div>
+			</section>
+		</header>
 
-<body>
-	<header>
-		<section>
-			<div class="contenedorHeader">
-				<div class="transparencia"></div>
-				<h1 class="tituloHome">Menú</h1>
-			</div>
-		</section>
-	</header>
+		<div class="contenedor_botones">
+			<button class="boton_menu" id="entrada">
+				<a href="./menu_Entrada.html"
+					><img src="./img/botonMenuEntrada.png" width="60px" height="60px" class="imgBoton"
+				/></a>
+			</button>
+			<h5 class="texto" id="texto_entrada">Entradas</h5>
+			<button class="boton_menu" id="plato_principal">
+				<a href="menu_platos_principales.html"
+					><img src="./img/botonMenuPlatoPrincipal.png" width="60px" height="60px" class="imgBoton"
+				/></a>
+			</button>
+			<h5 class="texto" id="texto_plato_principal">Platos Principales</h5>
+			<button class="boton_menu" id="bebidas">
+				<a href="menu_bebidas.html "
+					><img src="./img/botonMenuBebidas.png" width="60px" height="60px" class="imgBoton"
+				/></a>
+			</button>
+			<h5 class="texto" id="texto_bebidas">Bebidas</h5>
+			<button class="boton_menu" id="postres">
+				<a href="menu_cafeteria_y_postres.html ">
+					<img
+						src="./img/botonMenuCafeteria.png"
+						width="50px"
+						height="50px"
+						class="imgBotonPostres"
+				/></a>
+			</button>
 
-	<div class="contenedor_botones">
-		<button class="boton_menu" id="entrada">
-			<a href="./menu_Entrada.html"><img src="./img/botonMenuEntrada.png" width="60px" height="60px"
-					class="imgBoton" /></a>
-		</button>
-		<h5 class="texto" id="texto_entrada">Entradas</h5>
-		<button class="boton_menu" id="plato_principal">
-			<a href="menu_platos_principales.html"><img src="./img/botonMenuPlatoPrincipal.png" width="60px"
-					height="60px" class="imgBoton" /></a>
-		</button>
-		<h5 class="texto" id="texto_plato_principal">Platos Principales</h5>
-		<button class="boton_menu" id="bebidas">
-			<a href="menu_bebidas.html "><img src="./img/botonMenuBebidas.png" width="60px" height="60px"
-					class="imgBoton" /></a>
-		</button>
-		<h5 class="texto" id="texto_bebidas">Bebidas</h5>
-		<button class="boton_menu" id="postres">
-			<a href="menu_cafeteria_y_postres.html "> <img src="./img/botonMenuCafeteria.png" width="50px" height="50px"
-					class="imgBotonPostres" /></a>
-		</button>
-
-		<h5 class="texto" id="texto_postres">Cafetería y Postres</h5>
-	</div>
-	<style>
-		#entrada {
-			opacity: 0.7;
-		}
-
-		#bebidas {
-			opacity: 0.7;
-		}
-
-		#postres {
-			opacity: 1;
-		}
-	</style>
-
-	<section>
-		<div class="contenedorVerMiPedido">
-			<a href="./index.html" class="botonIrIndex"> <i class="fas fa-home"></i></a>
-			<a href="pedido.php"><button class="boton_carrito">Mi Pedido</button></a>
+			<h5 class="texto" id="texto_postres">Cafetería y Postres</h5>
 		</div>
-	</section>
-
-	<main>
-		<section class="menu">
-			<ul>
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonNachos">
-						<img src="./img/nachos.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Postres</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="Tortatresleches">
-					<div class="productoPrecio">
-						<p class="Plato">Torta tres leches</p>
-
-						<p class="Precio">$220</p>
-					</div>
-
-					<p>
-						Tipo muffins bien mexicaas
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="Crepeé">
-					<div class="productoPrecio">
-						<p class="Plato">Crepeé</p>
-
-						<p class="Precio">$240</p>
-					</div>
-
-					<p>
-						Crepeê de banana al tequila y chocolate.El chapulin las amaba!
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="PandePlatanos">
-					<div class="productoPrecio">
-						<p class="Plato">Pan de plátanos</p>
-
-						<p class="Precio">$220</p>
-					</div>
-
-					<p>
-						A papa mono con bananas verdes!
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="RollDeCanela">
-					<div class="productoPrecio">
-						<p class="Plato">Roll de canela </p>
-
-						<p class="Precio">$ 160</p>
-					</div>
-
-					<p>
-						la flor de la canela 
-					</p>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonPasteleria">
-						<img src="./img/chicharrones para el menu.png" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Pasteleria</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="Marquise">
-					<div class="productoPrecio">
-						<p class="Plato">Marquise</p>
-
-						<p class="Precio">$ 290</p>
-					</div>
-
-					<p>
-						Brownie, dulce de leche y merengue suizo
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-				<li class="listaProducto" id="Chocolatosa">
-					<div class="productoPrecio">
-						<p class="Plato">Chocolatosa</p>
-
-						<p class="Precio">$290</p>
-					</div>
-
-					<p>
-						Ganacha de chocolate con mousse de chocolate picante y bañada en un cremoso de chocolate. ”CHOCOLATE MEXICANO, COMO LOS MARIACHIS”.
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				
-				<li class="listaProducto" id="Cheescake">
-					<div class="productoPrecio">
-						<p class="Plato">Cheescake</p>
-
-						<p class="Precio">$290</p>
-					</div>
-
-					<p>
-					   Crema de queso cocida. Con una base de galletas negras y cobertura de coulis de frutos rojos
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="DonasMexicanas">
-					<div class="productoPrecio">
-						<p class="Plato">Donas Mexicanas</p>
-
-						<p class="Precio">$120</p>
-					</div>
-
-					<p>
-						Donas con colores y cositas de colores bien padre! a la mexicana
-				   </p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="Churros">
-					<div class="productoPrecio">
-						<p class="Plato">Churros</p>
-
-						<p class="Precio">$ 100</p>
-					</div>
-
-					<p>
-						Relleno de dulce de leche. Cachucha se le dice en México.
-				   </p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="Medialunas">
-					<div class="productoPrecio">
-						<p class="Plato">Medialunas</p>
-
-						<p class="Precio"> $ 80 </p>
-					</div>
-
-					<p>
-						Croissant al estilo nuestro
-				   </p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="tortasDeJamon">
-					<div class="productoPrecio">
-						<p class="Plato">tortas de jamón </p>
-
-                        <p class="Precio1">$250</p>
-						<p class="Precio2">$290</p>
-					</div>
-
-					<p>
-						 tostadas o solas. Las que le gustan al chavo!
-						 Completa con tomate, lechuga y aguacate.
-				   </p>
-
-				   <button href="www.google.com" class="botonAgregarAlCarritoSimple">Sola</button>
-				   <button href="www.google.com" class="botonAgregarAlCarritoDoble">Completa</button>
-				</li>
-				<li class="listaProducto" id="tostadas">
-					<div class="productoPrecio">
-						<p class="Plato">tostadas</p>
-
-						<p class="Precio"> $190</p>
-					</div>
-
-					<p>
-						tostadas con manteca y dulces 
-
-				   </p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="platoDeFrutas">
-					<div class="productoPrecio">
-						<p class="Plato">plato de frutas</p>
-
-						<p class="Precio"> $190</p>
-					</div>
-
-					<p>
-						Plato de frutas de estación. consulte al mesero/a
-
-				   </p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonDesayunos">
-						<img src="./img/papas para el menu 2.jpg" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Desayunos</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="HuevosRancheros">
-					<div class="productoPrecio">
-						<p class="Plato">Huevos rancheros</p>
-
-						<p class="Precio">$ 390 </p> 
-					</div>
-
-					<p>
-						Huevos ¨bien chingones¨ con tortillas de trigo ligeramente fritas, y huevo frito con algún tipo de salsa picante y acompañados de frijoles refritos. 
-						Se puede usar huevo revuelto en lugar de huevos fritos opcional a pedido
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="HuevosDivorciados">
-					<div class="productoPrecio">
-						<p class="Plato">Huevos divorciados</p>
-
-						<p class="Precio">$ 390 </p> 
-					</div>
-
-					<p>
-						
-					 Una variante popular de los huevos rancheros son los huevos divorciados:
-					 dos huevos servidos, uno es cubierto de salsa verde y el otro de salsa roja, separados por una ‘pared’ de frijoles
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="Chilaquiles">
-					<div class="productoPrecio">
-						<p class="Plato">Chilaquiles</p>
-
-						<p class="Precio">$ 390 </p> 
-					</div>
-
-					<p>	
-					  Un plato típico mexicano elaborado a base de trozos triangulares de tortilla de maíz fritos o tostados llamados totopos, 
-					  que se cocinan en una salsa picante que es roja, acompañados de frijoles refritos con un huevo (opcional) y cubiertos de queso fresco gratinado
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="desayunoVoladorDelDia">
-					<div class="productoPrecio">
-						<p class="Plato">Desayuno volador del dia </p>
-
-                        <p class="Precio1">$350</p>
-						<p class="Precio2">$590</p>
-					</div>
-
-					<p>
-						Consulte la promo desayuno volador del dia! compuesto de varios ingredientes:
-						 frutas, café y plato caliente. para dos cuates o individual. 
-				   </p>
-
-				   <button href="www.google.com" class="botonAgregarAlCarritoSimple">individual</button>
-				   <button href="www.google.com" class="botonAgregarAlCarritoDoble"> Para dos </button>
-				</li>
-				
-				<li>
-					<button class="contenedorBoton" id="contenedorBotonCafeteria">
-						<img src="./img/pechugas bufalo para el menu.JPG" width="70" height="80" class="imagenBoton" />
-
-						<h3 class="productoTxt">Cafetería</h3>
-
-						<p class="descripcionTxt">Descripcion</p>
-					</button>
-				</li>
-
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="ristrettoMacho">
-					<div class="productoPrecio">
-						<p class="Plato">Ristretto macho </p>
-
-						<p class="Precio"> $120 </p>
-					</div>
-
-					<p>
-						Ristretto macho a la italiana corto y fuerte 
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="cafePincheGringo">
-					<div class="productoPrecio">
-						<p class="Plato">café pinche gringo </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						Café pinche gringo largo y suave
-
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="CaféconLeche">
-					<div class="productoPrecio">
-						<p class="Plato">café con leche </p>
-
-                        <p class="Precio1">$140</p>
-						<p class="Precio2">240 </p>
-					</div>
-
-					<p>
-						café con leche. Promos con medialunas o churros.
-				   </p>
-
-				   <button href="www.google.com" class="botonAgregarAlCarritoSimple">Solo</button>
-				   <button href="www.google.com" class="botonAgregarAlCarritoDoble"> Promoción </button>
-				</li>
-				
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-				<li class="listaProducto" id="expresoPorteno">
-					<div class="productoPrecio">
-						<p class="Plato">Expreso porteño </p>
-
-						<p class="Precio"> $ 120 </p>
-					</div>
-
-					<p>
-						 tradicional expreso argentino
-
-					</p>
-
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</li>
-
-			<div class="finDelContenedor">
-				<br />
+		<style>
+			#entrada {
+				opacity: 0.7;
+			}
+
+			#bebidas {
+				opacity: 0.7;
+			}
+
+			#postres {
+				opacity: 1;
+			}
+		</style>
+
+		<section>
+			<div class="contenedorVerMiPedido">
+				<a href="./index.html" class="botonIrIndex"> <i class="fas fa-home"></i></a>
+				<a href="pedido.php"><button class="boton_carrito">Mi Pedido</button></a>
 			</div>
 		</section>
-	</main>
 
-	<footer>
-		<div class="contenedorGrid">
-			<div class="elementosFooter">
-				<img src="img/logo mexicano footer.jpg" alt="logoMexicano" width="330" height="115"
-					class="logoMexicanoFooter" />
+		<main>
+			<section class="menu">
+				<ul>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonNachos">
+							<img src="./img/nachos.jpg" width="70" height="80" class="imagenBoton" />
 
-				<div class="contenedorRedes">
-					<a href="https://www.instagram.com/mexicanocafebariloche/" class="fab fa-instagram"
-						id="iconoInstagram" target="blank">
-					</a>
-					<a href="https://www.facebook.com/elmexicanobariloche" target="_blank" class="fab fa-facebook-f"
-						id="iconoFacebook">
-					</a>
-					<a href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
-						target="_blank" class="fab fa-whatsapp" id="iconoWhatsApp">
-					</a>
+							<h3 class="productoTxt">Postres</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="Tortatresleches">
+						<div class="productoPrecio">
+							<p class="Plato">Torta tres leches</p>
+
+							<p class="Precio">$220</p>
+						</div>
+
+						<p class="descripcionPlato">Tipo muffins bien mexicaas.</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="Crepeé">
+						<div class="productoPrecio">
+							<p class="Plato">Crepeé</p>
+
+							<p class="Precio">$240</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Crepeê de banana al tequila y chocolate. El chapulin las amaba!
+						</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="PandePlatanos">
+						<div class="productoPrecio">
+							<p class="Plato">Pan de plátanos</p>
+
+							<p class="Precio">$220</p>
+						</div>
+
+						<p class="descripcionPlato">A papa mono con bananas verdes!</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="RollDeCanela">
+						<div class="productoPrecio">
+							<p class="Plato">Roll de canela</p>
+
+							<p class="Precio">$ 160</p>
+						</div>
+
+						<p class="descripcionPlato">La flor de la canela.</p>
+
+						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonPasteleria">
+							<img
+								src="./img/chicharrones para el menu.png"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Pasteleria</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="Marquise">
+						<div class="productoPrecio">
+							<p class="Plato">Marquise</p>
+
+							<p class="Precio">$ 290</p>
+						</div>
+
+						<p class="descripcionPlato">Brownie, dulce de leche y merengue suizo.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="Chocolatosa">
+						<div class="productoPrecio">
+							<p class="Plato">Chocolatosa</p>
+
+							<p class="Precio">$290</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Ganacha de chocolate con mousse de chocolate picante y bañada en un cremoso de
+							chocolate. <strong> ”CHOCOLATE MEXICANO, COMO LOS MARIACHIS”. </strong>
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+
+					<li class="listaProducto" id="Cheescake">
+						<div class="productoPrecio">
+							<p class="Plato">Cheescake</p>
+
+							<p class="Precio">$290</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Crema de queso cocida. Con una base de galletas negras y cobertura de coulis de frutos
+							rojos.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="DonasMexicanas">
+						<div class="productoPrecio">
+							<p class="Plato">Donas Mexicanas</p>
+
+							<p class="Precio">$120</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Donas con colores y cositas de colores bien padre! a la mexicana.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="Churros">
+						<div class="productoPrecio">
+							<p class="Plato">Churros</p>
+
+							<p class="Precio">$ 100</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Relleno de dulce de leche. Cachucha se le dice en México.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="Medialunas">
+						<div class="productoPrecio">
+							<p class="Plato">Medialunas</p>
+
+							<p class="Precio">$ 80</p>
+						</div>
+
+						<p class="descripcionPlato">Croissant, al estilo nuestro.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="tortasDeJamon">
+						<div class="productoPrecio">
+							<p class="Plato">Tortas de jamón</p>
+
+							<p class="Precio1">$250</p>
+							<p class="Precio2">$290</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Tostadas o solas. <br />
+							<strong> Las que le gustan al chavo! </strong> <br />
+							Completa con tomate, lechuga y aguacate.
+						</p>
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Sola</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Completa</button>
+						</div>
+					</li>
+					<li class="listaProducto" id="tostadas">
+						<div class="productoPrecio">
+							<p class="Plato">tostadas</p>
+
+							<p class="Precio">$190</p>
+						</div>
+
+						<p class="descripcionPlato">Tostadas con manteca, y dulces.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="platoDeFrutas">
+						<div class="productoPrecio">
+							<p class="Plato">plato de frutas</p>
+
+							<p class="Precio">$190</p>
+						</div>
+
+						<p class="descripcionPlato">Plato de frutas de estación. Consulte al mesero/a</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonDesayunos">
+							<img
+								src="./img/papas para el menu 2.jpg"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Desayunos</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="HuevosRancheros">
+						<div class="productoPrecio">
+							<p class="Plato">Huevos rancheros</p>
+
+							<p class="Precio">$ 390</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Huevos ¨bien chingones¨ con tortillas de trigo ligeramente fritas, y huevo frito con
+							algún tipo de salsa picante y acompañados de frijoles refritos.
+							<strong
+								>Se puede usar huevo revuelto en lugar de huevos fritos opcional a pedido.
+							</strong>
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="HuevosDivorciados">
+						<div class="productoPrecio">
+							<p class="Plato">Huevos divorciados</p>
+
+							<p class="Precio">$ 390</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Una variante popular de los huevos rancheros son los huevos divorciados: <br />
+							dos huevos servidos, uno es cubierto de salsa verde y el otro de salsa roja, separados
+							por una ‘pared’ de frijoles.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="Chilaquiles">
+						<div class="productoPrecio">
+							<p class="Plato">Chilaquiles</p>
+
+							<p class="Precio">$ 390</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Un plato típico mexicano elaborado a base de trozos triangulares de tortilla de maíz
+							fritos o tostados llamados totopos, que se cocinan en una salsa picante que es roja,
+							acompañados de frijoles refritos con un huevo (opcional) y cubiertos de queso fresco
+							gratinado.
+						</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="desayunoVoladorDelDia">
+						<div class="productoPrecio">
+							<p class="Plato">Desayuno volador del dia</p>
+
+							<p class="Precio1">$350</p>
+							<p class="Precio2">$590</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Consulte la promo desayuno volador del dia! compuesto de varios ingredientes: frutas,
+							café y plato caliente. <br />
+							<strong> Para dos cuates o individual. </strong>
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Individual</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Para dos</button>
+						</div>
+					</li>
+
+					<li>
+						<button class="contenedorBoton" id="contenedorBotonCafeteria">
+							<img
+								src="./img/pechugas bufalo para el menu.JPG"
+								width="70"
+								height="80"
+								class="imagenBoton"
+							/>
+
+							<h3 class="productoTxt">Cafetería</h3>
+
+							<p class="descripcionTxt">Descripcion</p>
+						</button>
+					</li>
+
+					<li class="listaProducto" id="expresoPorteno">
+						<div class="productoPrecio">
+							<p class="Plato">Expreso porteño</p>
+
+							<p class="Precio">$ 120</p>
+						</div>
+
+						<p class="descripcionPlato">Tradicional expreso argentino.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="ristrettoMacho">
+						<div class="productoPrecio">
+							<p class="Plato">Ristretto macho</p>
+
+							<p class="Precio">$120</p>
+						</div>
+
+						<p class="descripcionPlato">Ristretto macho a la italiana corto y fuerte.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="cafePincheGringo">
+						<div class="productoPrecio">
+							<p class="Plato">café pinche gringo</p>
+
+							<p class="Precio">$ 120</p>
+						</div>
+
+						<p class="descripcionPlato">Café pinche gringo largo y suave.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+					<li class="listaProducto" id="CaféconLeche">
+						<div class="productoPrecio">
+							<p class="Plato">café con leche</p>
+
+							<p class="Precio1">$140</p>
+							<p class="Precio2">240</p>
+						</div>
+
+						<p class="descripcionPlato">
+							Café con leche. <br />
+							<strong> Promos con medialunas o churros.</strong>
+						</p>
+
+						<div class="contenedorBotonesDobles">
+							<button href="www.google.com" class="botonAgregarAlCarritoSimple">Solo</button>
+							<button href="www.google.com" class="botonAgregarAlCarritoDoble">Promoción</button>
+						</div>
+					</li>
+
+					<li class="listaProducto" id="expresoPorteno">
+						<div class="productoPrecio">
+							<p class="Plato">Expreso porteño</p>
+
+							<p class="Precio">$ 120</p>
+						</div>
+
+						<p class="descripcionPlato">Tradicional expreso argentino.</p>
+
+						<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al pedido</button>
+					</li>
+				</ul>
+				<div class="finDelContenedor">
+					<br />
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="contenedorGrid">
+				<div class="elementosFooter">
+					<img
+						src="img/logo mexicano footer.jpg"
+						alt="logoMexicano"
+						width="330"
+						height="115"
+						class="logoMexicanoFooter"
+					/>
+
+					<div class="contenedorRedes">
+						<a
+							href="https://www.instagram.com/mexicanocafebariloche/"
+							class="fab fa-instagram"
+							id="iconoInstagram"
+							target="blank"
+						>
+						</a>
+						<a
+							href="https://www.facebook.com/elmexicanobariloche"
+							target="_blank"
+							class="fab fa-facebook-f"
+							id="iconoFacebook"
+						>
+						</a>
+						<a
+							href="https://api.whatsapp.com/send?phone=5492944958019&text=&source=&data=&app_absent="
+							target="_blank"
+							class="fab fa-whatsapp"
+							id="iconoWhatsApp"
+						>
+						</a>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
-</body>
-
+		</footer>
+	</body>
 </html>

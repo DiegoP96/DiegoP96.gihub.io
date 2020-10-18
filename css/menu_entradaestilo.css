@@ -247,6 +247,10 @@ button.boton_carrito:hover {
 	letter-spacing: 1px;
 }
 
+#Quinoa {
+	max-width: 600px;
+}
+
 .botonAgregarAlCarrito {
 	grid-row: 3/4;
 	grid-column: 3/4;
@@ -269,7 +273,6 @@ button.boton_carrito:hover {
 	grid-column: 3/3;
 	display: flex;
 	flex-direction: column;
-	/*! align-self: flex-end; */
 	justify-content: space-between;
 }
 
@@ -375,6 +378,12 @@ a {
 	color: #89e077;
 }
 
+@media screen and (max-width: 1366px) and (min-width: 1200px) {
+	.descripcionPlato {
+		max-width: 900px;
+	}
+}
+
 @media screen and (max-width: 650px) {
 	.finDelContenedor {
 		padding: 1.2em 0 1.2em 0;
@@ -385,7 +394,12 @@ a {
 	}
 
 	.descripcionPlato {
-		font-size: 0.8em;
+		font-size: 0.7em;
+		max-width: 600px;
+	}
+
+	#Quinoa {
+		font-size: 0.7em;
 	}
 
 	.botonAgregarAlCarrito {
@@ -401,17 +415,15 @@ a {
 }
 
 @media screen and (max-width: 450px) {
-	
-	.Plato{
-		
+	.Plato {
 		font-size: 0.8em;
 	}
-	
-	.Precio, P{
-		
+
+	.Precio,
+	P {
 		font-size: 0.8em;
 	}
-	
+
 	.listaProducto {
 		grid-row-gap: 15px;
 	}
@@ -422,7 +434,7 @@ a {
 
 	.descripcionPlato {
 		max-width: 400px;
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 
 	.contenedorBotonesDobles {
@@ -466,18 +478,17 @@ a {
 		width: 30px;
 		height: 35px;
 	}
-	
-	.texto{
-		margin-left: 1em; 
+
+	.texto {
+		margin-left: 1em;
 		font-size: 0.6em;
 	}
 
 	.contenedorVerMiPedido {
 		margin-top: 1em;
 	}
-	
-	.listaProducto{
-		
+
+	.listaProducto {
 		padding: 1.7em;
 	}
 
@@ -522,6 +533,11 @@ a {
 	.imgBotonPostres {
 		width: 30px;
 		height: 35px;
+	}
+	
+	.descripcionPlato{
+		
+		font-size: 0.6em;
 	}
 
 	.textoFooter {
@@ -579,6 +595,10 @@ a {
 		margin-top: -15px;
 		margin-left: 1.1em;
 		font-size: 0.5em;
+	}
+
+	.descripcionPlato {
+		font-size: 0.6em;
 	}
 
 	p {

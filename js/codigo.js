@@ -144,7 +144,7 @@ $(document).ready(function (e) {
     $("#Medialunas").toggle(
 
     );
-    $("#tortasDeJamon").toggle(
+    $("#tortasDeJamon ").toggle(
         
     );
     $("#tostadas").toggle(
@@ -485,7 +485,7 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").show(e);
             $("#Churros").show(e);
             $("#Medialunas").show(e);
-            $("#tortasDeJamon").show(e);
+            $("#tortasDeJamon ").show(e);
             $("#tostadas").show(e);
             $("#platoDeFrutas").show(e);
             contador++;
@@ -497,7 +497,7 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").hide(e);
             $("#Churros").hide(e);
             $("#Medialunas").hide(e);
-            $("#tortasDeJamon").hide(e);
+            $("#tortasDeJamon ").hide(e);
             $("#tostadas").hide(e);
             $("#platoDeFrutas").hide(e);
 

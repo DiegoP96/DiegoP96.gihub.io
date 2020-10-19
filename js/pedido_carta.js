@@ -113,7 +113,7 @@ function addToCartClicked(event) {
 
 function addToCartClickedDoble(event) {
     var button = event.target
-    var shopItem = button.parentElement
+    var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio2')[0].innerText
     if (checkPlatesDuplicate(title + " Doble")) {
@@ -126,7 +126,7 @@ function addToCartClickedDoble(event) {
 
 function addToCartClickedSimple(event) {
     var button = event.target
-    var shopItem = button.parentElement
+    var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio1')[0].innerText
     if (checkPlatesDuplicate(title)) {

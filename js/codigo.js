@@ -175,9 +175,28 @@ $(document).ready(function (e) {
     $("#cafePincheGringo").toggle(
 
     );
+    $("#cafeLatte").toggle(
+
+    );
+    $("#chocolateTradicional").toggle(
+
+    );
+    $("#chocolateEspecial").toggle(
+
+    );
+    $("#capuchinoTradicional").toggle(
+
+    );
+    $("#CapuchinoALaMexicana").toggle(
+
+    );
+    $("#te").toggle(
+
+    );
     $("#cafeconLeche").toggle(
 
     );
+
     $("#listaMargarita").toggle(
 
     );
@@ -645,6 +664,12 @@ $(document).ready(function (e) {
             $("#ristrettoMacho").show(e);
             $("#cafePincheGringo").show(e);
             $("#cafeconLeche").show(e);
+            $("#cafeLatte").show(e);
+            $("#chocolateTradicional").show(e);
+            $("#chocolotaEspecial").show(e);
+            $("#capuchinoTradicional").show(e);
+            $("#CapuchinoALaMexicana").show(e);
+            $("#te").show(e);
 
             contador++;
         } else {
@@ -653,6 +678,12 @@ $(document).ready(function (e) {
             $("#ristrettoMacho").hide(e);
             $("#cafePincheGringo").hide(e);
             $("#cafeconLeche").hide(e);
+            $("#cafeLatte").hide(e);
+            $("#chocolateTradicional").hide(e);
+            $("#chocolotaEspecial").hide(e);
+            $("#capuchinoTradicional").hide(e);
+            $("#CapuchinoALaMexicana").hide(e);
+            $("#te").hide(e);
             contador = 0;
         }
     });

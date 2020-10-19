@@ -203,6 +203,39 @@ $(document).ready(function (e) {
 
     );
 
+    $("#listaTrivento1").toggle(
+
+    );
+    $("#listaTrivento2").toggle(
+
+    );
+    $("#listaTrivento3").toggle(
+
+    );
+    $("#listaTrivento4").toggle(
+
+    );
+    $("#listaTrivento5").toggle(
+
+    );
+    $("#listaTrivento6").toggle(
+
+    );
+    $("#listaTrivento7").toggle(
+
+    );
+    $("#listaTrivento8").toggle(
+
+    );
+    $("#listaTrivento9").toggle(
+
+    );
+    $("#listaTrivento10").toggle(
+        
+    );
+
+
+
 });
 
 
@@ -334,6 +367,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY ENSALADAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonEnsaladas").click(function (e) {
@@ -578,7 +612,6 @@ $(document).ready(function (e) {
     });
 });
 
-
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonCafeteria").click(function (e) {
@@ -603,6 +636,7 @@ $(document).ready(function (e) {
 });
 
 $(document).ready(function (e) {
+
     var contador = 0;
     $("#contenedorBotonTragos").click(function (e) {
 
@@ -628,6 +662,42 @@ $(document).ready(function (e) {
             $("#listaNegroni").hide(e);
             $("#listaCampari").hide(e);
             $("#listaMargarita").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTrivento").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaTrivento1").show(e);
+            $("#listaTrivento2").show(e);
+            $("#listaTrivento3").show(e);
+            $("#listaTrivento4").show(e);
+            $("#listaTrivento5").show(e);
+            $("#listaTrivento6").show(e);
+            $("#listaTrivento7").show(e);
+            $("#listaTrivento8").show(e);
+            $("#listaTrivento9").show(e);
+            $("#listaTrivento10").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaTrivento1").hide(e);
+            $("#listaTrivento2").hide(e);
+            $("#listaTrivento3").hide(e);
+            $("#listaTrivento4").hide(e);
+            $("#listaTrivento5").hide(e);
+            $("#listaTrivento6").hide(e);
+            $("#listaTrivento7").hide(e);
+            $("#listaTrivento8").hide(e);
+            $("#listaTrivento9").hide(e);
+            $("#listaTrivento10").hide(e);
             contador = 0;
         }
     });

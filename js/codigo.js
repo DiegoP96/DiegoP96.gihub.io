@@ -231,8 +231,31 @@ $(document).ready(function (e) {
 
     );
     $("#listaTrivento10").toggle(
-        
+
     );
+
+    $("#listaSanHuberto1").toggle(
+
+    );
+    $("#listaSanHuberto2").toggle(
+
+    );
+    $("#listaSanHuberto3").toggle(
+
+    );
+    $("#listaSanHuberto4").toggle(
+
+    );
+    $("#listaSanHuberto5").toggle(
+
+    );
+    $("#listaSanHuberto6").toggle(
+
+    );
+    $("#listaSanHuberto7").toggle(
+
+    );
+
 
 
 
@@ -698,6 +721,37 @@ $(document).ready(function (e) {
             $("#listaTrivento8").hide(e);
             $("#listaTrivento9").hide(e);
             $("#listaTrivento10").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonSanHuberto").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaSanHuberto1").show(e);
+            $("#listaSanHuberto2").show(e);
+            $("#listaSanHuberto3").show(e);
+            $("#listaSanHuberto4").show(e);
+            $("#listaSanHuberto5").show(e);
+            $("#listaSanHuberto6").show(e);
+            $("#listaSanHuberto7").show(e);
+
+
+            contador++;
+        } else {
+
+            $("#listaSanHuberto1").hide(e);
+            $("#listaSanHuberto2").hide(e);
+            $("#listaSanHuberto3").hide(e);
+            $("#listaSanHuberto4").hide(e);
+            $("#listaSanHuberto5").hide(e);
+            $("#listaSanHuberto6").hide(e);
+            $("#listaSanHuberto7").hide(e);
+
             contador = 0;
         }
     });

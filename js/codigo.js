@@ -178,6 +178,30 @@ $(document).ready(function (e) {
     $("#cafeconLeche").toggle(
 
     );
+    $("#listaMargarita").toggle(
+
+    );
+    $("#listaCampari").toggle(
+
+    );
+    $("#listaNegroni").toggle(
+
+    );
+    $("#listaMojito").toggle(
+
+    );
+    $("#listaGinTonic").toggle(
+
+    );
+    $("#listaFernet").toggle(
+
+    );
+    $("#listaCubaLibre").toggle(
+
+    );
+    $("#listaCaipi").toggle(
+
+    );
 
 });
 
@@ -573,6 +597,37 @@ $(document).ready(function (e) {
             $("#ristrettoMacho").hide(e);
             $("#cafePincheGringo").hide(e);
             $("#cafeconLeche").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTragos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaMojito").show(e);
+            $("#listaCaipi").show(e);
+            $("#listaCubaLibre").show(e);
+            $("#listaFernet").show(e);
+            $("#listaGinTonic").show(e);
+            $("#listaNegroni").show(e);
+            $("#listaCampari").show(e);
+            $("#listaMargarita").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaMojito").hide(e);
+            $("#listaCaipi").hide(e);
+            $("#listaCubaLibre").hide(e);
+            $("#listaFernet").hide(e);
+            $("#listaGinTonic").hide(e);
+            $("#listaNegroni").hide(e);
+            $("#listaCampari").hide(e);
+            $("#listaMargarita").hide(e);
             contador = 0;
         }
     });

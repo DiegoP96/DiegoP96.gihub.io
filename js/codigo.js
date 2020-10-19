@@ -129,44 +129,55 @@ $(document).ready(function (e) {
 
     );
     $("#Chocolatosa").toggle(
-    
+
     );
-     $("#Cheescake").toggle(
-    
-     );
-     $("#DonasMexicanas").toggle(
-    
+    $("#Cheescake").toggle(
+
+    );
+    $("#DonasMexicanas").toggle(
+
     );
     $("#Churros").toggle(
-    
+
     );
-    
+
     $("#Medialunas").toggle(
 
     );
     $("#tortasDeJamon ").toggle(
-        
+
     );
     $("#tostadas").toggle(
-        
+
     );
     $("#platoDeFrutas").toggle(
-        
+
     );
     $("#HuevosRancheros").toggle(
-    
-    );
-        
-    $("#HuevosDivorciados").toggle(
-    
-    );
-    $("#Chilaquiles").toggle(
-            
-    );
-    $("#desayunoVoladorDelDia").toggle(
-            
+
     );
 
+    $("#HuevosDivorciados").toggle(
+
+    );
+    $("#Chilaquiles").toggle(
+
+    );
+    $("#desayunoVoladorDelDia").toggle(
+
+    );
+    $("#ristrettoMacho").toggle(
+
+    );
+    $("#expresoPorteno").toggle(
+
+    );
+    $("#cafePincheGringo").toggle(
+
+    );
+    $("#cafeconLeche").toggle(
+
+    );
 
 });
 
@@ -538,6 +549,30 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").hide(e);
             $("#Chilaquiles").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
+            contador = 0;
+        }
+    });
+});
+
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonCafeteria").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#expresoPorteno").show(e);
+            $("#ristrettoMacho").show(e);
+            $("#cafePincheGringo").show(e);
+            $("#cafeconLeche").show(e);
+
+            contador++;
+        } else {
+
+            $("#expresoPorteno").hide(e);
+            $("#ristrettoMacho").hide(e);
+            $("#cafePincheGringo").hide(e);
+            $("#cafeconLeche").hide(e);
             contador = 0;
         }
     });

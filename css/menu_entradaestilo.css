@@ -210,6 +210,11 @@ button.boton_carrito:hover {
 	text-align: initial;
 	letter-spacing: 2px;
 	margin-left: 22px;
+	font-size: 10px;
+}
+
+#expandirTxt{
+	margin-top: 10px;
 }
 
 .listaProducto {

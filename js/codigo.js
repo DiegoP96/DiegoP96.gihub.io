@@ -275,6 +275,13 @@ $(document).ready(function (e) {
 
     );
 
+    $("#listaSueco").toggle(
+
+    );
+    $("#listaPollo").toggle(
+
+    );
+
 
 
 
@@ -772,6 +779,26 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").hide(e);
             $("#listaSanHuberto6").hide(e);
             $("#listaSanHuberto7").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPlatos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaSueco").show(e);
+            $("#listaPollo").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaSueco").hide(e);
+            $("#listaPollo").hide(e);
 
             contador = 0;
         }

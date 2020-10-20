@@ -191,6 +191,59 @@ body {
 	margin-top: -10px;
 }
 
+.contenedorPopUp{
+	width: 100%;
+	height: 100%; 
+	background-color: rgba(0,0,0,0.7);
+	position: absolute;
+	top:0;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	box-sizing: border-box;
+	display: none;
+	
+}
+
+.popUp{
+	width: 250px;
+	height: 300px;
+	border-radius: 4px;
+	padding-right: 4px;
+	padding-left: 4px;
+	background-color: #f9f9f9;
+	border: solid 4px #717beb ;
+	position: relative;
+	text-align: center;
+	font-family: "Cormorant Garamond", serif;
+
+}
+#imagenPopUp{
+	padding-top: 10px;
+	width:250px;
+	height:100px; 
+
+}
+#whatappPopUp{
+	text-decoration: none;
+	color:#6add52;
+	padding-top: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+.cerrarPopUp{
+	position: absolute;
+	font-size: 35px;
+	top:0;
+	right: 9px;
+	margin-top: none;
+	margin-right: none;
+	transform: rotate(45deg);
+	cursor: pointer;
+
+}
+
 .txtMapaDelSitio {
 	width: 70%;
 	justify-self: center;

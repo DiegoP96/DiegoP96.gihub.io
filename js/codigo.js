@@ -275,6 +275,13 @@ $(document).ready(function (e) {
 
     );
 
+    $("#listaSueco").toggle(
+
+    );
+    $("#listaPollo").toggle(
+
+    );
+
 
 
 
@@ -433,6 +440,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY TACOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonTacos").click(function (e) {
@@ -459,6 +467,7 @@ $(document).ready(function (e) {
 
 });
 
+// READY QUESADILLAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonQuesadillas").click(function (e) {
@@ -483,6 +492,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY FLAUTAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonFlautas").click(function (e) {
@@ -505,28 +515,7 @@ $(document).ready(function (e) {
     });
 });
 
-$(document).ready(function (e) {
-    var contador = 0;
-    $("#contenedorBotonFlautas").click(function (e) {
-
-        if (contador == 0) {
-
-            $("#listaFlautasRes").show(e);
-            $("#listaFlautasPollo").show(e);
-            $("#listaFlautasPuerco").show(e);
-
-            contador++;
-        } else {
-
-            $("#listaFlautasRes").hide(e);
-            $("#listaFlautasPollo").hide(e);
-            $("#listaFlautasPuerco").hide(e);
-
-            contador = 0;
-        }
-    });
-});
-
+// READY REFRESCOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonRefrescos").click(function (e) {
@@ -549,6 +538,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY NACHOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonNachos").click(function (e) {
@@ -572,6 +562,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY CERVEZAS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonCervezas").click(function (e) {
@@ -597,6 +588,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY PASTELERIA
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonPasteleria").click(function (e) {
@@ -631,6 +623,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY DESAYUNOS
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonDesayunos").click(function (e) {
@@ -654,6 +647,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY CAFETERIA
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonCafeteria").click(function (e) {
@@ -689,6 +683,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY TRAGOS
 $(document).ready(function (e) {
 
     var contador = 0;
@@ -721,6 +716,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY TRIVENTO
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonTrivento").click(function (e) {
@@ -757,6 +753,7 @@ $(document).ready(function (e) {
     });
 });
 
+// READY SAN HUEBERTO
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonSanHuberto").click(function (e) {
@@ -782,6 +779,26 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").hide(e);
             $("#listaSanHuberto6").hide(e);
             $("#listaSanHuberto7").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPlatos").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaSueco").show(e);
+            $("#listaPollo").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaSueco").hide(e);
+            $("#listaPollo").hide(e);
 
             contador = 0;
         }

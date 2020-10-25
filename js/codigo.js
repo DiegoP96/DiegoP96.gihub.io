@@ -166,6 +166,10 @@ $(document).ready(function (e) {
     $("#desayunoVoladorDelDia").toggle(
 
     );
+    $("#Moyotes").toggle(
+
+    );
+
     $("#ristrettoMacho").toggle(
 
     );
@@ -634,6 +638,7 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").show(e);
             $("#Chilaquiles").show(e);
             $("#desayunoVoladorDelDia").show(e);
+            $("#Moyotes").show(e);
 
             contador++;
         } else {
@@ -642,6 +647,8 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").hide(e);
             $("#Chilaquiles").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
+            $("#Moyotes").hide(e);
+
             contador = 0;
         }
     });

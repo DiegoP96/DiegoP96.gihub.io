@@ -170,6 +170,10 @@ $(document).ready(function (e) {
 
     );
 
+    $("#tostadaFranchuta").toggle(
+
+    );
+
     $("#ristrettoMacho").toggle(
 
     );
@@ -639,6 +643,7 @@ $(document).ready(function (e) {
             $("#Chilaquiles").show(e);
             $("#desayunoVoladorDelDia").show(e);
             $("#Moyotes").show(e);
+            $("#tostadaFranchuta").show(e);
 
             contador++;
         } else {
@@ -648,6 +653,7 @@ $(document).ready(function (e) {
             $("#Chilaquiles").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
             $("#Moyotes").hide(e);
+            $("#tostadaFranchuta").hide(e);
 
             contador = 0;
         }

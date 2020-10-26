@@ -166,6 +166,14 @@ $(document).ready(function (e) {
     $("#desayunoVoladorDelDia").toggle(
 
     );
+    $("#Moyotes").toggle(
+
+    );
+
+    $("#tostadaFranchuta").toggle(
+
+    );
+
     $("#ristrettoMacho").toggle(
 
     );
@@ -282,8 +290,15 @@ $(document).ready(function (e) {
 
     );
 
+    $("#pizzaMargarita").toggle(
 
+    );
+    $("#pizzaMexicana").toggle(
 
+    );
+    $("#pizzaTocino").toggle(
+
+    );
 
 });
 
@@ -634,6 +649,8 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").show(e);
             $("#Chilaquiles").show(e);
             $("#desayunoVoladorDelDia").show(e);
+            $("#Moyotes").show(e);
+            $("#tostadaFranchuta").show(e);
 
             contador++;
         } else {
@@ -642,6 +659,9 @@ $(document).ready(function (e) {
             $("#HuevosDivorciados").hide(e);
             $("#Chilaquiles").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
+            $("#Moyotes").hide(e);
+            $("#tostadaFranchuta").hide(e);
+
             contador = 0;
         }
     });
@@ -785,6 +805,7 @@ $(document).ready(function (e) {
     });
 });
 
+//READY PLATOS ESPECIALES
 $(document).ready(function (e) {
     var contador = 0;
     $("#contenedorBotonPlatos").click(function (e) {
@@ -804,3 +825,26 @@ $(document).ready(function (e) {
         }
     });
 });
+
+// READY PIZZAS
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPizzas").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#pizzaMargarita").show(e);
+            $("#pizzaMexicana").show(e);
+            $("#pizzaTocino").show(e);
+
+            contador++;
+        } else {
+
+            $("#pizzaMargarita").hide(e);
+            $("#pizzaMexicana").hide(e);
+            $("#pizzaTocino").hide(e);
+
+            contador = 0;
+        }
+    });
+})

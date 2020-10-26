@@ -310,8 +310,6 @@ button.boton_carrito:hover {
 }
 
 .botonAgregarAlCarritoDoble {
-	grid-row: 3/4;
-	grid-column: 2/3;
 	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
@@ -407,7 +405,7 @@ a {
 	color: #89e077;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1024px) {
+@media screen and (max-width: 4024px) and (min-width: 1024px) {
 	.descripcionPlato {
 		max-width: 900px;
 	}
@@ -444,6 +442,20 @@ a {
 
 	.contenedorProductoDescripcion {
 		width: 20%;
+	}
+
+	.contenedorBotonesDobles {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 650px) and (min-width: 375px) {
+	.contenedorBotonesDobles {
+		justify-content: end;
+	}
+
+	.botonAgregarAlCarritoDoble {
+		margin-left: 10px;
 	}
 }
 

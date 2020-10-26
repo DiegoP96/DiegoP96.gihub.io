@@ -125,10 +125,6 @@
 	height: 300px;
 }
 
-ul {
-	list-style: none;
-}
-
 .contenedorVerMiPedido {
 	display: flex;
 	padding: 0.3em 2em;
@@ -166,14 +162,11 @@ button.boton_carrito:hover {
 }
 
 .contenedorBoton {
-	display: grid;
-	padding: 50px;
-	grid-template-columns: 60px 100px;
-	grid-template-rows: 28px;
-	grid-column-gap: 50px;
-	width: 100%;
-	height: 115px;
-	align-content: center;
+	display: flex;
+	padding: 20px 0px;
+	justify-content: space-evenly;
+	align-items: center;
+	max-width: 100%;
 	background-color: white;
 	border: none;
 	border-top: solid 1px gainsboro;
@@ -181,13 +174,13 @@ button.boton_carrito:hover {
 }
 
 .imagenBoton {
-	margin: 15px 0px 0px 50px;
-	width: 100%;
-	grid-column-start: 2;
-	grid-row-start: 1;
-	align-self: center;
+	width: 80px;
+	height: 75px;
 	border-radius: 50%;
 	border: solid 2px gainsboro;
+}
+
+.contenedorProductoDescripcion {
 }
 
 #imagenBotonRefresco {
@@ -195,21 +188,17 @@ button.boton_carrito:hover {
 }
 
 .productoTxt {
-	grid-column-start: 1;
-	grid-row-start: 1;
 	color: black;
 	font-weight: 400;
-	text-align: initial;
 	letter-spacing: 1px;
-	margin-left: 22px;
+	margin: 10px 0px;
+	width: 80px;
 }
 
 .descripcionTxt {
-	grid-column-start: 1;
 	color: rgb(192, 189, 189);
 	text-align: initial;
 	letter-spacing: 2px;
-	margin-left: 22px;
 	font-size: 10px;
 }
 
@@ -218,14 +207,14 @@ button.boton_carrito:hover {
 }
 
 .listaProducto {
-	display: grid;
-	grid-template-columns: 1fr auto;
+	display: flex;
 	padding: 2em;
 	background-color: rgba(216, 216, 216, 0.185);
 	max-width: 100%;
-	height: 120px;
 	border-bottom: solid 2px gainsboro;
 	font-size: 1em;
+	flex-flow: column;
+	flex-wrap: wrap;
 }
 
 .productoPrecio {
@@ -254,6 +243,8 @@ button.boton_carrito:hover {
 	grid-row: 2/3;
 	max-width: 400px;
 	letter-spacing: 1px;
+	margin-top: 10px;
+	font-size: 0.8em;
 }
 
 #Quinoa {
@@ -261,60 +252,58 @@ button.boton_carrito:hover {
 }
 
 .botonAgregarAlCarrito {
-	grid-row: 3/4;
-	grid-column: 3/4;
-	/*! align-self: baseline; */
-	width: 160px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
 	font-weight: 300;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: white;
 	background-color: #ffc530;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
+	margin-top: 15px;
 }
 
 .contenedorBotonesDobles {
-	grid-row: 2/3;
-	grid-column: 3/3;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
 .botonAgregarAlCarritoSimple {
 	grid-row: 3/4;
 	grid-column: 2/3;
-	width: 160px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
 	font-weight: 300;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: white;
 	background-color: #ffc530;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
+	margin-top: 15px;
 }
 
 .botonAgregarAlCarritoDoble {
 	grid-row: 3/4;
 	grid-column: 2/3;
-	width: 160px;
+	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
 	border-radius: 2em;
 	text-decoration: none;
 	font-weight: 300;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	color: white;
 	background-color: #ffac30;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
+	margin-top: 15px;
 }
 .Plato {
 	font-style: normal;
@@ -387,74 +376,43 @@ a {
 	color: #89e077;
 }
 
-@media screen and (max-width: 1366px) and (min-width: 1200px) {
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
 	.descripcionPlato {
 		max-width: 900px;
 	}
-}
 
-@media screen and (max-width: 650px) {
-	.finDelContenedor {
-		padding: 1.2em 0 1.2em 0;
+	.contenedorBoton {
+		padding: 20px 70px;
+		justify-content: flex-start;
 	}
 
-	.listaProducto {
-		grid-row-gap: 10px;
-	}
-
-	.descripcionPlato {
-		font-size: 0.7em;
-		max-width: 600px;
-	}
-
-	#Quinoa {
-		font-size: 0.7em;
+	.contenedorProductoDescripcion {
+		width: 12%;
 	}
 
 	.botonAgregarAlCarrito {
-		width: 120px;
-		font-size: 0.7em;
+		align-self: flex-end;
 	}
-
-	.botonAgregarAlCarritoSimple,
+	.botonAgregarAlCarritoSimple {
+		align-self: flex-end;
+	}
 	.botonAgregarAlCarritoDoble {
-		width: 120px;
-		font-size: 0.7em;
-	}
-}
-
-@media screen and (max-width: 450px) {
-	.Plato {
-		font-size: 0.8em;
-	}
-
-	.Precio,
-	P {
-		font-size: 0.8em;
-	}
-
-	.listaProducto {
-		grid-row-gap: 15px;
-	}
-
-	.botonAgregarAlCarrito {
-		grid-column: 1/2;
-	}
-
-	.descripcionPlato {
-		max-width: 400px;
-		font-size: 0.6em;
+		align-self: flex-end;
 	}
 
 	.contenedorBotonesDobles {
-		flex-direction: row;
-		justify-content: normal;
-		grid-column: 1/2;
-		grid-row: 3/4;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 650px) {
+	.contenedorBoton {
+		padding: 20px 70px;
+		justify-content: flex-start;
 	}
 
-	.botonAgregarAlCarritoDoble {
-		margin-left: 2em;
+	.contenedorProductoDescripcion {
+		width: 20%;
 	}
 }
 
@@ -497,23 +455,6 @@ a {
 		margin-top: 1em;
 	}
 
-	.listaProducto {
-		padding: 1.7em;
-	}
-
-	.descripcionPlato {
-		max-width: 400px;
-		font-size: 0.7em;
-	}
-
-	.listaProducto {
-		grid-row-gap: 10px;
-	}
-
-	.finDelContenedor {
-		padding: 1.2em 0 1.2em 0;
-		width: 100;
-	}
 	.elementosFooter {
 		padding: 1em;
 	}
@@ -599,19 +540,22 @@ a {
 		height: 70px;
 	}
 
+	.botonAgregarAlCarrito {
+		width: 120px;
+	}
+
+	.botonAgregarAlCarritoSimple {
+		width: 120px;
+	}
+
+	.botonAgregarAlCarritoDoble {
+		width: 120px;
+	}
+
 	.texto {
 		margin-top: -15px;
 		margin-left: 1.1em;
 		font-size: 0.5em;
-	}
-
-	.descripcionPlato {
-		font-size: 0.6em;
-	}
-
-	p {
-		font-size: 0.8em;
-		max-width: 230px;
 	}
 
 	.logoMexicanoFooter {

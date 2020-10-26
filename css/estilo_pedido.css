@@ -39,7 +39,7 @@ td {
 
 .headerCarrito {
 	font-family: "Bebas Neue", cursive;
-	color: #717beb;
+	color: #ffc530;
 	letter-spacing: 2px;
 	text-shadow:  white 2px 5px;
 	margin: none 4px ;
@@ -48,13 +48,13 @@ td {
 
 #valor{
 
-	color:#ffc530;
+	color:#717beb;
 	padding-right: 4px;
 }
 
 #opciones{
 
-	color:#ffc530;
+	color:#717beb;
 }
 
 

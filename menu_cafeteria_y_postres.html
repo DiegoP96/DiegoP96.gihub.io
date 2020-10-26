@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="./img/Logo Mexicano.png" />
-		<link rel="stylesheet" href="css/menu_entradaestilo.css" />
+		<link rel="stylesheet" href="css/estilo_menu.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
 			rel="stylesheet"
@@ -17,7 +17,7 @@
 		<script src="js/codigo.js"></script>
 		<script src="js/pedido_carta.js"></script>
 
-		<title>Menu Entrada</title>
+		<title>Menu Cafetería y postres </title>
 	</head>
 
 	<body>
@@ -32,7 +32,7 @@
 
 		<div class="contenedor_botones">
 			<button class="boton_menu" id="entrada">
-				<a href="./menu_Entrada_flex.html"
+				<a href="./menu_entrada.html"
 					><img
 						src="./img/botonMenuEntrada.png"
 						width="60px"
@@ -96,23 +96,23 @@
 
 		<main>
 			<section class="menu">
-				<ul>
-					<li>
-						<button class="contenedorBoton" id="contenedorBotonNachos">
-							<img
-								src="./img/rollosDeCanela.jpg"
-								width="70"
-								height="80"
-								class="imagenBoton"
-							/>
-
+				<div>
+					<div class="contenedorBoton" id="contenedorBotonNachos">
+						<div class="contenedorProductoDescripcion">
 							<h3 class="productoTxt">Postres</h3>
-
+	
 							<p class="descripcionTxt">Expandir</p>
-						</button>
-					</li>
+						</div>
+	
+						<img
+							src="./img/rollosDeCanela.jpg"
+							width="70"
+							height="80"
+							class="imagenBoton"
+						/>
+					</div>
 
-					<li class="listaProducto" id="Tortatresleches">
+					<div class="listaProducto" id="Tortatresleches">
 						<div class="productoPrecio">
 							<p class="Plato">Torta tres leches</p>
 
@@ -122,9 +122,9 @@
 						<p class="descripcionPlato">Tipo muffins bien mexicanas.</p>
 
 						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-					</li>
+					</div>
 
-					<li class="listaProducto" id="Crepeé">
+					<div class="listaProducto" id="Crepeé">
 						<div class="productoPrecio">
 							<p class="Plato">Crepeé</p>
 
@@ -137,9 +137,9 @@
 						</p>
 
 						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-					</li>
+					</div>
 
-					<li class="listaProducto" id="PandePlatanos">
+					<div class="listaProducto" id="PandePlatanos">
 						<div class="productoPrecio">
 							<p class="Plato">Pan de plátanos</p>
 
@@ -149,8 +149,8 @@
 						<p class="descripcionPlato">A papa mono con bananas verdes!</p>
 
 						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-					</li>
-					<li class="listaProducto" id="RollDeCanela">
+					</div>
+					<div class="listaProducto" id="RollDeCanela">
 						<div class="productoPrecio">
 							<p class="Plato">Roll de canela</p>
 
@@ -160,24 +160,24 @@
 						<p class="descripcionPlato">La flor de la canela.</p>
 
 						<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-					</li>
+					</div>
 
-					<li>
-						<button class="contenedorBoton" id="contenedorBotonPasteleria">
+						<div class="contenedorBoton" id="contenedorBotonPasteleria">
+							<div class="contenedorProductoDescripcion">
+								<h3 class="productoTxt">Pastelería</h3>
+		
+								<p class="descripcionTxt">Expandir</p>
+							</div>
+		
 							<img
 								src="./img/torta.jpg"
 								width="70"
 								height="80"
 								class="imagenBoton"
 							/>
+						</div>
 
-							<h3 class="productoTxt">Pastelería</h3>
-
-							<p class="descripcionTxt">Expandir</p>
-						</button>
-					</li>
-
-					<li class="listaProducto" id="Marquise">
+					<div class="listaProducto" id="Marquise">
 						<div class="productoPrecio">
 							<p class="Plato">Marquise</p>
 
@@ -191,9 +191,9 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
+					</div>
 
-					<li class="listaProducto" id="Chocolatosa">
+					<div class="listaProducto" id="Chocolatosa">
 						<div class="productoPrecio">
 							<p class="Plato">Chocolatosa</p>
 
@@ -211,9 +211,9 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
+					</div>
 
-					<li class="listaProducto" id="Cheescake">
+					<div class="listaProducto" id="Cheescake">
 						<div class="productoPrecio">
 							<p class="Plato">Cheescake</p>
 
@@ -228,8 +228,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="DonasMexicanas">
+					</div>
+					<div class="listaProducto" id="DonasMexicanas">
 						<div class="productoPrecio">
 							<p class="Plato">Donas Mexicanas</p>
 
@@ -244,8 +244,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="Churros">
+					</div>
+					<div class="listaProducto" id="Churros">
 						<div class="productoPrecio">
 							<p class="Plato">Churros</p>
 
@@ -259,8 +259,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="Medialunas">
+					</div>
+					<div class="listaProducto" id="Medialunas">
 						<div class="productoPrecio">
 							<p class="Plato">Medialunas</p>
 
@@ -272,8 +272,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="tortasDeJamon">
+					</div>
+					<div class="listaProducto" id="tortasDeJamon">
 						<div class="productoPrecio">
 							<p class="Plato">Torta de jamón</p>
 
@@ -300,8 +300,8 @@
 								Completa
 							</button>
 						</div>
-					</li>
-					<li class="listaProducto" id="tostadas">
+					</div>
+					<div class="listaProducto" id="tostadas">
 						<div class="productoPrecio">
 							<p class="Plato">Tostadas</p>
 
@@ -313,8 +313,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="platoDeFrutas">
+					</div>
+					<div class="listaProducto" id="platoDeFrutas">
 						<div class="productoPrecio">
 							<p class="Plato">Plato de frutas</p>
 
@@ -328,23 +328,24 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li>
-						<button class="contenedorBoton" id="contenedorBotonDesayunos">
-							<img
-								src="./img/huevosRacheros.jpg"
-								width="70"
-								height="80"
-								class="imagenBoton"
-							/>
+					</div>
 
+					<div class="contenedorBoton" id="contenedorBotonDesayunos">
+						<div class="contenedorProductoDescripcion">
 							<h3 class="productoTxt">Desayunos</h3>
-
+	
 							<p class="descripcionTxt">Expandir</p>
-						</button>
-					</li>
+						</div>
+	
+						<img
+							src="./img/huevosRacheros.jpg"
+							width="70"
+							height="80"
+							class="imagenBoton"
+						/>
+					</div>
 
-					<li class="listaProducto" id="HuevosRancheros">
+					<div class="listaProducto" id="HuevosRancheros">
 						<div class="productoPrecio">
 							<p class="Plato">Huevos rancheros</p>
 
@@ -360,8 +361,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="HuevosDivorciados">
+					</div>
+					<div class="listaProducto" id="HuevosDivorciados">
 						<div class="productoPrecio">
 							<p class="Plato">Huevos divorciados</p>
 
@@ -377,8 +378,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="Chilaquiles">
+					</div>
+					<div class="listaProducto" id="Chilaquiles">
 						<div class="productoPrecio">
 							<p class="Plato">Chilaquiles</p>
 
@@ -394,8 +395,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="desayunoVoladorDelDia">
+					</div>
+					<div class="listaProducto" id="desayunoVoladorDelDia">
 						<div class="productoPrecio">
 							<p class="Plato">Desayuno volador del día</p>
 
@@ -422,24 +423,24 @@
 								Para dos
 							</button>
 						</div>
-					</li>
+					</div>
 
-					<li>
-						<button class="contenedorBoton" id="contenedorBotonCafeteria">
-							<img
-								src="./img/cafemexicano.jpg"
-								width="70"
-								height="80"
-								class="imagenBoton"
-							/>
-
+					<div class="contenedorBoton" id="contenedorBotonCafeteria">
+						<div class="contenedorProductoDescripcion">
 							<h3 class="productoTxt">Cafetería</h3>
-
+	
 							<p class="descripcionTxt">Expandir</p>
-						</button>
-					</li>
+						</div>
+	
+						<img
+							src="./img/cafemexicano.jpg"
+							width="70"
+							height="80"
+							class="imagenBoton"
+						/>
+					</div>
 
-					<li class="listaProducto" id="expresoPorteno">
+					<div class="listaProducto" id="expresoPorteno">
 						<div class="productoPrecio">
 							<p class="Plato">Expreso porteño</p>
 
@@ -451,8 +452,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="ristrettoMacho">
+					</div>
+					<div class="listaProducto" id="ristrettoMacho">
 						<div class="productoPrecio">
 							<p class="Plato">Ristretto macho</p>
 
@@ -466,8 +467,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="cafePincheGringo">
+					</div>
+					<div class="listaProducto" id="cafePincheGringo">
 						<div class="productoPrecio">
 							<p class="Plato">Café pinche gringo</p>
 
@@ -481,8 +482,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="cafeconLeche">
+					</div>
+					<div class="listaProducto" id="cafeconLeche">
 						<div class="productoPrecio">
 							<p class="Plato">Café con leche</p>
 
@@ -509,9 +510,9 @@
 								Promoción
 							</button>
 						</div>
-					</li>
+					</div>
 
-					<li class="listaProducto" id="cafeLatte">
+					<div class="listaProducto" id="cafeLatte">
 						<div class="productoPrecio">
 							<p class="Plato">Café latte</p>
 
@@ -525,8 +526,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="chocolateTradicional">
+					</div>
+					<div class="listaProducto" id="chocolateTradicional">
 						<div class="productoPrecio">
 							<p class="Plato">Chocolate tradicional</p>
 
@@ -538,8 +539,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="chocolateEspecial">
+					</div>
+					<div class="listaProducto" id="chocolateEspecial">
 						<div class="productoPrecio">
 							<p class="Plato">Chocolate especial</p>
 
@@ -554,8 +555,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="capuchinoTradicional">
+					</div>
+					<div class="listaProducto" id="capuchinoTradicional">
 						<div class="productoPrecio">
 							<p class="Plato">Capuchino tradicional</p>
 
@@ -567,8 +568,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="CapuchinoALaMexicana">
+					</div>
+					<div class="listaProducto" id="CapuchinoALaMexicana">
 						<div class="productoPrecio">
 							<p class="Plato">Capuchino a la mexicana</p>
 
@@ -582,8 +583,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-					<li class="listaProducto" id="te">
+					</div>
+					<div class="listaProducto" id="te">
 						<div class="productoPrecio">
 							<p class="Plato">Té</p>
 
@@ -597,8 +598,8 @@
 						<button href="www.google.com" class="botonAgregarAlCarrito">
 							Agregar al pedido
 						</button>
-					</li>
-				</ul>
+					</div>
+				</div>
 				<div class="finDelContenedor">
 					<br />
 				</div>

@@ -65,7 +65,7 @@
          
             <div class="cart-table cart-quantity">
                 
-                <input type="text" class="number-table" name="mesa" placeholder="Mesa" i>
+                <input type="text" class="number-table" name="mesa" placeholder="n° de mesa" i>
                 <?php
                 if (isset($_GET['error'])) {
                     if ($_GET['error'] == 'noMesa' || $_GET['error'] == 'ninguno') {
@@ -78,9 +78,9 @@
            <button class="botonBorrarPedidos" type="button"> <i class="fas fa-trash"></i></button>
 
             <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
+               <div> <strong class="cart-total-title">Total</strong> </div>
                 
-                <span class="cart-total-price" name="total">$0</span>
+                <div class="cart-total-price" name="total">$0</div>
                 <input type="number" class="inputTotal" hidden name="total">
             </div>
 

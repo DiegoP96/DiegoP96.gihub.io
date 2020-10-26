@@ -107,9 +107,12 @@ td {
 
 .cart-total {
 	margin-right: 100px;
+	display: flex;
+	flex-direction: row;
 }
 
 .cart-total-title {
+	
 	margin-right: 10px;
 	font-family: "Bebas Neue", cursive;
 	color: #717beb;
@@ -118,7 +121,10 @@ td {
 }
 
 .number-table {
-	width: 50px;
+	width: 100px;
+	height: 20px;
+	border: #77dd77 solid 3px;
+	border-radius: 6px;
 }
 
 .cart-total-price {
@@ -243,3 +249,64 @@ a {
 	color: #89e077;
 }
 
+
+
+@media screen and (max-width: 800px) and (min-width: 768px) {
+
+	.cart-total {
+		margin-right: 8px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.number-table{
+		margin-left: 100px;
+	}
+}
+
+@media screen and (max-width: 650px) and (min-width: 375px) {
+
+	.cart-total {
+		margin-right: 10px;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#valor{
+
+		color:#717beb;
+		padding-right: 6px;
+	}
+	
+	#opciones{
+	
+		color:#717beb;
+		padding-left: 2px;
+	}
+	
+
+
+}
+
+@media screen and (max-width: 360px) and (min-width: 320px) {
+
+	.cart-total {
+		margin-right: 5px;
+		display: flex;
+		flex-direction: row;
+	}
+	#valor{
+
+		color:#717beb;
+		padding-right: 8px;
+	}
+	
+	#opciones{
+	
+		color:#717beb;
+		padding-left: 2px;
+	}
+	
+
+
+}

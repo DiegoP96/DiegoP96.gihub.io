@@ -263,7 +263,18 @@ button.boton_carrito:hover {
 	background-color: #ffc530;
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
+	box-shadow: 0 4px #999;
 	margin-top: 15px;
+}
+
+.botonAgregarAlCarrito:hover {
+	background-color: #ffc530;
+}
+
+.botonAgregarAlCarrito:active {
+	background-color: #ffc530;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 .contenedorBotonesDobles {
@@ -273,8 +284,6 @@ button.boton_carrito:hover {
 }
 
 .botonAgregarAlCarritoSimple {
-	grid-row: 3/4;
-	grid-column: 2/3;
 	width: 130px;
 	height: 35px;
 	border: 0.16em solid rgba(255, 255, 255, 0);
@@ -287,6 +296,17 @@ button.boton_carrito:hover {
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
 	margin-top: 15px;
+	box-shadow: 0 4px #999;
+}
+
+.botonAgregarAlCarritoSimple:hover {
+	background-color: #ffc530;
+}
+
+.botonAgregarAlCarritoSimple:active {
+	background-color: #ffc530;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 .botonAgregarAlCarritoDoble {
@@ -304,6 +324,17 @@ button.boton_carrito:hover {
 	text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
 	text-align: center;
 	margin-top: 15px;
+	box-shadow: 0 4px #999;
+}
+
+.botonAgregarAlCarritoDoble:hover {
+	background-color: #ffac30;
+}
+
+.botonAgregarAlCarritoDoble:active {
+	background-color: #ffac30;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 .Plato {
 	font-style: normal;

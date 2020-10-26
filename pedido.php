@@ -45,9 +45,9 @@
             <table class="tablaPedidos">
                 <tr class="headerCarrito">
                     <th class="platoTitulo">Plato</th>
-                    <th class="valorTitulo">Valor</th>
+                    <th class="valorTitulo" id= "valor">Valor</th>
                     <th class="cantidadTitulo">Cantidad</th>
-                    <th class="opcionesTitulo">Opciones</th>
+                    <th class="opcionesTitulo" id = "opciones">Opciones</th>
 
                 </tr>
 
@@ -86,7 +86,7 @@
 
             </div>
 
-            <div> 
+            <div class= "contenedorBotonPedir"> 
 
             <input class="btn btn-primary btn-purchase" type="submit" value="Pedir">
 

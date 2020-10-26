@@ -40,9 +40,23 @@ td {
 .headerCarrito {
 	font-family: "Bebas Neue", cursive;
 	color: #717beb;
-	letter-spacing: 3px;
-	font-size: 1.2em;
+	letter-spacing: 2px;
+	text-shadow:  white 2px 5px;
+	margin: none 4px ;
+	font-size: 1.1em;
 }
+
+#valor{
+
+	color:#ffc530;
+	padding-right: 4px;
+}
+
+#opciones{
+
+	color:#ffc530;
+}
+
 
 .tablaPedidos {
 	/* border-bottom: gainsboro solid 1px; */
@@ -92,7 +106,7 @@ td {
 }
 
 .cart-total {
-	margin-right: 65px;
+	margin-right: 100px;
 }
 
 .cart-total-title {
@@ -138,6 +152,7 @@ td {
 	color: #000000;
 	background-color: #77dd77;
 }
+
 
 .btn-purchase {
 
@@ -227,3 +242,4 @@ a {
 	opacity: 1;
 	color: #89e077;
 }
+

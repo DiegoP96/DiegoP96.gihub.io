@@ -29,7 +29,7 @@
 
     <div class="contenedorImagen">
 
-        <a href="menu_entrada.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
+        <a href="menu_Entrada.html" class="botonIrMenuPrincipal"> <i class="fas fa-arrow-left"></i></a>
 
 
         <p class="section-header">Pedido</p>

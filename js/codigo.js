@@ -324,11 +324,13 @@ $(document).ready(function (e) {
         if (contador == 0) {
             $("#listaNachosZapatistas").show(e);
             $("#listaNachisimos").show(e);
+            $("#Chilaquiles").show(e);
 
             contador++;
         } else {
             $("#listaNachosZapatistas").hide(e);
             $("#listaNachisimos").hide(e);
+            $("#Chilaquiles").hide(e);
 
             contador = 0;
         }

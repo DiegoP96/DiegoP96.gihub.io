@@ -39,6 +39,9 @@ $(document).ready(function (e) {
     $("#listaSopadeLima").toggle(
 
     );
+    $("#listaSopadeLima2").toggle(
+
+    );
 
     $("#listaEnsaladaMexicana").toggle(
 
@@ -59,6 +62,9 @@ $(document).ready(function (e) {
 
     );
     $("#listaTacosPollo").toggle(
+
+    );
+    $("#listaTacosPollo2").toggle(
 
     );
     $("#listaTacosVerdura").toggle(
@@ -82,6 +88,9 @@ $(document).ready(function (e) {
     $("#listaQuesadillasAsada").toggle(
 
     );
+    $("#listaQuesadillasAsada2").toggle(
+
+    );
     $("#listaFlautasRes").toggle(
 
     );
@@ -89,6 +98,18 @@ $(document).ready(function (e) {
 
     );
     $("#listaFlautasPuerco").toggle(
+
+    );
+    $("#listaFlautasRes1").toggle(
+
+    );
+    $("#listaFlautasPollo1").toggle(
+
+    );
+    $("#listaFlautasPuerco1").toggle(
+
+    );
+    $("#listaFlautasPuercoP1").toggle(
 
     );
     $("#listaPepsi").toggle(
@@ -432,12 +453,15 @@ $(document).ready(function (e) {
 
             $("#listaSopasAzteca").show(e);
             $("#listaSopadeLima").show(e);
+            $("#listaSopadeLima2").show(e);
 
             contador++;
         } else {
 
             $("#listaSopasAzteca").hide(e);
             $("#listaSopadeLima").hide(e);
+            $("#listaSopadeLima2").hide(e);
+
 
             contador = 0;
         }
@@ -481,6 +505,7 @@ $(document).ready(function (e) {
             $("#listaTacosPollo").show(e);
             $("#listaTacosVerdura").show(e);
             $("#listaTacosAsada").show(e);
+            $("#listaTacosPollo2").show(e);
             contador++;
         } else {
 
@@ -489,6 +514,7 @@ $(document).ready(function (e) {
             $("#listaTacosPollo").hide(e);
             $("#listaTacosVerdura").hide(e);
             $("#listaTacosAsada").hide(e);
+            $("#listaTacosPollo2").hide(e);
             contador = 0;
         }
     });
@@ -508,6 +534,7 @@ $(document).ready(function (e) {
             $("#listaQuesadillasPollo").show(e);
             $("#listaQuesadillasVerdura").show(e);
             $("#listaQuesadillasAsada").show(e);
+            $("#listaQuesadillasAsada2").show(e);
             contador++;
         } else {
 
@@ -516,6 +543,7 @@ $(document).ready(function (e) {
             $("#listaQuesadillasPollo").hide(e);
             $("#listaQuesadillasVerdura").hide(e);
             $("#listaQuesadillasAsada").hide(e);
+            $("#listaQuesadillasAsada2").hide(e);
             contador = 0;
         }
     });
@@ -538,6 +566,30 @@ $(document).ready(function (e) {
             $("#listaFlautasRes").hide(e);
             $("#listaFlautasPollo").hide(e);
             $("#listaFlautasPuerco").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonFlautas1").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaFlautasRes1").show(e);
+            $("#listaFlautasPollo1").show(e);
+            $("#listaFlautasPuerco1").show(e);
+            $("#listaFlautasPuercoP1").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaFlautasRes1").hide(e);
+            $("#listaFlautasPollo1").hide(e);
+            $("#listaFlautasPuerco1").hide(e);
+            $("#listaFlautasPuercoP1").hide(e);
 
             contador = 0;
         }

@@ -250,6 +250,12 @@ $(document).ready(function (e) {
     $("#listaMojito").toggle(
 
     );
+    $("#listaMojito2").toggle(
+
+    );
+    $("#listaMojito3").toggle(
+
+    );
     $("#listaGinTonic").toggle(
 
     );
@@ -315,6 +321,9 @@ $(document).ready(function (e) {
     $("#listaSanHuberto7").toggle(
 
     );
+    $("#listaSanHuberto8").toggle(
+
+    );
 
     $("#listaSueco").toggle(
 
@@ -346,13 +355,14 @@ $(document).ready(function (e) {
             $("#listaNachosZapatistas").show(e);
             $("#listaNachisimos").show(e);
             $("#Chilaquiles").show(e);
+            $("#Cheescake").show(e);
 
             contador++;
         } else {
             $("#listaNachosZapatistas").hide(e);
             $("#listaNachisimos").hide(e);
             $("#Chilaquiles").hide(e);
-
+            $("#Cheescake").hide(e);
             contador = 0;
         }
     });
@@ -678,10 +688,9 @@ $(document).ready(function (e) {
 
             $("#Marquise").show(e);
             $("#Chocolatosa").show(e);
-            $("#Cheescake").show(e);
+
             $("#DonasMexicanas").show(e);
-            $("#Churros").show(e);
-            $("#Medialunas").show(e);
+
 
             $("#tostadas").show(e);
             $("#platoDeFrutas").show(e);
@@ -690,10 +699,9 @@ $(document).ready(function (e) {
 
             $("#Marquise").hide(e);
             $("#Chocolatosa").hide(e);
-            $("#Cheescake").hide(e);
+
             $("#DonasMexicanas").hide(e);
-            $("#Churros").hide(e);
-            $("#Medialunas").hide(e);
+
 
             $("#tostadas").hide(e);
             $("#platoDeFrutas").hide(e);
@@ -710,7 +718,8 @@ $(document).ready(function (e) {
     $("#contenedorBotonDesayunos").click(function (e) {
 
         if (contador == 0) {
-
+            $("#Churros").show(e);
+            $("#Medialunas").show(e);
             $("#HuevosRancheros").show(e);
             $("#HuevosDivorciados").show(e);
             $("#Chilaquiles").show(e);
@@ -725,7 +734,8 @@ $(document).ready(function (e) {
 
             contador++;
         } else {
-
+            $("#Churros").hide(e);
+            $("#Medialunas").hide(e);
             $("#HuevosRancheros").hide(e);
             $("#HuevosDivorciados").hide(e);
             $("#Chilaquiles").hide(e);
@@ -787,6 +797,8 @@ $(document).ready(function (e) {
         if (contador == 0) {
 
             $("#listaMojito").show(e);
+            $("#listaMojito2").show(e);
+            $("#listaMojito3").show(e);
             $("#listaCaipi").show(e);
             $("#listaCubaLibre").show(e);
             $("#listaFernet").show(e);
@@ -799,6 +811,8 @@ $(document).ready(function (e) {
         } else {
 
             $("#listaMojito").hide(e);
+            $("#listaMojito2").hide(e);
+            $("#listaMojito3").hide(e);
             $("#listaCaipi").hide(e);
             $("#listaCubaLibre").hide(e);
             $("#listaFernet").hide(e);
@@ -862,7 +876,7 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").show(e);
             $("#listaSanHuberto6").show(e);
             $("#listaSanHuberto7").show(e);
-
+            $("#listaSanHuberto8").show(e);
 
             contador++;
         } else {
@@ -874,6 +888,7 @@ $(document).ready(function (e) {
             $("#listaSanHuberto5").hide(e);
             $("#listaSanHuberto6").hide(e);
             $("#listaSanHuberto7").hide(e);
+            $("#listaSanHuberto8").hide(e);
 
             contador = 0;
         }

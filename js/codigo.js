@@ -147,6 +147,18 @@ $(document).ready(function (e) {
     $("#tortasDeJamon ").toggle(
 
     );
+    $("#tortasDeJamonP ").toggle(
+
+    );
+    $("#tortasDeJamonPQ ").toggle(
+
+    );
+    $("#tortasDeJamonB ").toggle(
+
+    );
+    $("#tortasDeJamonV ").toggle(
+
+    );
     $("#tostadas").toggle(
 
     );
@@ -616,7 +628,7 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").show(e);
             $("#Churros").show(e);
             $("#Medialunas").show(e);
-            $("#tortasDeJamon ").show(e);
+
             $("#tostadas").show(e);
             $("#platoDeFrutas").show(e);
             contador++;
@@ -628,7 +640,7 @@ $(document).ready(function (e) {
             $("#DonasMexicanas").hide(e);
             $("#Churros").hide(e);
             $("#Medialunas").hide(e);
-            $("#tortasDeJamon ").hide(e);
+
             $("#tostadas").hide(e);
             $("#platoDeFrutas").hide(e);
 
@@ -651,6 +663,11 @@ $(document).ready(function (e) {
             $("#desayunoVoladorDelDia").show(e);
             $("#Moyotes").show(e);
             $("#tostadaFranchuta").show(e);
+            $("#tortasDeJamon ").show(e);
+            $("#tortasDeJamonP ").show(e);
+            $("#tortasDeJamonPQ ").show(e);
+            $("#tortasDeJamonB ").show(e);
+            $("#tortasDeJamonV ").show(e);
 
             contador++;
         } else {
@@ -661,7 +678,11 @@ $(document).ready(function (e) {
             $("#desayunoVoladorDelDia").hide(e);
             $("#Moyotes").hide(e);
             $("#tostadaFranchuta").hide(e);
-
+            $("#tortasDeJamon ").hide(e);
+            $("#tortasDeJamonP ").hide(e);
+            $("#tortasDeJamonPQ ").hide(e);
+            $("#tortasDeJamonB ").hide(e);
+            $("#tortasDeJamonV ").hide(e);
             contador = 0;
         }
     });

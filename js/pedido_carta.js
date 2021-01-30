@@ -116,10 +116,10 @@ function addToCartClickedDoble(event) {
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio2')[0].innerText
-    if (checkPlatesDuplicate(title + " Doble")) {
+    if (checkPlatesDuplicate(title + " " + button.innerText)) {
         return
     }
-    document.cookie = "plato" + get3D(i) + "=" + title + " Doble" + price + ";SameSite=Lax"
+    document.cookie = "plato" + get3D(i) + "=" + title + " " + button.innerText + price + ";SameSite=Lax"
     i++
     document.cookie = "contador=" + i + ";SameSite=Lax"
 }
@@ -129,10 +129,12 @@ function addToCartClickedSimple(event) {
     var shopItem = button.parentElement.parentElement
     var title = shopItem.getElementsByClassName('Plato')[0].innerText
     var price = shopItem.getElementsByClassName('Precio1')[0].innerText
-    if (checkPlatesDuplicate(title)) {
+    if (checkPlatesDuplicate(title + " " + button.innerText)) {
         return
     }
-    document.cookie = "plato" + get3D(i) + "=" + title + price + ";SameSite=Lax"
+    
+
+    document.cookie = "plato" + get3D(i) + "=" + title + " " + button.innerText + price + ";SameSite=Lax"
     i++
     document.cookie = "contador=" + i + ";SameSite=Lax"
 }
@@ -141,7 +143,7 @@ function checkPlatesDuplicate(string) {
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
-        name = 'plato' + get3D(i) + "="
+        var name = 'plato' + get3D(i) + "="
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
         }

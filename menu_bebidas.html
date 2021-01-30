@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="./img/Logo Mexicano.png" />
-		<link rel="stylesheet" href="css/estilo_menu.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/233d4e0a24.js"
-			crossorigin="anonymous"
-		></script>
-		<script src="js/jquery-3.5.1.min.js"></script>
-		<script src="js/codigo.js"></script>
-		<script src="js/pedido_carta.js"></script>
 
-		<title>Menu Bebidas</title>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="./img/Logo Mexicano.png" />
+	<link rel="stylesheet" href="css/estilo_menu.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+	<script src="https://kit.fontawesome.com/233d4e0a24.js" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/codigo.js"></script>
+	<script src="js/pedido_carta.js"></script>
 
-	<body>
-		<header>
-			<section>
-				<div class="contenedorHeader">
-					<div class="transparencia"></div>
-					<h1 class="tituloHome">Menú</h1>
-				</div>
-			</section>
-		</header>
+	<title>Menu Bebidas</title>
+</head>
+
+<body>
+	<header>
+		<section>
+			<div class="contenedorHeader">
+				<div class="transparencia"></div>
+				<h1 class="tituloHome">Menú</h1>
+			</div>
+		</section>
+	</header>
 
 
 	<div class="contenedor_botones">
@@ -69,16 +64,17 @@
 			opacity: 1;
 		}
 
-		#bodegaTriventos{
-		   display:inline;
-		   font-size: 12px;
-		   width: 10em;
+		#bodegaTriventos {
+			display: inline;
+			font-size: 12px;
+			width: 10em;
 
 		}
-		#bodegaSanHuberto{
-		   display:inline;
-		   font-size: 12px;
-		   width: 10em;
+
+		#bodegaSanHuberto {
+			display: inline;
+			font-size: 12px;
+			width: 10em;
 		}
 	</style>
 
@@ -92,82 +88,182 @@
 	<main>
 		<section class="menu">
 			<div>
-				
-				<div>
-					<div class="contenedorBoton" id="contenedorBotonRefrescos">
-						<div class="contenedorProductoDescripcion">
-							<h3 class="productoTxt">Refescos</h3>
-
-							<p class="descripcionTxt">Expandir</p>
-						</div>
-
-						<img
-							src="./img/pepsi.png"
-							width="70"
-							height="80"
-							class="imagenBoton"
-						/>
-					</div>
-
-				<div class="listaProducto" id="listaPepsi">
-					<div class="productoPrecio">
-						<p class="Plato">Latas Linea Pepsi</p>
-
-						<p class="Precio">$130</p>
-					</div>
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaAgua">
-					<div class="productoPrecio">
-						<p class="Plato">Agua</p>
-
-						<p class="Precio">$130</p>
-					</div>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</div>
-				<div class="listaProducto" id="listaJugos">
-					<div class="productoPrecio">
-						<p class="Plato">Jugos de Frutas</p>
-
-						<p class="Precio">$190</p>
-					</div>
-
-					<button class="botonAgregarAlCarrito">Agregar al pedido</button>
-				</div>
 
 				<div>
-					<div class="contenedorBoton" id="contenedorBotonCervezas">
-						<div class="contenedorProductoDescripcion">
-							<h3 class="productoTxt">Cervezas</h3>
+					<div>
+						<div class="contenedorBoton" id="contenedorBotonPatagonia">
+							<div class="contenedorProductoDescripcion">
+								<h3 class="productoTxt">Cervezas Patagonia</h3>
 
-							<p class="descripcionTxt">Expandir</p>
+								<p class="descripcionTxt">Expandir</p>
+							</div>
+
+							<img src="./img/Patagonia.png" width="70" height="80" class="imagenBoton" />
+						</div>
+						<div class="listaProducto" id="listaPatagonia1">
+							<div class="productoPrecio">
+								<p class="Plato"><img src="./img/amber_lager-removebg-preview.png" width="70" height="70"> </p>
+
+								<p class="Precio1">$150</p>
+								<p class="Precio2">$200</p>
+							</div>
+
+							<p class="descripcionPlato">Cerveza de intenso sabor, elaborada con lúpulo patagónico y una
+								variedad de 4 maltas especiales, que le dan un carácter maltoso y un deleite especial.
+
+							</p>
+							<p class="descripcionPlato">
+								<strong>4.7 % ABV / 14.5 IBU</strong>
+							</p>
+
+							<div class="contenedorBotonesDobles">
+								<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
+								<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
+							</div>
+						</div>
+						<div class="listaProducto" id="listaPatagonia2">
+							<div class="productoPrecio">
+								<p class="Plato"><img src="./img/bohemian-removebg-preview.png" width="70" height="70"></p>
+
+								<p class="Precio1">$150</p>
+								<p class="Precio2">$200</p>
+							</div>
+
+							<p class="descripcionPlato">Cerveza que se caracteriza por su color dorado y aroma maltoso,
+								con un interesante amargo en sabor, dado por su característico lúpulo saaz.
+
+							</p>
+							<p class="descripcionPlato"><strong>5.2% ABV / 18 IBU</strong></p>
+
+							<div class="contenedorBotonesDobles">
+								<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
+								<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
+							</div>
+						</div>
+						<div class="listaProducto" id="listaPatagonia3">
+							<div class="productoPrecio">
+								<p class="Plato"><img src="./img/pale_ale-removebg-preview.png" width="70" height="70"></p>
+
+								<p class="Precio1">$150</p>
+								<p class="Precio2">$200</p>
+							</div>
+
+							<p class="descripcionPlato">Cerveza Pale Ale, con una combinación de malta especiales y
+								fermentación a altas temperaturas, que da lugar a una cerveza de color dorado bronce
+								brillante de leve amargor, cuerpo medio y perfil lupulado.
+								
+							</p>
+							<p class="descripcionPlato"><strong>5% ABV / 19 IBU</strong></p>
+
+							<div class="contenedorBotonesDobles">
+								<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
+								<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
+							</div>
+						</div>
+						<div class="listaProducto" id="listaPatagonia4">
+							<div class="productoPrecio">
+								<p class="Plato"><img src="./img/wissw-removebg-preview.png" width="70" height="70"></p>
+
+								<p class="Precio1">$150</p>
+								<p class="Precio2">$200</p>
+							</div>
+
+							<p class="descripcionPlato">Cerveza premium con trigo, de elevada refrescancia, bajo amargor
+								y cuerpo liviano, en cuyo aroma predomina la cascara de naranja y el coriandro.
+								
+							</p>
+							<p class="descripcionPlato"><strong>4,3% ABV / 9.8 IBU</strong></p>
+
+							<div class="contenedorBotonesDobles">
+								<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
+								<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
+							</div>
+						</div>
+						<div class="listaProducto" id="listaPatagonia5">
+							<div class="productoPrecio">
+								<p class="Plato"><img src="./img/ipa-removebg-preview.png" width="70" height="70"></p>
+
+								<p class="Precio1">$150</p>
+								<p class="Precio2">$200</p>
+							</div>
+
+							<p class="descripcionPlato">Cerveza de amargor suave con un intenso aroma a lúpulo gracias a
+								la técnica de dry hopping. El agregado de sauco le aporta notas dulces.
+								
+							</p>
+							<p class="descripcionPlato"><strong> 4.5% ABV / 36 IBU</strong></p>
+
+							<div class="contenedorBotonesDobles">
+								<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
+								<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
+							</div>
 						</div>
 
-						<img
-							src="./img/corona.png"
-							width="70"
-							height="80"
-							class="imagenBoton"
-						/>
-					</div>
-			
-				<div class="listaProducto" id="listaCorona">
-					<div class="productoPrecio">
-						<p class="Plato">Corona</p>
+						<div class="contenedorBoton" id="contenedorBotonRefrescos">
+							<div class="contenedorProductoDescripcion">
+								<h3 class="productoTxt">Refescos</h3>
 
-						<p class="Precio1">$190</p>
-						<p class="Precio2">$290</p>
-					</div>
+								<p class="descripcionTxt">Expandir</p>
+							</div>
 
-					<div class="contenedorBotonesDobles">
-						<button href="www.google.com" class="botonAgregarAlCarritoSimple">375 cc</button>
-						<button href="www.google.com" class="botonAgregarAlCarritoDoble">710 cc</button>
-					</div>
-				</div>
+							<img src="./img/pepsi.png" width="70" height="80" class="imagenBoton" />
+						</div>
 
-				<div class="listaProducto" id="listaPatagonia">
+						<div class="listaProducto" id="listaPepsi">
+							<div class="productoPrecio">
+								<p class="Plato">Latas Linea Pepsi</p>
+
+								<p class="Precio">$130</p>
+							</div>
+							<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+						</div>
+
+						<div class="listaProducto" id="listaAgua">
+							<div class="productoPrecio">
+								<p class="Plato">Agua</p>
+
+								<p class="Precio">$130</p>
+							</div>
+
+							<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+						</div>
+						<div class="listaProducto" id="listaJugos">
+							<div class="productoPrecio">
+								<p class="Plato">Jugos de Frutas</p>
+
+								<p class="Precio">$190</p>
+							</div>
+
+							<button class="botonAgregarAlCarrito">Agregar al pedido</button>
+						</div>
+
+						<div>
+							<div class="contenedorBoton" id="contenedorBotonCervezas">
+								<div class="contenedorProductoDescripcion">
+									<h3 class="productoTxt">Cervezas</h3>
+
+									<p class="descripcionTxt">Expandir</p>
+								</div>
+
+								<img src="./img/corona.png" width="70" height="80" class="imagenBoton" />
+							</div>
+
+							<div class="listaProducto" id="listaCorona">
+								<div class="productoPrecio">
+									<p class="Plato">Corona</p>
+
+									<p class="Precio1">$190</p>
+									<p class="Precio2">$290</p>
+								</div>
+
+								<div class="contenedorBotonesDobles">
+									<button href="www.google.com" class="botonAgregarAlCarritoSimple">375
+										cc</button>
+									<button href="www.google.com" class="botonAgregarAlCarritoDoble">710 cc</button>
+								</div>
+							</div>
+
+							<!-- <div class="listaProducto" id="listaPatagonia">
 					<div class="productoPrecio">
 						<p class="Plato">Patagonia</p>
 
@@ -180,293 +276,279 @@
 					<div class="contenedorBotonesDobles">
 						<button href="www.google.com" class="botonAgregarAlCarritoSimple">1/2 Pinta</button>
 						<button href="www.google.com" class="botonAgregarAlCarritoDoble">Pinta</button>
-					</div>
-				</div>
-				<div class="listaProducto" id="listaStella">
-					<div class="productoPrecio">
-						<p class="Plato">Stella Artois</p>
-						<p class="Precio">$190</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Porron</button>
-				</div>
-				<div class="listaProducto" id="listaQuilmes">
-					<div class="productoPrecio">
-						<p class="Plato">Michelada</p>
+					</div> -->
+							<!-- </div> -->
+							<div class="listaProducto" id="listaStella">
+								<div class="productoPrecio">
+									<p class="Plato">Stella Artois</p>
+									<p class="Precio">$190</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Porron</button>
+							</div>
+							<div class="listaProducto" id="listaQuilmes">
+								<div class="productoPrecio">
+									<p class="Plato">Michelada</p>
 
-						<p class="Precio">$90</p>
-					</div>
+									<p class="Precio">$90</p>
+								</div>
 
-					<button href="www.google.com" class="botonAgregarAlCarrito">Porrón</button>
-				</div>
-				<div class="contenedorBoton" id="contenedorBotonTragos">
-					<div class="contenedorProductoDescripcion">
-						<h3 class="productoTxt">Tragos</h3>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Porrón</button>
+							</div>
+							<div class="contenedorBoton" id="contenedorBotonTragos">
+								<div class="contenedorProductoDescripcion">
+									<h3 class="productoTxt">Tragos</h3>
 
-						<p class="descripcionTxt">Expandir</p>
-					</div>
+									<p class="descripcionTxt">Expandir</p>
+								</div>
 
-					<img
-						src="./img/stock_margarita.jpg"
-						width="70"
-						height="80"
-						class="imagenBoton"
-					/>
-				</div>
-		
-
-				<div class="listaProducto" id="listaMargarita">
-					<div class="productoPrecio">
-						<p class="Plato">Margarita</p>
-
-						<p class="Precio1">$320</p>
-						<p class="Precio2">$350</p>
-					</div>
-					<p class="descripcionPlato">Con Tequila José Cuervo.</p>
-
-					<div class="contenedorBotonesDobles">
-						<button href="www.google.com" class="botonAgregarAlCarritoSimple">Limon</button>
-						<button href="www.google.com" class="botonAgregarAlCarritoDoble">Frutilla/Frambuesa</button>
-					</div>
-				</div>
-
-				<div class="listaProducto" id="listaCampari">
-					<div class="productoPrecio">
-						<p class="Plato">Campari</p>
-
-						<p class="Precio">$300</p>
-					</div>
-
-					<p class="descripcionPlato">Con jugo de naranja o tónica.</p>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaNegroni">
-					<div class="productoPrecio">
-						<p class="Plato">Negroni</p>
-						<p class="Precio">$390</p>
-					</div>
-					<p class="descripcionPlato">Campari, Cinzano y gin.</p>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaGinTonic">
-					<div class="productoPrecio">
-						<p class="Plato">Gin Tonic</p>
-						<p class="Precio">$350</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaFernet">
-					<div class="productoPrecio">
-						<p class="Plato">Fernet con Coca</p>
-						<p class="Precio">$300</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaCubaLibre">
-					<div class="productoPrecio">
-						<p class="Plato">Cuba Libre</p>
-						<p class="Precio">$300</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaCaipi">
-					<div class="productoPrecio">
-						<p class="Plato">Caipiriña</p>
-						<p class="Precio">$350</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-
-				<div class="listaProducto" id="listaMojito">
-					<div class="productoPrecio">
-						<p class="Plato">Mojito</p>
-						<p class="Precio">$350</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaMojito2">
-					<div class="productoPrecio">
-						<p class="Plato">Daiquiri Frutal</p>
-						<p class="Precio">$390</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>	
-				<div class="listaProducto" id="listaMojito3">
-					<div class="productoPrecio">
-						<p class="Plato">Shot Jose Cuervo</p>
-						<p class="Precio">$300</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>				
+								<img src="./img/stock_margarita.jpg" width="70" height="80" class="imagenBoton" />
+							</div>
 
 
-			
-				<div class="contenedorBoton" id="contenedorBotonTrivento">
-					<div class="contenedorProductoDescripcion">
-						<h3 class="productoTxt">Bodega Trivento</h3>
+							<div class="listaProducto" id="listaMargarita">
+								<div class="productoPrecio">
+									<p class="Plato">Margarita</p>
 
-						<p class="descripcionTxt">Expandir</p>
-					</div>
+									<p class="Precio1">$320</p>
+									<p class="Precio2">$350</p>
+								</div>
+								<p class="descripcionPlato">Con Tequila José Cuervo.</p>
 
-					<img
-						src="./img/bodegaTrivento.jpg"
-						width="70"
-						height="80"
-						class="imagenBoton"
-					/>
-				</div>
+								<div class="contenedorBotonesDobles">
+									<button href="www.google.com" class="botonAgregarAlCarritoSimple">Limon</button>
+									<button href="www.google.com"
+										class="botonAgregarAlCarritoDoble">Frutilla/Frambuesa</button>
+								</div>
+							</div>
 
-				<div class="listaProducto" id="listaTrivento1">
-					<div class="productoPrecio">
-						<p class="Plato">Casillero del Diablo Cardonay</p>
-						<p class="Precio">$780</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
+							<div class="listaProducto" id="listaCampari">
+								<div class="productoPrecio">
+									<p class="Plato">Campari</p>
 
-				<div class="listaProducto" id="listaTrivento2">
-					<div class="productoPrecio">
-						<p class="Plato">Casillero del Diablo Red Blend</p>
-						<p class="Precio">$780</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento3">
-					<div class="productoPrecio">
-						<p class="Plato">Casillero del Diablo Sauvignon</p>
-						<p class="Precio">$780</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento4">
-					<div class="productoPrecio">
-						<p class="Plato">Casillero del Diablo Malbec</p>
-						<p class="Precio">$780</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento5">
-					<div class="productoPrecio">
-						<p class="Plato">Tribu Blanco Dulce</p>
-						<p class="Precio">$450</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento6">
-					<div class="productoPrecio">
-						<p class="Plato">Tribu Rose</p>
-						<p class="Precio">$450</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento7">
-					<div class="productoPrecio">
-						<p class="Plato">Tribu Malbec</p>
-						<p class="Precio">$450</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento8">
-					<div class="productoPrecio">
-						<p class="Plato">Trivento Malbec 375cc</p>
-						<p class="Precio">$350</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento9">
-					<div class="productoPrecio">
-						<p class="Plato">Trivento White Malbec</p>
-						<p class="Precio">$550</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaTrivento10">
-					<div class="productoPrecio">
-						<p class="Plato">Trivento Reserve</p>
-						<p class="Precio">$550</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="contenedorBoton" id="contenedorBotonSanHuberto">
-					<div class="contenedorProductoDescripcion">
-						<h3 class="productoTxt">Bodega San Huberto</h3>
+									<p class="Precio">$300</p>
+								</div>
 
-						<p class="descripcionTxt">Expandir</p>
-					</div>
+								<p class="descripcionPlato">Con jugo de naranja o tónica.</p>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
 
-					<img
-						src="./img/bodegaSanHuberto.jpg"
-						width="70"
-						height="80"
-						class="imagenBoton"
-					/>
-				</div>
-		
-				<div class="listaProducto" id="listaSanHuberto1">
-					<div class="productoPrecio">
-						<p class="Plato">Nina Gold Malbec</p>
-						<p class="Precio">$700</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto2">
-					<div class="productoPrecio">
-						<p class="Plato">Nina Gold Cabernet Franc</p>
-						<p class="Precio">$700</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto3">
-					<div class="productoPrecio">
-						<p class="Plato">Nina Gold Cabernet Sauvignon</p>
-						<p class="Precio">$700</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto4">
-					<div class="productoPrecio">
-						<p class="Plato">Nina Gold Torrontes</p>
-						<p class="Precio">$700</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto5">
-					<div class="productoPrecio">
-						<p class="Plato">Sede Blanco Dulce</p>
-						<p class="Precio">$400</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto6">
-					<div class="productoPrecio">
-						<p class="Plato">Sade Malbec</p>
-						<p class="Precio">$400</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto7">
-					<div class="productoPrecio">
-						<p class="Plato">Sade Cabernet Sauvignon</p>
-						<p class="Precio">$400</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-				<div class="listaProducto" id="listaSanHuberto8">
-					<div class="productoPrecio">
-						<p class="Plato">Espumantes</p>
-						<p class="Precio">$800</p>
-					</div>
-					<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
-				</div>
-			</div>
+							<div class="listaProducto" id="listaNegroni">
+								<div class="productoPrecio">
+									<p class="Plato">Negroni</p>
+									<p class="Precio">$390</p>
+								</div>
+								<p class="descripcionPlato">Campari, Cinzano y gin.</p>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
 
-			<div class="finDelContenedor">
-				<br />
-			</div>
+							<div class="listaProducto" id="listaGinTonic">
+								<div class="productoPrecio">
+									<p class="Plato">Gin Tonic</p>
+									<p class="Precio">$350</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+							<div class="listaProducto" id="listaFernet">
+								<div class="productoPrecio">
+									<p class="Plato">Fernet con Coca</p>
+									<p class="Precio">$300</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+							<div class="listaProducto" id="listaCubaLibre">
+								<div class="productoPrecio">
+									<p class="Plato">Cuba Libre</p>
+									<p class="Precio">$300</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+							<div class="listaProducto" id="listaCaipi">
+								<div class="productoPrecio">
+									<p class="Plato">Caipiriña</p>
+									<p class="Precio">$350</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+							<div class="listaProducto" id="listaMojito">
+								<div class="productoPrecio">
+									<p class="Plato">Mojito</p>
+									<p class="Precio">$350</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaMojito2">
+								<div class="productoPrecio">
+									<p class="Plato">Daiquiri Frutal</p>
+									<p class="Precio">$390</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaMojito3">
+								<div class="productoPrecio">
+									<p class="Plato">Shot Jose Cuervo</p>
+									<p class="Precio">$300</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+
+
+							<div class="contenedorBoton" id="contenedorBotonTrivento">
+								<div class="contenedorProductoDescripcion">
+									<h3 class="productoTxt">Bodega Trivento</h3>
+
+									<p class="descripcionTxt">Expandir</p>
+								</div>
+
+								<img src="./img/bodegaTrivento.jpg" width="70" height="80" class="imagenBoton" />
+							</div>
+
+							<div class="listaProducto" id="listaTrivento1">
+								<div class="productoPrecio">
+									<p class="Plato">Casillero del Diablo Cardonay</p>
+									<p class="Precio">$780</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+
+							<div class="listaProducto" id="listaTrivento2">
+								<div class="productoPrecio">
+									<p class="Plato">Casillero del Diablo Red Blend</p>
+									<p class="Precio">$780</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento3">
+								<div class="productoPrecio">
+									<p class="Plato">Casillero del Diablo Sauvignon</p>
+									<p class="Precio">$780</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento4">
+								<div class="productoPrecio">
+									<p class="Plato">Casillero del Diablo Malbec</p>
+									<p class="Precio">$780</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento5">
+								<div class="productoPrecio">
+									<p class="Plato">Tribu Blanco Dulce</p>
+									<p class="Precio">$450</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento6">
+								<div class="productoPrecio">
+									<p class="Plato">Tribu Rose</p>
+									<p class="Precio">$450</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento7">
+								<div class="productoPrecio">
+									<p class="Plato">Tribu Malbec</p>
+									<p class="Precio">$450</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento8">
+								<div class="productoPrecio">
+									<p class="Plato">Trivento Malbec 375cc</p>
+									<p class="Precio">$350</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento9">
+								<div class="productoPrecio">
+									<p class="Plato">Trivento White Malbec</p>
+									<p class="Precio">$550</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaTrivento10">
+								<div class="productoPrecio">
+									<p class="Plato">Trivento Reserve</p>
+									<p class="Precio">$550</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="contenedorBoton" id="contenedorBotonSanHuberto">
+								<div class="contenedorProductoDescripcion">
+									<h3 class="productoTxt">Bodega San Huberto</h3>
+
+									<p class="descripcionTxt">Expandir</p>
+								</div>
+
+								<img src="./img/bodegaSanHuberto.jpg" width="70" height="80" class="imagenBoton" />
+							</div>
+
+							<div class="listaProducto" id="listaSanHuberto1">
+								<div class="productoPrecio">
+									<p class="Plato">Nina Gold Malbec</p>
+									<p class="Precio">$700</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto2">
+								<div class="productoPrecio">
+									<p class="Plato">Nina Gold Cabernet Franc</p>
+									<p class="Precio">$700</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto3">
+								<div class="productoPrecio">
+									<p class="Plato">Nina Gold Cabernet Sauvignon</p>
+									<p class="Precio">$700</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto4">
+								<div class="productoPrecio">
+									<p class="Plato">Nina Gold Torrontes</p>
+									<p class="Precio">$700</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto5">
+								<div class="productoPrecio">
+									<p class="Plato">Sede Blanco Dulce</p>
+									<p class="Precio">$400</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto6">
+								<div class="productoPrecio">
+									<p class="Plato">Sade Malbec</p>
+									<p class="Precio">$400</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto7">
+								<div class="productoPrecio">
+									<p class="Plato">Sade Cabernet Sauvignon</p>
+									<p class="Precio">$400</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+							<div class="listaProducto" id="listaSanHuberto8">
+								<div class="productoPrecio">
+									<p class="Plato">Espumantes</p>
+									<p class="Precio">$800</p>
+								</div>
+								<button href="www.google.com" class="botonAgregarAlCarrito">Agregar al Pedido</button>
+							</div>
+						</div>
+
+						<div class="finDelContenedor">
+							<br />
+						</div>
 		</section>
 	</main>
 
@@ -488,6 +570,7 @@
 					</a>
 				</div>
 			</div>
-		</footer>
-	</body>
+	</footer>
+</body>
+
 </html>

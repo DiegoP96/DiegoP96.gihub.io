@@ -136,7 +136,19 @@ $(document).ready(function (e) {
     $("#listaCorona").toggle(
 
     );
-    $("#listaPatagonia").toggle(
+    $("#listaPatagonia1").toggle(
+
+    );
+    $("#listaPatagonia2").toggle(
+
+    );
+    $("#listaPatagonia3").toggle(
+
+    );
+    $("#listaPatagonia4").toggle(
+
+    );
+    $("#listaPatagonia5").toggle(
 
     );
     $("#listaStella").toggle(
@@ -661,7 +673,6 @@ $(document).ready(function (e) {
         if (contador == 0) {
 
             $("#listaCorona").show(e);
-            $("#listaPatagonia").show(e);
             $("#listaStella").show(e);
             $("#listaQuilmes").show(e);
 
@@ -670,10 +681,32 @@ $(document).ready(function (e) {
         } else {
 
             $("#listaCorona").hide(e);
-            $("#listaPatagonia").hide(e);
+
             $("#listaStella").hide(e);
             $("#listaQuilmes").hide(e);
 
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonPatagonia").click(function (e) {
+
+        if (contador == 0) {
+            $("#listaPatagonia1").show(e);
+            $("#listaPatagonia2").show(e);
+            $("#listaPatagonia3").show(e);
+            $("#listaPatagonia4").show(e);
+            $("#listaPatagonia5").show(e);
+            contador++;
+        } else {
+            $("#listaPatagonia1").hide(e);
+            $("#listaPatagonia2").hide(e);
+            $("#listaPatagonia3").hide(e);
+            $("#listaPatagonia4").hide(e);
+            $("#listaPatagonia5").hide(e);
             contador = 0;
         }
     });

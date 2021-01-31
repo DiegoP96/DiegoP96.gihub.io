@@ -208,6 +208,9 @@ $(document).ready(function (e) {
     $("#Chilaquiles").toggle(
 
     );
+    $("#Chilaquiles1").toggle(
+
+    );
     $("#desayunoVoladorDelDia").toggle(
 
     );
@@ -755,7 +758,7 @@ $(document).ready(function (e) {
             $("#Medialunas").show(e);
             $("#HuevosRancheros").show(e);
             $("#HuevosDivorciados").show(e);
-            $("#Chilaquiles").show(e);
+            $("#Chilaquiles1").show(e);
             $("#desayunoVoladorDelDia").show(e);
             $("#Moyotes").show(e);
             $("#tostadaFranchuta").show(e);
@@ -771,7 +774,7 @@ $(document).ready(function (e) {
             $("#Medialunas").hide(e);
             $("#HuevosRancheros").hide(e);
             $("#HuevosDivorciados").hide(e);
-            $("#Chilaquiles").hide(e);
+            $("#Chilaquiles1").hide(e);
             $("#desayunoVoladorDelDia").hide(e);
             $("#Moyotes").hide(e);
             $("#tostadaFranchuta").hide(e);

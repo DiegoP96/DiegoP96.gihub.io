@@ -59,14 +59,14 @@ body {
 }
 
 .contenedorImagen {
-	max-width: 960px;
+	/* max-width: 960px; */
 	width: 100%;
 	max-height: 629px;
 	height: auto;
 	box-sizing: border-box;
 	object-fit: fill;
 	filter: contrast(70%);
-	margin: auto;
+	/* margin: auto; */
 }
 
 .contenedorImagen img {

@@ -4,10 +4,12 @@
 	font-size: 8px;
 	line-height: 1.5;
 	position: relative;
+	height: auto;
 	width: 100%;
 	margin: 0px auto;
 	overflow: hidden;
 	-webkit-font-smoothing: antialiased;
+	/* max-width: 960px; */
 }
 .sh__btns,
 .sh__meta,
@@ -386,14 +388,14 @@
 	float: left;
 }
 
-@media (max-width: 1366px) and (min-width: 1280px) {
+@media (max-width: 1920px) and (min-width: 1280px) {
 	.sheetSlider {
 		width: 90%;
-		height: 500px;
+		height: 900px;
 	}
 
 	.sheetSlider img {
-		height: 500px;
+		height: 900px;
 	}
 }
 

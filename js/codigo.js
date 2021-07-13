@@ -73,6 +73,9 @@ $(document).ready(function (e) {
     $("#listaTacosAsada").toggle(
 
     );
+    $("#listaTacosGuadalupe").toggle(
+
+    );
     $("#listaQuesadillasChilorio").toggle(
 
     );
@@ -546,7 +549,25 @@ $(document).ready(function (e) {
 
 
 });
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonTacosEspeciales").click(function (e) {
 
+        if (contador == 0) {
+
+            $("#listaTacosAsada").show(e);
+            $("#listaTacosGuadalupe").show(e);
+            contador++;
+        } else {
+
+            $("#listaTacosAsada").hide(e);
+            $("#listaTacosGuadalupe").hide(e);
+            contador = 0;
+        }
+    });
+
+
+});
 // READY QUESADILLAS
 $(document).ready(function (e) {
     var contador = 0;

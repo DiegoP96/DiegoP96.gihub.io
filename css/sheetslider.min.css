@@ -84,7 +84,7 @@
 	font-weight: 500;
 	-webkit-transition: color 0.5s;
 	transition: color 0.5s;
-	color: #717beb;
+	color: #68f3ab;
 }
 .sh__btns {
 	bottom: 0;
@@ -436,7 +436,7 @@
 	}
 }
 .sh__meta a:hover {
-	color: #607d8b;
+	color: #0eff5e;
 }
 .sheetSlider input:nth-child(1):checked ~ .sh__btns label:nth-child(1),
 .sheetSlider input:nth-child(10):checked ~ .sh__btns label:nth-child(10),

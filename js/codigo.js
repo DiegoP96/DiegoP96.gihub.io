@@ -124,6 +124,12 @@ $(document).ready(function (e) {
     $("#listaJugos").toggle(
 
     );
+    $("#listaToros").toggle(
+
+    );
+    $("#listaLimonada").toggle(
+
+    );
     $("#Tortatresleches").toggle(
 
     );
@@ -342,6 +348,37 @@ $(document).ready(function (e) {
     $("#listaSanHuberto8").toggle(
 
     );
+    $("#listaMalma1").toggle(
+
+    );
+    $("#listaMalma2").toggle(
+
+    );
+    $("#listaMalma3").toggle(
+
+    );
+    $("#listaMalma4").toggle(
+
+    );
+    $("#listaMalma5").toggle(
+
+    );
+    $("#listaMalma6").toggle(
+
+    );
+    $("#listaMalma7").toggle(
+
+    );
+    $("#listaMalma8").toggle(
+
+    );
+    $("#listaMalma9").toggle(
+
+    );
+    $("#listaMalma10").toggle(
+
+    );
+
 
     $("#listaSueco").toggle(
 
@@ -652,6 +689,8 @@ $(document).ready(function (e) {
             $("#listaPepsi").show(e);
             $("#listaAgua").show(e);
             $("#listaJugos").show(e);
+            $("#listaToros").show(e);
+            $("#listaLimonada").show(e);
 
             contador++;
         } else {
@@ -659,6 +698,8 @@ $(document).ready(function (e) {
             $("#listaPepsi").hide(e);
             $("#listaAgua").hide(e);
             $("#listaJugos").hide(e);
+            $("#listaToros").hide(e);
+            $("#listaLimonada").hide(e);
 
             contador = 0;
         }
@@ -946,6 +987,42 @@ $(document).ready(function (e) {
             $("#listaSanHuberto6").hide(e);
             $("#listaSanHuberto7").hide(e);
             $("#listaSanHuberto8").hide(e);
+
+            contador = 0;
+        }
+    });
+});
+
+$(document).ready(function (e) {
+    var contador = 0;
+    $("#contenedorBotonMalma").click(function (e) {
+
+        if (contador == 0) {
+
+            $("#listaMalma1").show(e);
+            $("#listaMalma2").show(e);
+            $("#listaMalma3").show(e);
+            $("#listaMalma4").show(e);
+            $("#listaMalma5").show(e);
+            $("#listaMalma6").show(e);
+            $("#listaMalma7").show(e);
+            $("#listaMalma8").show(e);
+            $("#listaMalma9").show(e);
+            $("#listaMalma10").show(e);
+
+            contador++;
+        } else {
+
+            $("#listaMalma1").hide(e);
+            $("#listaMalma2").hide(e);
+            $("#listaMalma3").hide(e);
+            $("#listaMalma4").hide(e);
+            $("#listaMalma5").hide(e);
+            $("#listaMalma6").hide(e);
+            $("#listaMalma7").hide(e);
+            $("#listaMalma8").hide(e);
+            $("#listaMalma9").hide(e);
+            $("#listaMalma10").hide(e);
 
             contador = 0;
         }

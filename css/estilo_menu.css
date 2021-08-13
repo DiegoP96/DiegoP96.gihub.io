@@ -195,7 +195,7 @@ button.boton_carrito:hover {
 }
 
 .descripcionTxt {
-	color: rgb(192, 189, 189);
+	color: rgb(132, 121, 121);
 	text-align: initial;
 	letter-spacing: 2px;
 	font-size: 10px;
@@ -264,6 +264,7 @@ button.boton_carrito:hover {
 	text-align: center;
 	box-shadow: 0 4px #999;
 	margin-top: 15px;
+	visibility: hidden;
 }
 
 .botonAgregarAlCarrito:hover {
@@ -296,6 +297,7 @@ button.boton_carrito:hover {
 	text-align: center;
 	margin-top: 15px;
 	box-shadow: 0 4px #999;
+	visibility: hidden;
 }
 
 .botonAgregarAlCarritoSimple:hover {
@@ -322,6 +324,7 @@ button.boton_carrito:hover {
 	text-align: center;
 	margin-top: 15px;
 	box-shadow: 0 4px #999;
+	visibility: hidden;
 }
 
 .botonAgregarAlCarritoDoble:hover {
